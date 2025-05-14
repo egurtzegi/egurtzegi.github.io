@@ -1,0 +1,14 @@
+---
+title: "Phonetics and Phonology"
+author:
+  - name: Ander Egurtzegi
+date: "2013-01-01"
+publication:
+  type: "chapter"
+  book_title: "Basque and Proto-Basque. Language-Internal and typological approaches to linguistic reconstruction"
+  editor: "Martínez-Areta (ed.)"
+  publisher: "Peter Lang, Frankfurt am Main"
+  pages: "119–172"
+pdf: "pdfs/Egurtzegi-2013-Phonetics&Phonology.pdf"
+categories: ["Book Chapter"]
+--- 

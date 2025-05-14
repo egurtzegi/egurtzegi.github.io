@@ -1,0 +1,16 @@
+---
+title: "Metathesis of aspiration as the source of anticipatory voicelessness in Basque"
+author:
+  - name: Ander Egurtzegi
+date: "2019-01-01" # Assuming start of year
+publication: "Journal of French Language Studies, *29*(2), 265–279."
+categories: [Journal]
+links:
+  - name: DOI
+    url: https://doi.org/10.1017/S0959269518000339
+    icon: ai ai-doi
+  - name: PDF
+    url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6AFAF84FE1A5D486CAADEE6555986E8C/S0959269518000339a.pdf/metathesis-of-aspiration-as-the-source-of-anticipatory-voicelessness-in-basque.pdf
+    icon: ai ai-open-access
+# abstract: "..."
+--- 

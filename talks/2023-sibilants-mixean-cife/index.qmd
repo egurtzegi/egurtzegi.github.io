@@ -1,0 +1,16 @@
+---
+title: "An acoustic description of sibilant contrasts and sibilant merger in Mixean Basque"
+authors:
+  - "Ander Egurtzegi"
+  - "D. Krajewska"
+  - "C. Carignan"
+  - "I. Urrestarazu-Porta"
+date: "2023-01-01" # Assuming generic date
+event: "9th International Conference on Experimental Phonetics (CIFE)"
+location: "University of Vigo, Spain"
+categories:
+  - "Conference Presentation"
+links:
+  - name: "Slides"
+    url: "https://urrestarazu.gitlab.io/slides/2023-vigo-sibilants.html"
+--- 

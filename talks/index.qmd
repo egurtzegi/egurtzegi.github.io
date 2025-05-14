@@ -1,0 +1,10 @@
+---
+title: "Talks"
+listing:
+  contents: "*.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+---
+
+This page lists talks and presentations. 

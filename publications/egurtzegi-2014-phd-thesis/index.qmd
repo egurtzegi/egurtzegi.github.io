@@ -1,0 +1,11 @@
+---
+title: "Towards a phonetically grounded diachronic phonology of Basque"
+author:
+  - "Ander Egurtzegi"
+date: "2014-01-01"
+publication: "PhD thesis, University of the Basque Country (UPV/EHU)"
+categories:
+  - "Other Publication"
+  - "Thesis"
+pdf: "pdfs/Egurtzegi2014.pdf"
+--- 

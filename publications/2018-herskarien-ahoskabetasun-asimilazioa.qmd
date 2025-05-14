@@ -1,0 +1,16 @@
+---
+title: "Herskarien ustezko ahoskabetasun asimilazioa eta euskal herskari zaharren gauzatzea [The apparent assimilation of voicelessness and the realization of old Basque stops]"
+author:
+  - name: Ander Egurtzegi
+date: "2018-01-01" # Assuming start of year
+publication: "International Journal of Basque Linguistics and Philology (ASJU), *52*, 189–206."
+categories: [Journal]
+links:
+  - name: DOI
+    url: https://doi.org/10.1387/asju.20198
+    icon: ai ai-doi
+  - name: PDF
+    url: http://www.ehu.eus/ojs/index.php/ASJU/article/view/20198/18324
+    icon: ai ai-open-access
+# abstract: "..."
+--- 

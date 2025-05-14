@@ -1,0 +1,15 @@
+---
+title: "Diferentes tipos de aspiración en vasco (con análisis espectrales del dialecto suletino actual)"
+subtitle: "Different kinds of aspiration in Basque (with spectral analyses of the modern Zuberoan dialect)"
+author:
+  - name: Ander Egurtzegi
+date: "2013-01-01"
+publication:
+  type: "chapter"
+  book_title: "Iberia e Sardegna"
+  editor: "Blasco et al. (eds.)"
+  publisher: "Le Monnier, Firenze"
+  pages: "151–169"
+pdf: "pdfs/Egurtzegi-SardiniaProofs.pdf"
+categories: ["Book Chapter"]
+--- 

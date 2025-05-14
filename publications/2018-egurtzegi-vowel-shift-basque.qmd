@@ -1,0 +1,15 @@
+---
+title: "The role of vowel phonotactics and dispersion in an ongoing vowel shift in Northern Bizkaian Basque"
+authors:
+  - "Ander Egurtzegi"
+date: "2018-01-01"
+publication_types:
+  - "article-journal"
+publication: "Linguistics, 56(5), 1023–1052"
+doi: "10.1515/ling-2018-0010"
+
+links:
+  - name: PDF
+    url: "pdfs/Egurtzegi-2018-Linguistics.pdf"
+    icon: "ai ai-file-pdf"
+--- 

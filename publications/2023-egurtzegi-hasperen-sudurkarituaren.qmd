@@ -1,0 +1,14 @@
+---
+title: "/h̃/ hasperen sudurkarituaren inguruan [On the nasalized aspiration /h̃/]"
+author:
+  - "Ander Egurtzegi"
+date: "2023-01-01"
+categories: ["Journal"]
+publication-venue: "International Journal of Basque Linguistics and Philology (ASJU)"
+volume: 57
+pages: "275-294"
+doi: "10.1387/asju.25952"
+pdf: "https://ojs.ehu.eus/index.php/ASJU/article/view/25952/24923"
+---
+
+Details for: /h̃/ hasperen sudurkarituaren inguruan [On the nasalized aspiration /h̃/]. 

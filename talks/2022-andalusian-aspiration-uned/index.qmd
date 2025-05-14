@@ -1,0 +1,15 @@
+---
+title: "Andalusian pre-to-post-aspiration and the life cycle of sound change"
+authors:
+  - "Ander Egurtzegi"
+  - "J. Cronenberg"
+  - "J. Harrington"
+date: "2022-01-01" # Assuming generic date
+event: "Workshop on Sound Change. Departamento de Lengua Española y Lingüística General (UNED)"
+location: "Madrid, Spain"
+categories:
+  - "Workshop Presentation"
+links:
+  - name: "Slides (PDF)"
+    url: "../slides/UNED-Slides.pdf"
+--- 

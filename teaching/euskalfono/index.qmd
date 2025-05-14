@@ -1,0 +1,43 @@
+---
+title: "Euskararen Fonetika eta Fonologia (UPPA)"
+date: "2022-05-06"
+summary: "Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu. Azkenik, deskribapen eta analisi akustikoaren sarrera xume bat egingo dugu Praat programaren bidez."
+tags:
+  - "Undergraduate"
+  - "Phonetics"
+  - "Phonology"
+  - "Basque"
+---
+
+Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu. Azkenik, deskribapen eta analisi akustikoaren sarrera xume bat egingo dugu Praat programaren bidez.
+
+## Egitasmoa
+
+* 2022ko gaitegia eta informazio orokorra [[pdf]](egitasmoa.pdf)
+
+## Gaiak
+
+### 1.- Gaia: Oinarrizko zenbait konzeptu
+
+* Klasean erabiltako filminak [[pdf]](1GAIA.pdf)
+* IPA (Nazioarteko Alfabeto Fonetikoa): Taula osoa euskaraz [[pdf]](IPA_Kiel_2021_full_eus.pdf)
+* IPA (Nazioarteko Alfabeto Fonetikoa): Taula osoa frantsesez [[pdf]](IPA_Kiel_2019_full_fra.pdf)
+
+### 2.- Gaia: Euskararen fonologia
+
+* Klasean erabiltako filminak [[pdf]](2GAIA.pdf)
+* IPA (Nazioarteko Alfabeto Fonetikoa): Kontsonanteen taula euskaraz [[pdf]](KontsonanteakAFIrenArabera.pdf)
+
+### 3.- Gaia: Txandakatzeak
+
+* Klasean erabiltako filminak [[pdf]](3GAIA.pdf)
+
+### 4.- Gaia: Azentua eta prosodia
+
+* Klasean erabiltako filminak [[pdf]](4GAIA.pdf)
+
+## Ariketak
+
+* 1. ariketa [[pdf]](ARIKETAK-1.pdf)
+* 2. ariketa [[pdf]](ARIKETAK-2.pdf)
+* 3. lan idatzia [[pdf]](AukeratzekoTestuak.pdf) 

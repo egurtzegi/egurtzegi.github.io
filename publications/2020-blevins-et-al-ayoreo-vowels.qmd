@@ -1,0 +1,17 @@
+---
+title: "Reduced Vowels in Ayoreo and the Nature of Underlying Vowel Contrasts"
+authors:
+  - "Juliette Blevins"
+  - "Ander Egurtzegi"
+  - "Gorka Elordieta"
+date: "2020-01-01"
+publication_types:
+  - "paper-conference"
+publication: "Proceedings of the 2019 Annual Meeting on Phonology"
+doi: "10.3765/amp.v0i0.4743"
+
+links:
+  - name: PDF
+    url: "pdfs/Blevinsetal2020Reduced.pdf"
+    icon: "ai ai-file-pdf"
+--- 

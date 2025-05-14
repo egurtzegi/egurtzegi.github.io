@@ -1,0 +1,15 @@
+---
+title: "A nasalance-based study of the /h/ vs. /h̃/ opposition in Zuberoan Basque"
+authors:
+  - "Ander Egurtzegi"
+  - "A. García-Covelo"
+  - "I. Urrestarazu-Porta"
+date: "2023-01-01" # Assuming generic date
+event: "20th International Congress of Phonetic Sciences (ICPhS)"
+location: "Prague"
+categories:
+  - "Conference Presentation"
+links:
+  - name: "Slides"
+    url: "https://urrestarazu.gitlab.io/slides-icphs/2023-larraine-nasals-icphs.html"
+--- 

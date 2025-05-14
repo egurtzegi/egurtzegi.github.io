@@ -1,0 +1,15 @@
+---
+title: "Voicelessness spread and devoicing in Basque"
+authors:
+  - "Ander Egurtzegi"
+date: "2014-01-01"
+publication_types:
+  - "article-journal"
+publication: "Laboratory Phonology, 5(2), 295–320"
+doi: "10.1075/lab.15.2.01egu"
+
+links:
+  - name: PDF
+    url: "pdfs/Egurtzegi2014.pdf"
+    icon: "ai ai-file-pdf"
+--- 

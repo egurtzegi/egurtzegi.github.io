@@ -1,0 +1,19 @@
+---
+title: "Phonetic correlates of the sibilant contrast in Mixean Basque"
+authors:
+  - "Ander Egurtzegi"
+  - "C. Carignan"
+date: "2020-01-01"
+publication_types:
+  - "article-journal"
+publication: "Journal of the Acoustical Society of America, 147(4), EL336–EL341"
+doi: "10.1121/10.0001123"
+
+links:
+  - name: PDF
+    url: "pdfs/JASA_MixeanBasque(postprint).pdf"
+    icon: "ai ai-file-pdf"
+  - name: Journal Link
+    url: "https://asa.scitation.org/doi/10.1121/10.0001123"
+    icon: "ai ai-archive"
+--- 

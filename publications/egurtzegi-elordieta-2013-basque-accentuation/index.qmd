@@ -1,0 +1,11 @@
+---
+title: "Euskal azentueren historiaz [On the history of Basque accentuation]"
+author:
+  - "Ander Egurtzegi"
+  - "G. Elordieta"
+date: "2013-01-01"
+publication: "In Gómez et al. (eds.), *3rd Conference of the Luis Michelena Chair*. Vitoria-Gasteiz: UPV/EHU, 163–186."
+categories:
+  - "Refereed Conference Publication"
+pdf: "pdfs/Egurtzegi & Elordieta 2013-KMK III.pdf"
+--- 

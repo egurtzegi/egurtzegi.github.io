@@ -1,0 +1,15 @@
+---
+title: "Basque Historical Phonology"
+authors:
+  - "Ander Egurtzegi"
+  - "Borja Ariztimuño"
+date: "2020-01-01"
+publication_types:
+  - "chapter"
+publication: "In *Oxford Research Encyclopedia of Linguistics*. Oxford: Oxford University Press."
+
+links:
+  - name: Preprint
+    url: "pdfs/EgurtzegiAriztimuno2019.pdf"
+    icon: "ai ai-file-pdf"
+--- 

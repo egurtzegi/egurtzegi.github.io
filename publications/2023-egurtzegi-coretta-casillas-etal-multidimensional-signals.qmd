@@ -1,0 +1,22 @@
+---
+title: "Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses"
+author:
+  - "Ander Egurtzegi"
+  - "S. Coretta"
+  - "J. Casillas"
+  - "et al."
+  - "T. Roettger"
+date: "2023-01-01"
+categories: ["Journal"]
+publication-venue: "Advances in Methods and Practices in Psychological Science"
+volume: 6
+issue: 3
+doi: "10.1177/25152459231162567"
+pdf: "https://journals.sagepub.com/doi/full/10.1177/25152459231162567"
+osf:
+  - "https://osf.io/3bmcp/"
+  - "https://osf.io/g9bq5/ (Team analysis)"
+github: "https://github.com/many-speech-analyses/many_analyses"
+---
+
+Details for: Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses. 

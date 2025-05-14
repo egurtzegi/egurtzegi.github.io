@@ -1,0 +1,20 @@
+---
+title: "Morfema mugetako hots aldaketak Zaldibarko euskaran: Azterketa akustikoa [Morpheme-boundary sound changes in Zaldibar Basque: Acoustic study]"
+author:
+  - name: Ander Egurtzegi
+  - name: I. San Martin
+date: "2018-01-01" # Assuming start of year
+publication: "Lapurdum, *21*." # Volume 21, no pages/issue listed
+categories: [Journal]
+links:
+  - name: DOI
+    url: https://journals.openedition.org/lapurdum/3697
+    icon: ai ai-doi
+  - name: PDF
+    url: pdfs/Zaldibar_04-18bidalia.pdf # Corrected local PDF
+    icon: ai ai-open-access
+  - name: Preprint
+    url: pdfs/Zaldibar_10-07_Azkena.pdf # Preprint PDF
+    icon: fas fa-file-pdf # Using a different icon for preprint
+# abstract: "..."
+--- 

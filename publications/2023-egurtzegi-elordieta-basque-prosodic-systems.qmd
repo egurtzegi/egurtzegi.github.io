@@ -1,0 +1,16 @@
+---
+title: "A history of the Basque prosodic systems"
+author:
+  - "Ander Egurtzegi"
+  - "G. Elordieta"
+date: "2023-01-01"
+categories: ["Journal"]
+publication-venue: "Diachronica"
+volume: 40
+issue: 1
+pages: "30-72"
+doi: "10.1075/dia.20066.egu"
+pdf: "https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu"
+---
+
+Details for: A history of the Basque prosodic systems. 

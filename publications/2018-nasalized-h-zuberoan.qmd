@@ -1,0 +1,16 @@
+---
+title: "On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque"
+author:
+  - name: Ander Egurtzegi
+date: "2018-01-01" # Assuming start of year
+publication: "Linguistics, *56*(6), 1353–1367."
+categories: [Journal]
+links:
+  - name: DOI
+    url: https://doi.org/10.1515/ling-2018-0024
+    icon: ai ai-doi
+  - name: PDF
+    url: pdfs/Egurtzegi-2018-Linguistics.pdf # Relative path to the copied PDF
+    icon: ai ai-open-access
+# abstract: "..."
+--- 

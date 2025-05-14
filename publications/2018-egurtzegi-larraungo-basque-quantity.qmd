@@ -1,0 +1,15 @@
+---
+title: "Preaspiration, Pre-Rhotic Lengthening, and the Development of a Phonological Quantity System in Larraungo Basque"
+authors:
+  - "Ander Egurtzegi"
+date: "2018-01-01"
+publication_types:
+  - "article-journal"
+publication: "Language, 94(3), 671–705"
+doi: "10.1353/lan.2018.0035"
+
+links:
+  - name: PDF
+    url: "http://xanti.github.io/papers/Egurtzegi-2018-Nasalized-o-raising.pdf"
+    icon: "ai ai-open-access"
+--- 

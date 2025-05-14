@@ -1,0 +1,15 @@
+---
+title: "Sibilant mergers in Basque historical phonology"
+authors:
+  - "Ander Egurtzegi"
+  - "Ricardo Gómez"
+date: "2013-01-01"
+publication_types:
+  - "chapter"
+publication: "In *Swallows, Laryngeals and Sibilants*, 113–136. Vitoria-Gasteiz: UPV/EHU."
+
+links:
+  - name: PDF
+    url: "pdfs/Egurtzegi&Ariztimuno2013Swallows.pdf"
+    icon: "ai ai-file-pdf"
+--- 

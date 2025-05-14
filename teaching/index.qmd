@@ -1,0 +1,10 @@
+---
+title: "Teaching"
+listing:
+  contents: "*.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+---
+
+This page lists teaching materials and courses. 

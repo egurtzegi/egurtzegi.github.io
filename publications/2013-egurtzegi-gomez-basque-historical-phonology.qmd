@@ -1,0 +1,16 @@
+---
+title: "On the division of Basque historical phonology into periods: a proposal (Euskararen Kronologia Fonologikoaz: Periodo Berriak)"
+authors:
+  - "Ander Egurtzegi"
+  - "Ricardo Gómez"
+date: "2013-01-01"
+publication_types:
+  - "article-journal"
+publication: "Fontes Linguae Vasconum: Studia et Documenta, 115, 5–34"
+doi: "10.1353/bhs.2013.0009"
+
+links:
+  - name: PDF
+    url: "pdfs/Egurtzegi-2013-Phonetics&Phonology.pdf"
+    icon: "ai ai-file-pdf"
+--- 

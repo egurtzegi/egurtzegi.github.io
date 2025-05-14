@@ -1,0 +1,16 @@
+---
+title: "Principal components variable importance reconstruction (PC-VIR): Exploring predictive importance in multicollinear acoustic speech data"
+author:
+  - "Ander Egurtzegi"
+  - "C. Carignan"
+date: "2021-01-01"
+publication: "*arXiv:2102.04740 [stat.ME]*"
+categories:
+  - "Other Publication"
+pdf: "https://arxiv.org/pdf/2102.04740.pdf"
+links:
+  - name: "arXiv"
+    url: "https://arxiv.org/abs/2102.04740"
+  - name: "GitHub"
+    url: "https://github.com/ChristopherCarignan/PC-VIR"
+--- 

@@ -1,0 +1,17 @@
+---
+title: "Final obstruent voicing in Lakota: Phonetic evidence and phonological implications"
+author:
+  - "Ander Egurtzegi"
+  - "J. Blevins"
+  - "J. Ullrich"
+date: "2020-01-01"
+categories: ["Journal"]
+publication-venue: "Language"
+volume: 96
+issue: 2
+pages: "294-337"
+doi: "10.1353/lan.2020.0022"
+pdf: "pdfs/Blevinsetal2020Reduced.pdf"
+---
+
+Details for: Final obstruent voicing in Lakota: Phonetic evidence and phonological implications. 

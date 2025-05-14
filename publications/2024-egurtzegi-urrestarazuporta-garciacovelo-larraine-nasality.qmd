@@ -1,0 +1,17 @@
+---
+title: "Sudurkaritasun fonologikoa Larrainen: /h̃/ bai, baina bokalik ez [Phonological nasality in Larraine Basque: there is /h̃/, but no nasal vowels]"
+author:
+  - "Ander Egurtzegi"
+  - "I. Urrestarazu-Porta"
+  - "A. García-Covelo"
+date: "2024-01-01" # Using first day of year for now
+categories: ["Journal"]
+publication-venue: "Fontes Linguae Vasconum"
+volume: 137
+pages: "163-190"
+doi: "10.35462/flv137.7"
+pdf: "https://www.culturanavarra.es/uploads/files/FLV137-07.pdf"
+# No OSF or GitHub link in this entry
+---
+
+Details for: Sudurkaritasun fonologikoa Larrainen: /h̃/ bai, baina bokalik ez [Phonological nasality in Larraine Basque: there is /h̃/, but no nasal vowels]. 

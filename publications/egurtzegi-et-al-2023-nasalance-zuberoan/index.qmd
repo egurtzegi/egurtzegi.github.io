@@ -1,0 +1,13 @@
+---
+title: "A nasalance-based study of the /h/ vs. /h̃/ opposition in Zuberoan Basque"
+author:
+  - "Ander Egurtzegi"
+  - "A. García-Covelo"
+  - "I. Urrestarazu-Porta"
+date: "2023-01-01" # Assuming Jan 1st as day/month are not specified
+publication: "In Radek Skarnitzl & Jan Volín (eds.), *Proceedings of the 20th International Congress of Phonetic Sciences*. Prague: Guarant International, 3427-3431."
+categories:
+  - "Refereed Conference Publication"
+pdf: "https://guarant.cz/icphs2023/1047.pdf"
+# No local PDF to copy for this one
+--- 

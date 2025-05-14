@@ -1,0 +1,16 @@
+---
+title: "The development of a sibilant inventory in Zuberoan Basque"
+authors:
+  - "Ander Egurtzegi"
+  - "Juliette Blevins"
+date: "2017-01-01"
+publication_types:
+  - "article-journal"
+publication: "Phonology, 34(3), 473–507"
+doi: "10.1002/phon.1000"
+
+links:
+  - name: PDF
+    url: "pdfs/blevins_egurtzegi2017phonology.pdf"
+    icon: "ai ai-file-pdf"
+--- 

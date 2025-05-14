@@ -1,0 +1,10 @@
+---
+title: "Projects"
+listing:
+  contents: "*.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+---
+
+This page lists research projects. 

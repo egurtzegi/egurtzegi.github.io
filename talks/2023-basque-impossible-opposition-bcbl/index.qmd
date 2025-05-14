@@ -1,0 +1,16 @@
+---
+title: "Does Basque have an impossible phonological opposition?"
+authors:
+  - "Ander Egurtzegi"
+  - "A. García-Covelo"
+  - "I. Urrestarazu-Porta"
+date: "2023-01-01" # Assuming generic date
+event: "BCBL Speech and Bilingualism Talks"
+categories:
+  - "Invited Talk"
+links:
+  - name: "Slides (BCBL)"
+    url: "../slides/2023-larraine-nasals-bcbl.html"
+  - name: "Slides (UPV/EHU)"
+    url: "../slides/2024-larraine-h-ehu.html"
+--- 
