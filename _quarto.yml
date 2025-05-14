@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: public # Standard Quarto output directory
+bibliography: references.bib # Add bibliography
 
 website:
   title: "Ander Egurtzegi"
@@ -22,7 +23,6 @@ website:
         text: Contact
       - href: files/EgurtzegiCV.pdf # Link to the CV
         text: CV
-  bibliography: references.bib # Add bibliography
 
 format:
   html:
