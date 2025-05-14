@@ -1,1 +1,11 @@
 /.quarto/
+
+# Quarto output directory
+public/
+
+# R history file
+.Rhistory
+
+# OS-specific files
+.DS_Store
+Thumbs.db
