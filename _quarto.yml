@@ -1,20 +1,33 @@
 project:
   type: website
+  output-dir: public # Standard Quarto output directory
 
 website:
-  title: "egurtzegi-quarto-website"
+  title: "Ander Egurtzegi"
   navbar:
+    background: primary # A common choice, can be themed later
+    search: true
     left:
-      - href: index.qmd
+      - href: index.qmd # "Home" will link to the main index page
         text: Home
-      - about.qmd
+      - href: publications/index.qmd # Placeholder for publications listing page
+        text: Publications
+      - href: talks/index.qmd # Placeholder for talks listing page
+        text: Talks
+      - href: projects/index.qmd # Placeholder for projects listing page
+        text: Projects
+      - href: teaching/index.qmd # Placeholder for teaching listing page
+        text: Teaching
+      - href: index.qmd#contact # Assuming contact section will be on the homepage
+        text: Contact
+      - href: files/EgurtzegiCV.pdf # Link to the CV
+        text: CV
+  bibliography: references.bib # Add bibliography
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    theme: cosmo # A common clean theme, can be changed later
+    css: styles.css # Placeholder for custom styles
     toc: true
 
 

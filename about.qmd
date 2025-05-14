@@ -1,5 +1,22 @@
 ---
-title: "About"
+title: "About Ander Egurtzegi"
 ---
 
-About this site
+### Chargé de Recherche (tenured researcher)
+
+*   **Centre National de la Recherche Scientifique** ([CNRS](http://www.cnrs.fr/))
+*   **IKER UMR-5478** ([IKER](http://www.iker.cnrs.fr/?lang=en))
+
+---
+
+I am a historical laboratory phonologist at the [Centre National de la Recherche Scientifique](http://www.cnrs.fr/) at [IKER UMR5478](http://www.iker.cnrs.fr/?lang=en). I specialize in phonetically-based sound change, typologically rare sound patterns, metathesis, and the reconstruction of Proto-Basque. I pursue an interdisciplinary approach to the study of sound change by combining historical linguistics, theoretical phonology, experimental phonetics, phonological typology, philology, sociolinguistics, and contact linguistics.
+
+I have worked on a wide range of topics including metathesis, u-fronting, nasalized aspiration, consonant cluster resolution, accentual shifts, final obstruent voicing, and acoustic descriptions of endangered dialects. You can find most of my papers in the publications section of this website.
+
+You might remember me from my time at the [Institute of Phonetics and Speech Processing](https://www.en.phonetik.uni-muenchen.de/index.html) of the [University of Munich](http://www.en.uni-muenchen.de/index.html), the Phonetics Lab of the [University of the Basque Country](https://www.ehu.eus/eu/home), or the briefer periods I spent at the [City University of New York](https://gc.cuny.edu/Home) or the [Complutense University of Madrid](https://www.ucm.es/english/).
+
+I tend to pronounce my name \[ˈan̪deɾ eˈɣ̞urt͡s̻eɣ̞i], but it can also be pronounced \[ˈan̪der eɣ̞urˈt͡s̻eɣ̞i]. Of course, I have answered to many other names, including \[ˈʔandɐ], \[ˈændɚ], \[ˈændə(ɹ)], \[ˈɑn.dər], \[ˈɑndɛɾs] and even \[anˈden]. We don't have the space here for the variants of my last name, but that one runs wild. You can choose any variant or create a new one, as I'm happy to be the source of linguistic variation.
+
+If my name rings a bell but my face and work don't match with it, note that there is yet another linguist that answers to A. Egurtzegi: Check out [my brother's](https://www.researchgate.net/profile/Aitor_Egurtzegi) work on psycholinguistics at Uni Zurich.
+
+For contact, please email [ander.egurtzegi@iker.cnrs.fr](mailto:ander.egurtzegi@iker.cnrs.fr).

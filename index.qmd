@@ -1,7 +1,35 @@
 ---
-title: "egurtzegi-quarto-website"
+title: "Ander Egurtzegi"
 ---
 
-This is a Quarto website.
+I am Ander Egurtzegi, a Chargé de Recherche (tenured researcher) at the Centre National de la Recherche Scientifique (CNRS) at IKER UMR-5478. I work on the typology of sound change, with a focus on Basque. My research explores phonetically-based sound change, typologically rare sound patterns, metathesis, and the reconstruction of Proto-Basque, combining historical linguistics, theoretical phonology, experimental phonetics, and contact linguistics.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome to my website. Here you can find information about my publications, talks, projects, and teaching activities.
+
+## Featured Publications
+
+*   In press. Metathesis. In Ledgeway et al. (eds.), _The Wiley Blackwell Companion to Diachronic Linguistics_. Wiley-Blackwell. [<i class = "ai ai-open-access ai-lg"></i>](publications/pdfs/MetathesisDiaComEgurtzegi.pdf)
+
+*   2023 [with J. Blevins] Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. _Linguistic Typology_ 27.2, 289–311. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class = "ai ai-open-access ai-lg"></i>](https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036)
+
+*   2023 [with G. Elordieta] A history of the Basque prosodic systems. _Diachronica_ 40.1, 30-72. [<i class = "ai ai-doi ai-lg"></i>](http://doi.org/10.1075/dia.20066.egu) [<i class = "ai ai-open-access ai-lg"></i>](https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu)
+
+*   2022 [with D. Krajewska & E. Zuloaga] Sibilant mergers in 18th-century Basque: A quantitative study. _Phonological Data & Analysis_ 4.5, 1–31. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.3765/pda.v4art5.67) [<i class = "ai ai-open-access ai-lg"></i>](https://phondata.org/index.php/pda/article/view/67/43) [<i class = "ai ai-osf ai-lg"></i>](https://osf.io/t6a7w/)
+
+*   2020 [with J. Blevins & J. Ullrich] Final obstruent voicing in Lakota: Phonetic evidence and phonological implications. _Language_ 96.2, 294–337. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1353/lan.2020.0022) [<i class = "ai ai-open-access ai-lg"></i>](https://www.linguisticsociety.org/sites/default/files/05_96.2Blevins_reduced-ed.pdf)
+
+*   2020 [with C. Carignan] An acoustic description of Mixean Basque. _Journal of the Acoustical Society of America_ 147.4, 2791–2802. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1121/10.0000996) [<i class = "ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/pdf/10.1121/10.0000996) [Suplementary materials<i class = "ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/suppl/10.1121/10.0000996/suppl_file/supppub1.pdf).
+
+*   2018 On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque. _Linguistics_ 56.6, 1353–1367. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1515/ling-2018-0024) [<i class = "ai ai-open-access ai-lg"></i>](publications/pdfs/egurtzegi_2018_linguistics.pdf)
+
+*   2017 [with J. Blevins] Unexpected obstruent loss in initial obstruent-sonorant clusters: an apparent example from Basque. _Phonology_ 34.3, 507–522. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0952675717000264) [<i class = "ai ai-open-access ai-lg"></i>](publications/pdfs/blevins_egurtzegi2017phonology.pdf)
+
+*   2017 Phonetically conditioned sound change: Contact induced /u/-fronting in Zuberoan Basque. _Diachronica_ 34.3, 331–367. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.34.3.02egu) [<i class = "ai ai-open-access ai-lg"></i>](publications/pdfs/Egurtzegi-u-fronting-preprint.pdf)
+
+## About {#about}
+
+(Content to be migrated from `academic/content/home/about.md`)
+
+## Contact {#contact}
+
+(Content to be migrated from `academic/content/home/contact.md` and `academic/config/_default/params.toml`)
