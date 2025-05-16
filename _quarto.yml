@@ -5,30 +5,64 @@ bibliography: references.bib # Add bibliography
 
 website:
   title: "Ander Egurtzegi"
+  site-url: https://egurtzegi.github.io
+  search: 
+    location: navbar
+    type: overlay
   navbar:
-    background: primary # A common choice, can be themed later
-    search: true
-    left:
-      - href: index.qmd # "Home" will link to the main index page
+    # background: "#2B2B2B" # Lightened for better contrast with white text
+    # logo: "/assets/images/logo.png"
+    # logo-alt: "Ander Egurtzegi"
+    right:
+      - href: index.qmd
         text: Home
-      - href: publications/index.qmd # Placeholder for publications listing page
+      - about.qmd
+      - href: publications/index.qmd
         text: Publications
-      - href: talks/index.qmd # Placeholder for talks listing page
+      - href: talks/index.qmd
         text: Talks
-      - href: projects/index.qmd # Placeholder for projects listing page
+      - href: projects/index.qmd
         text: Projects
-      - href: teaching/index.qmd # Placeholder for teaching listing page
+      - href: teaching/index.qmd
         text: Teaching
-      - href: index.qmd#contact # Assuming contact section will be on the homepage
-        text: Contact
-      - href: files/EgurtzegiCV.pdf # Link to the CV
-        text: CV
+      - icon: github
+        href: https://github.com/egurtzegi
+        aria-label: GitHub
+  page-footer:
+    left: "© Ander Egurtzegi, 2024"
+    right: ""
 
 format:
   html:
-    theme: cosmo # A common clean theme, can be changed later
-    css: styles.css # Placeholder for custom styles
+    theme: 
+      light: [bootstrap, custom-light.scss]
+      dark: [bootstrap, custom-dark.scss]
+    # theme: custom.scss # This was causing the import error
+    # mainfont: "Atkinson Hyperlegible" # Removing this to control fonts via SCSS
+    # css: styles.css # Commented out to ensure custom.scss is primary style source
     toc: true
+    page-layout: full
+    html-math-method: katex
+    header-includes: |
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+      # <script src="custom.js" defer></script>
+    include-in-header:
+      - text: |
+          <style>
+            .container-fluid {
+              max-width: 1200px !important;
+            }
+            .page-layout-full .quarto-title-block .quarto-title-banner {
+              padding: 0;
+              max-width: 1200px;
+              margin: 0 auto;
+            }
+          </style>
+    # include-after-body:
+    #   - custom.js # Include our custom JavaScript --- Commented out
 
 
 

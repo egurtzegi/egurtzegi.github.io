@@ -1,0 +1,84 @@
+/*-- scss:defaults --*/
+
+// Overall theme colors
+$primary: #2962ff; 
+$secondary: #6c757d; 
+// ... (other global theme colors like success, info, warning, danger, light, dark if used)
+
+// Body colors
+$body-bg: #fff; 
+$body-color: rgba(0,0,0,0.8); 
+$headings-color: rgba(0,0,0,0.85); 
+$link-color: $primary;
+$link-hover-color: darken($primary, 10%);
+
+// Navbar variables for light theme
+$navbar-bg: #fff; 
+$navbar-light-bg: #fff; 
+$navbar-light-color: $primary;
+$navbar-light-active-color: $primary; 
+$navbar-light-brand-color: $headings-color;
+$navbar-brand-font-size: 1.75rem; // Increased site title font size
+$nav-link-font-size: 0.95rem; // Slightly increased nav link font size
+$nav-link-padding-y: 0.85rem; // Increased nav link vertical padding to make them taller
+
+// Custom SASS variable for navbar brand font weight
+$custom-navbar-brand-font-weight: 900;
+
+// Font definitions
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$headings-font-family: "Montserrat", $font-family-sans-serif;
+$headings-font-weight: 700; // Default for all headings - will be overridden for h2
+
+// Font size variables
+$sm-screen-h2-font-size: 1.8rem; // Approx 28.8px if base is 16px, can be tuned
+$lg-screen-base-font-size: 21px;
+$h2-font-size-multiplier: 2.25;
+
+/*-- scss:rules --*/
+
+// Base h2 styling (for smaller screens and as a fallback)
+h2, .h2 {
+  font-size: $sm-screen-h2-font-size;
+  font-weight: 400; // Reduced font weight for H2 to match old site
+}
+
+// Navbar adjustments
+.navbar-brand {
+  font-weight: $custom-navbar-brand-font-weight; // Using custom SASS variable, removed !important
+}
+
+.nav-link.active {
+  font-weight: 700; // Make active nav link bold
+}
+
+.navbar-collapse .navbar-nav {
+  margin-left: 20px !important; // Add some space to the left of nav links
+  margin-right: auto !important; // Push nav links to the left of remaining space
+}
+
+// Font size and h2 adjustments for larger screens
+@media screen and (min-width: 58em) {
+    html {
+        font-size: $lg-screen-base-font-size;
+    }
+    body {
+        font-size: $lg-screen-base-font-size;
+    }
+    h2, .h2 {
+      // SASS calculation: 21px * 2.25 = 47.25px
+      font-size: $lg-screen-base-font-size * $h2-font-size-multiplier;
+      font-weight: 400; // Ensure weight remains 400 on larger screens too
+    }
+}
+
+// Example for publication links styling if needed
+.pub-links a {
+  // styles for publication links
+}
+
+// Example for list items if they need specific styling
+.list-group-item {
+  // styles for list group items
+}
