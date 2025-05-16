@@ -40,6 +40,11 @@ $headings-font-family: "Montserrat", sans-serif;
 $headings-font-weight: 700;
 $navbar-brand-font-weight: 700; // Make navbar brand bolder
 
+// Font size variables (copied from custom-light.scss for consistency)
+$sm-screen-h2-font-size: 1.8rem;
+$lg-screen-base-font-size: 21px;
+$h2-font-size-multiplier: 2.25;
+
 /*-- scss:rules --*/
 
 // General body styles are handled by Bootstrap variables now.
@@ -145,4 +150,13 @@ pre {
     html {
         font-size: 22px;
     }
+} 
+
+// Match the main page title to section headings using SASS variables (dark theme)
+.quarto-title-block .title {
+  font-family: $headings-font-family;
+  font-size: $lg-screen-base-font-size * $h2-font-size-multiplier;
+  font-weight: 400;
+  color: $headings-color;
+  margin-bottom: 1.5rem;
 } 

@@ -1,10 +1,60 @@
 ---
 title: "Publications"
-listing:
-  contents: "*.qmd"
-  type: default
-  sort: "date desc"
-  categories: true
 ---
 
-This page lists academic publications. 
+In all papers, the open-access icon <i class="ai ai-open-access ai-lg"></i> links to a freely accessible pdf. The DOI icon <i class="ai ai-doi ai-lg"></i> links to the DOI or paper webpage (whenever available) and the arXiv icon <i class="ai ai-arxiv ai-lg"></i> links to arXiv. <i class="fab fa-github"></i> links to the Github repo and <i class="ai ai-osf ai-lg"></i> to the OSF repo (code + extra materials).
+
+<hr>
+
+## Journal Publications
+
+- 2024 [with D. Krajewska, C. Carignan & I. Urrestarazu-Porta]  An acoustic exploration of sibilant contrasts and sibilant merger in Mixean Basque. *Journal of the International Phonetic Association* 54.2, 677-706. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0025100324000045) [<i class="ai ai-open-access ai-lg"></i>](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/839C776F241162A02D7505FE4D042A7E/S0025100324000045a.pdf/div-class-title-an-acoustic-exploration-of-sibilant-contrasts-and-sibilant-merger-in-mixean-basque-div.pdf)   [<i class="ai ai-osf ai-lg"></i>](https://osf.io/vctgw/)
+- 2024 [with I. Urrestarazu-Porta & A. García-Covelo]  Sudurkaritasun fonologikoa Larrainen: /h̃/ bai, baina bokalik ez. *Fontes Linguae Vasconum* 137, 163-190. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.35462/flv137.7) [<i class="ai ai-open-access ai-lg"></i>](https://www.culturanavarra.es/uploads/files/FLV137-07.pdf)   
+- 2023 [with J. Blevins]  Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. *Linguistic Typology* 27.2, 289-311. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class="ai ai-open-access ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036)   
+- 2023 [with G. Elordieta]  A history of the Basque prosodic systems. *Diachronica* 40.1, 30-72. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.20066.egu) [<i class="ai ai-open-access ai-lg"></i>](https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu)   
+- 2023 [with S. Coretta, J. Casillas & T. Roettger]  Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses. *Advances in Methods and Practices in Psychological Science* 6.3. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1177/25152459231162567) [<i class="ai ai-open-access ai-lg"></i>](https://journals.sagepub.com/doi/full/10.1177/25152459231162567)  [<i class="fab fa-github"></i>](https://github.com/many-speech-analyses/many_analyses) [<i class="ai ai-osf ai-lg"></i>](https://osf.io/3bmcp/)
+- 2023 /h̃/ hasperen sudurkarituaren inguruan. *International Journal of Basque Linguistics and Philology (ASJU)* 57, 275-294. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1387/asju.25952) [<i class="ai ai-open-access ai-lg"></i>](https://ojs.ehu.eus/index.php/ASJU/article/view/25952/24923)   
+- 2022 [with D. Krajewska & E. Zuloaga]  Sibilant mergers in 18th-century Basque: A quantitative study. *Phonological Data & Analysis* 4.5, 1-31. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.3765/pda.v4art5.67) [<i class="ai ai-open-access ai-lg"></i>](https://phondata.org/index.php/pda/article/view/67/43)   [<i class="ai ai-osf ai-lg"></i>](https://osf.io/t6a7w/)
+- 2022 Goizuetako azentueraren garapena kokatzen Euskara Batu Zaharraren prosodia zehazteko: proposamenen ebaluazioa. *Fontes Linguae Vasconum* 133, 9-35. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.35462/flv133.1) [<i class="ai ai-open-access ai-lg"></i>](https://www.culturanavarra.es/uploads/files/FLV133_01.pdf)   
+- 2020 [with J. Blevins & J. Ullrich]  Final obstruent voicing in Lakota: Phonetic evidence and phonological implications. *Language* 96.2, 294-337. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1353/lan.2020.0022) [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Blevinsetal2020Reduced.pdf)   
+- 2020 [with C. Carignan]  An acoustic description of Mixean Basque. *Journal of the Acoustical Society of America* 147.4, 2791-2802. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1121/10.0000996) [<i class="ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/pdf/10.1121/10.0000996)   
+- 2019 Metathesis of aspiration as the source of anticipatory voicelessness in Basque. *Journal of French Language Studies* 29.2, 265-279. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0959269518000339) [<i class="ai ai-open-access ai-lg"></i>](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6AFAF84FE1A5D486CAADEE6555986E8C/S0959269518000339a.pdf/metathesis-of-aspiration-as-the-source-of-anticipatory-voicelessness-in-basque.pdf)   
+- 2018 On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque. *Linguistics* 56.6, 1353-1367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/ling-2018-0024) [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi-2018-Linguistics.pdf)   
+- 2018 [with I. San Martin]  Morfema mugetako hots aldaketak Zaldibarko euskaran: Azterketa akustikoa. *Lapurdum* 21. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.4000/lapurdum.3697) [<i class="ai ai-open-access ai-lg"></i>](https://journals.openedition.org/lapurdum/3697)   
+- 2018 Herskarien ustezko ahoskabetasun asimilazioa eta euskal herskari zaharren gauzatzea. *International Journal of Basque Linguistics and Philology (ASJU)* 52, 189-206. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1387/asju.20198) [<i class="ai ai-open-access ai-lg"></i>](http://www.ehu.eus/ojs/index.php/ASJU/article/view/20198/18324)   
+- 2017 [with J. Blevins]  Unexpected obstruent loss in initial obstruent-sonorant clusters: an apparent example from Basque. *Phonology* 34.3, 507-522. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0952675717000264) [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/blevins_egurtzegi2017phonology.pdf)   
+- 2017 Phonetically conditioned sound change: Contact induced /u/-fronting in Zuberoan Basque. *Diachronica* 34.3, 331-367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.34.3.02egu) [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi-u-fronting-preprint.pdf)   
+- 2015 Different distributions of contrastive vowel nasalization in Basque. *Loquens: Spanish Journal of Speech Sciences* 2.1, e017. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.3989/loquens.2015.017) [<i class="ai ai-open-access ai-lg"></i>](https://loquens.revistas.csic.es/index.php/loquens/article/view/22/63)   
+- 2013 Ekialdeko /o/-ren igoeraren testuinguru fonologikoaren bila. *International Journal of Basque Linguistics and Philology (ASJU)* 48.2, 257-266. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1387/asju.18683) [<i class="ai ai-open-access ai-lg"></i>](http://www.ehu.eus/ojs/index.php/ASJU/article/view/18683/17582)   
+- 2013 [with B. Ariztimuño]  Remarks on the etymology of the Basque word for 'swallow' and its potential relation to Celtic. *Ériu* 63, 79-90. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.3318/ERIU.2013.63.79) [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi&Ariztimuno2013Swallows.pdf)   
+- 2012 Hugo Ernst Schuchardt: Bibliografía vasca. *International Journal of Basque Linguistics and Philology (ASJU)* 46, 161-176.  [<i class="ai ai-open-access ai-lg"></i>](https://www.ehu.eus/ojs/index.php/ASJU/article/view/13450/12044)   
+- 2011 Euskal metatesiak: abiaburua haien ikerketarako. *International Journal of Basque Linguistics and Philology (ASJU)* 45, 1-79.  [<i class="ai ai-open-access ai-lg"></i>](http://www.ehu.eus/ojs/index.php/ASJU/article/view/9725/8965)   
+- 2011 [with B. Ariztimuño]  Enarak, elaiak eta testuinguruaren garrantzia. *International Journal of Basque Linguistics and Philology (ASJU)* 45, 403-410.  [<i class="ai ai-open-access ai-lg"></i>](http://www.ehu.eus/ojs/index.php/ASJU/article/view/9747/8987)   
+- 2009 [with M. Ayerbe]  La formación del plural en alemán desde una perspectiva morfofonológica. *Estudios Filológicos Alemanes* 19, 237-268.     
+
+## Book Chapters
+
+- In press Metathesis. *The Wiley Blackwell Companion to Diachronic Linguistics* In Ledgeway et al. (ed.). Wiley-Blackwell.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/MetathesisDiaComEgurtzegi.pdf)   
+- 2022 [with G. Elordieta]  Bizkaiko iparraldeko euskararen doinu-azentuaren berrikusketa. *Papers on Basque Linguistics in Honor of Jon Andoni Franco Elorza* In Barberia & Iribar (ed.). 319-337. Deusto University Press.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Elordieta-Egurtzegi-2022.pdf)   
+- 2019 [with B. Ariztimuño]  /f/-ren sarrera eta sorrera euskaran. *Bihotz ahots. M.L. Oñederra irakaslearen omenez* In Epelde & Jauregi (ed.). 197-213. UPV/EHU.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/EgurtzegiAriztimuno2019.pdf)   
+- 2018 Nasalized mid back vowel raising in Gascon and Basque. *Production and perception mechanisms of sound change* In Recasens & Sáchez-Miret (ed.). 173-187. Lincom.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi2018Nasalized-o-raising.pdf)   
+- 2015 Zubereraren /y/: bere sorrera eta hedapenaren inguruan. *Eridenen du zerzaz kontenta* In Ezeizabarrena & Gómez (ed.). 149-162. UPV/EHU.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi2015.pdf)   
+- 2013 Phonetics and Phonology. *Basque and Proto-Basque. Language-Internal and typological approaches to linguistic reconstruction* In Martínez-Areta (ed.). 119-172. Peter Lang.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi-2013-Phonetics&Phonology.pdf)   
+- 2013 Diferentes tipos de aspiración en vasco (con análisis espectrales del dialecto suletino actual). *Iberia e Sardegna* In Blasco et al. (ed.). 151-169. Le Monnier.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi-SardiniaProofs.pdf)   
+
+## Refereed Conference Publications
+
+- 2023 [with A. García-Covelo & I. Urrestarazu-Porta]  A nasalance-based study of the /h/ vs. /h̃/ opposition in Zuberoan Basque. *Proceedings of the 20th International Congress of Phonetic Sciences* In Radek Skarnitzl & Jan Volín (ed.). 3427-3431. Guarant International.  [<i class="ai ai-open-access ai-lg"></i>](https://guarant.cz/icphs2023/1047.pdf)   
+- 2015 [õ] sudurkarituaren igoera ekialdeko euskalkietan. *Ikergazte: International research in Basque* 39-45. UEU.     
+- 2013 [with G. Elordieta]  Euskal azentueren historiaz. *3rd Conference of the Luis Michelena Chair* In Gómez et al. (ed.). 163-186. UPV/EHU.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi & Elordieta 2013-KMK III.pdf)   
+
+## Outreach publications
+
+- 2018 Can speech errors become part of a language?. *Berichte* 2017, 10-13.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/EgurtzegiIBZBerichte2017.pdf)   
+
+## Other publications
+
+- 2021 [with C. Carignan]  Principal components variable importance reconstruction (PC-VIR): Exploring predictive importance in multicollinear acoustic speech data.  [<i class="ai ai-open-access ai-lg"></i>](https://arxiv.org/pdf/2102.04740.pdf) [<i class="ai ai-arxiv ai-lg"></i>](https://arxiv.org/abs/https://arxiv.org/abs/2102.04740) [<i class="fab fa-github"></i>](https://github.com/ChristopherCarignan/PC-VIR) 
+- 2021 [with G. Elordieta, O. Jauregi, D. Krajewska, M.L. Oñederra & I. Urrestarazu]  Nazioarteko Alfabeto Fonetikoa (2021ean moldatua).  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/IPA_Kiel_2021_full_eus.pdf)   
+- 2014 Towards a phonetically grounded diachronic phonology of Basque.  [<i class="ai ai-open-access ai-lg"></i>](https://egurtzegi.github.io/papers/Egurtzegi2014.pdf)   
+

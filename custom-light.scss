@@ -82,3 +82,12 @@ h2, .h2 {
 .list-group-item {
   // styles for list group items
 }
+
+// Match the main page title to section headings using SASS variables
+.quarto-title-block .title {
+  font-family: $headings-font-family;
+  font-size: $lg-screen-base-font-size * $h2-font-size-multiplier;
+  font-weight: 400;
+  color: $headings-color;
+  margin-bottom: 1.5rem;
+}

@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: public # Standard Quarto output directory
-bibliography: references.bib # Add bibliography
+# bibliography: publications/references.bib # Add bibliography
 
 website:
   title: "Ander Egurtzegi"
@@ -62,6 +62,8 @@ format:
           </style>
     # include-after-body:
     #   - custom.js # Include our custom JavaScript --- Commented out
+    # filters:
+    #   - grouped_bib.lua
 
 
 
