@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: public # Standard Quarto output directory
+  resources: 
+    - "static/**"
 # bibliography: publications/references.bib # Add bibliography
 
 website:
