@@ -38,11 +38,11 @@ for (html_file_path_from_cwd in html_files) {
     
     if (str_starts(original_link, "/")) {
       path_to_check_in_public <- str_remove(original_link, "^/")
-      } else {
+    } else {
       path_to_check_in_public <- path(html_file_dir_in_public, original_link)
-      path_to_check_in_public <- path_tidy(path_to_check_in_public)
-      }
+    }
 
+    path_to_check_in_public <- path_tidy(path_to_check_in_public)
     full_path_from_cwd <- path(public_dir, path_to_check_in_public)
     
     if (!file_exists(full_path_from_cwd)) {
