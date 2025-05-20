@@ -9,15 +9,6 @@
 <link href="../../libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="/static/libs/clipboard/clipboard.min.js"></script>
-<script src="/static/libs/quarto-html/tabby.min.js"></script>
-<script src="/static/libs/quarto-html/popper.min.js"></script>
-<script src="/static/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="/static/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/static/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="/static/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="/static/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="/static/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
 <meta name="author" content="Ander Egurtzegi (junto a Andrea García-Covelo e Iñigo Urrestarazu-Porta)">
@@ -25,8 +16,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-<link rel="stylesheet" href="/static/libs/revealjs/dist/reset.css">
-<link rel="stylesheet" href="/static/libs/revealjs/dist/reveal.css">
+<link href="../../libs/revealjs/dist/reset.css" rel="stylesheet">
+<link href="../../libs/revealjs/dist/reveal.css" rel="stylesheet">
 <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -40,13 +31,13 @@
       vertical-align: middle;
     }
   </style>
-<link rel="stylesheet" href="/static/libs/revealjs/dist/theme/quarto.css">
-<link href="/static/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-<link href="/static/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-<link href="/static/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-<link href="/static/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-<link href="/static/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-<link href="/static/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+<link href="../../libs/revealjs/dist/theme/quarto.css" rel="stylesheet">
+<link href="../../libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+<link href="../../libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+<link href="../../libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+<link href="../../libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+<link href="../../libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+<link href="../../libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
 <style type="text/css">
 
   .callout {
@@ -200,7 +191,7 @@
   }
 
   div.callout-important .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvniIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
   }
 
   div.callout-important.callout-style-default .callout-title {
@@ -224,7 +215,7 @@
   }
 
   div.callout-tip .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTRRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
   }
 
   div.callout-tip.callout-style-default .callout-title {
@@ -331,7 +322,7 @@
       margin-right: 0; 
     }
   </style>
-<script src="/static/libs/xaringanExtra-webcam-0.0.1/webcam.js"></script><script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+<script src="../../libs/xaringanExtra-webcam-0.0.1/webcam.js"></script><script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -491,6 +482,14 @@ Ander Egurtzegi (junto a Andrea García-Covelo e Iñigo Urrestarazu-Porta)
 <div class="footer">
 <p>Hualde, José Ignacio. 2003. Segmental phonology. <em>A grammar of Basque</em>, 15-65. Berlin &amp; New York: Mouton de Gruyter.</p>
 </div>
+```
+</section></section><section><section id="euskera-de-zuberoa" class="title-slide slide level1 center"><h1>Euskera de Zuberoa</h1>
+<div class="footer">
+<p>Hualde, José Ignacio. 2003. Segmental phonology. <em>A grammar of Basque</em>, 15-65. Berlin &amp; New York: Mouton de Gruyter.</p>
+</div>
+```
+</section></section></section>
+</rewritten_file>
 
 <img data-src="/static/img/slides/larraine-osoa/zuberoaninventory3.png" width="492" class="r-stretch quarto-figure-center"></section><section id="fricativas-glotales-1" class="slide level2"><h2>Fricativas glotales</h2>
 <ul>
@@ -641,7 +640,7 @@ Ander Egurtzegi (junto a Andrea García-Covelo e Iñigo Urrestarazu-Porta)
 </div>
 <div class="fragment">
 <div style="position: absolute; top: 60%; right: 4%; text-align: left;">
-<p>1000-1300 CE <br> Pérdida de aspiradas <br> en sílabas postónicas <br> en variedades orientales <br><br> /hV.hV.V/ &gt; /hV.hV.V/</p>
+<p>1000-1300 CE <br> Pérdida de aspiradas <br> en sílabas postónicas <br> en variedades orientales <br><br> /hV.'hV.hV/ &gt; /hV.hV.V/</p>
 </div>
 </div>
 </section><section id="cronología-1" class="slide level2" data-transition="slide-in"><h2>Cronología</h2>
@@ -808,7 +807,7 @@ Ander Egurtzegi (junto a Andrea García-Covelo e Iñigo Urrestarazu-Porta)
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside><p><video data-src="/static/img/slides/larraine-osoa/zoom-larraine.mp4" class="absolute" style="top: 0px; left: 400px; " data-heigth="1200" controls=""><a href="/static/img/slides/larraine-osoa/zoom-larraine.mp4">Video</a></video></p>
+      }</style></aside><p><video data-src="/static/videos/zoom-larraine.mp4" class="absolute" style="top: 0px; left: 400px; " data-heigth="1200" controls=""><a href="/static/videos/zoom-larraine.mp4">Video</a></video></p>
 </section></section><section><section id="diseño-experimental" class="title-slide slide level1 transition center"><h1>Diseño experimental</h1>
 <aside class="notes"><p>word reading task</p>
 <style type="text/css">
@@ -926,13 +925,13 @@ Ander Egurtzegi (junto a Andrea García-Covelo e Iñigo Urrestarazu-Porta)
 <div class="column">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+<p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-2-1.png" width="960"></p>
 </div>
 </div>
 </div><div class="column">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+<p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-3-1.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -999,7 +998,7 @@ A_o
 \]</span></p>
 </div>
 </div>
-</section></section><section><section id="análisis-estático-se-mantiene-la-oposición-entre-h-y-h-en-vasco-de-zuberoa" class="title-slide slide level1 transition center"><h1>Análisis estático: ¿Se mantiene la oposición entre /<span class="ipa">h</span>/ y /<span class="ipa">h̃</span>/ en vasco de Zuberoa?</h1>
+</section></section><section><section id="análisis-estático-se-mantiene-la-oposición-entre-h-y-h-en-vasco-de-zuberoa" class="title-slide slide level1 transition center"><h1>/h/ vs.&nbsp;/h̃/: Estudiando una oposición fonológica 'imposible' del euskera desde la fonología de laboratorio</h1>
 
 </section><section id="modelo-jerárquico-generalizado-bayesiano-con-brms" class="slide level2"><h2>Modelo jerárquico generalizado bayesiano con brms</h2>
 <p><img data-src="/static/img/slides/larraine-osoa/tools.jpg" class="absolute" style="bottom: 0px; right: 0px; width: 350px; "></p>
@@ -1018,7 +1017,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-4-1.png" style="width:95.0%;height:90.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-4-1.png" style="width:95.0%;height:90.0%"></p>
 </figure>
 </div>
 </div>
@@ -1027,18 +1026,18 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-5-1.png" style="width:95.0%;height:90.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-5-1.png" style="width:95.0%;height:90.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="section-1" class="slide level2"><h2></h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-6-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="section-2" class="slide level2"><h2></h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-6-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="section-2" class="slide level2"><h2></h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-7-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-7-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1047,7 +1046,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-8-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-8-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1056,7 +1055,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-9-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-9-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1065,7 +1064,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-10-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-10-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1074,7 +1073,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-11-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-11-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1083,7 +1082,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-12-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-12-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1092,7 +1091,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-13-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-13-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1101,7 +1100,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-14-1.png" style="width:85.0%;height:100.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-14-1.png" style="width:85.0%;height:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1110,7 +1109,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-15-1.png" style="width:95.0%;height:95.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-15-1.png" style="width:95.0%;height:95.0%"></p>
 </figure>
 </div>
 </div>
@@ -1119,7 +1118,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-16-1.png" style="width:95.0%;height:95.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-16-1.png" style="width:95.0%;height:95.0%"></p>
 </figure>
 </div>
 </div>
@@ -1128,7 +1127,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-17-1.png" style="width:95.0%;height:95.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-17-1.png" style="width:95.0%;height:95.0%"></p>
 </figure>
 </div>
 </div>
@@ -1137,7 +1136,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-18-1.png" style="width:95.0%;height:95.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-18-1.png" style="width:95.0%;height:95.0%"></p>
 </figure>
 </div>
 </div>
@@ -1146,7 +1145,7 @@ A_o
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-19-1.png" style="width:95.0%;height:95.0%"></p>
+<figure><p><img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-19-1.png" style="width:95.0%;height:95.0%"></p>
 </figure>
 </div>
 </div>
@@ -1236,15 +1235,15 @@ A_o
 </div>
 </section><section id="para-este-análisis-solo-hablantes-distinguidores" class="slide level2"><h2>Para este análisis solo hablantes distinguidores</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch quarto-figure-center"></section><section id="antes-de-registrar-el-tiempo" class="slide level2"><h2>Antes de registrar el tiempo</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-21-1.png" width="960" class="r-stretch quarto-figure-center"></section><section id="antes-de-registrar-el-tiempo" class="slide level2"><h2>Antes de registrar el tiempo</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch quarto-figure-center"></section><section id="después-de-registrar-el-tiempo" class="slide level2"><h2>Después de registrar el tiempo</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-22-1.png" width="960" class="r-stretch quarto-figure-center"></section><section id="después-de-registrar-el-tiempo" class="slide level2"><h2>Después de registrar el tiempo</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch quarto-figure-center"></section><section id="en-nuestros-datos-el-primer-cp-explica-la-mayoría-de-la-variación" class="slide level2"><h2>En nuestros datos, el primer CP explica la mayoría de la variación</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-23-1.png" width="960" class="r-stretch quarto-figure-center"></section><section id="en-nuestros-datos-el-primer-cp-explica-la-mayoría-de-la-variación" class="slide level2"><h2>En nuestros datos, el primer CP explica la mayoría de la variación</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-24-1.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section><section id="la-variación-explicada-por-el-primer-cp-es-vertical" class="slide level2"><h2>La variación explicada por el primer CP es vertical</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-24-1.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section><section id="la-variación-explicada-por-el-primer-cp-es-vertical" class="slide level2"><h2>La variación explicada por el primer CP es vertical</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-25-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="un-modelo-jerárquico-bayesiano-de-los-valores-del-primer-cp" class="slide level2"><h2>Un modelo jerárquico bayesiano de los valores del primer CP</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-25-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="un-modelo-jerárquico-bayesiano-de-los-valores-del-primer-cp" class="slide level2"><h2>Un modelo jerárquico bayesiano de los valores del primer CP</h2>
 <p><br><br> Variable dependiente: <span class="emph">valores del CP1</span></p>
 <p>Predictor poblacional: <span class="emph">categoría de la aspirada</span></p>
 <p>Familia: <span class="emph">Gaussiana</span></p>
@@ -1253,11 +1252,11 @@ A_o
 <p>Priors poco informativos</p>
 </section><section id="distribuciones-posteriores-1" class="slide level2"><h2>Distribuciones posteriores</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-26-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="distribución-de-contraste-entre-los-valores-de-cp1-posteriores-de-nasalizadas-y-orales" class="slide level2"><h2>Distribución de contraste entre los valores de CP1 posteriores de nasalizadas y orales</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-26-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="distribución-de-contraste-entre-los-valores-de-cp1-posteriores-de-nasalizadas-y-orales" class="slide level2"><h2>Distribución de contraste entre los valores de CP1 posteriores de nasalizadas y orales</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-27-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="de-los-valores-estimados-del-cp1-de-vuelta-a-nuestras-curvas-de-nasalidad" class="slide level2"><h2>De los valores estimados del CP1 de vuelta a nuestras curvas de nasalidad</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-27-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="de-los-valores-estimados-del-cp1-de-vuelta-a-nuestras-curvas-de-nasalidad" class="slide level2"><h2>De los valores estimados del CP1 de vuelta a nuestras curvas de nasalidad</h2>
 
-<img data-src="/static/slides/larraine-osoa/2024-larraine-h-fod_files/figure-revealjs/unnamed-chunk-28-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="discusión-4" class="slide level2" data-auto-animate="true"><h2 data-id="quarto-animate-title">Discusión</h2>
+<img data-src="/static/img/slides/larraine-osoa/unnamed-chunk-28-1.png" width="1536" class="r-stretch quarto-figure-center"></section><section id="discusión-4" class="slide level2" data-auto-animate="true"><h2 data-id="quarto-animate-title">Discusión</h2>
 <p><br><br></p>
 <p>La <span class="emph">nasalidad</span> es realizada como una característica <span class="emph">suprasegmental</span> que</p>
 <p><br></p>
@@ -1320,7 +1319,21 @@ var qrcode = new QRCode("qr2", {"width":"580","height":"580","colorLight":"#1822
 </div>
   </div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="/static/libs/revealjs/dist/reveal.js"></script><!-- reveal.js plugins --><script src="/static/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script><script src="/static/libs/revealjs/plugin/pdf-export/pdfexport.js"></script><script src="/static/libs/revealjs/plugin/reveal-menu/menu.js"></script><script src="/static/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script><script src="/static/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script><script src="/static/libs/revealjs/plugin/quarto-support/support.js"></script><script src="/static/libs/revealjs/plugin/notes/notes.js"></script><script src="/static/libs/revealjs/plugin/search/search.js"></script><script src="/static/libs/revealjs/plugin/zoom/zoom.js"></script><script src="/static/libs/revealjs/plugin/math/math.js"></script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../../libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+  <script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
