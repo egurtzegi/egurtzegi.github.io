@@ -8,7 +8,7 @@ Welcome to my website. Here you can find information about my publications, talk
 
 ## Featured Publications
 
-*   In press. Metathesis. In Ledgeway et al. (eds.), _The Wiley Blackwell Companion to Diachronic Linguistics_. Wiley-Blackwell. [<i class = "ai ai-open-access ai-lg"></i>](publications/pdfs/MetathesisDiaComEgurtzegi.pdf)
+*   In press. Metathesis. In Ledgeway et al. (eds.), _The Wiley Blackwell Companion to Diachronic Linguistics_. Wiley-Blackwell. [<i class = "ai ai-open-access ai-lg"></i>](/static/files/MetathesisDiaComEgurtzegi.pdf)
 
 *   2023 [with J. Blevins] Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. _Linguistic Typology_ 27.2, 289–311. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class = "ai ai-open-access ai-lg"></i>](https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036)
 
