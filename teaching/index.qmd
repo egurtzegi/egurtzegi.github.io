@@ -1,10 +1,16 @@
 ---
-title: "Teaching"
+title: Teaching
 listing:
-  contents: "*.qmd"
-  type: default
+  contents:
+    - "euskalfono.qmd"
+    - "soundchange.qmd"
   sort: "date desc"
-  categories: true
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
 
 This page lists teaching materials and courses. 

@@ -1,0 +1,41 @@
+---
+title: "Euskararen Fonetika eta Fonologia (UPPA)"
+date: "2022-05-06"
+---
+
+Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu. Azkenik, deskribapen eta analisi akustikoaren sarrera xume bat egingo dugu Praat programaren bidez.
+
+--------------------------------------------------
+Egitasmoa
+==============
+*   2022ko gaitegia eta informazio orokorra [pdf](/static/files/egitasmoa.pdf)
+--------------------------------------------------
+
+Gaiak
+==============
+1.- Gaia: Oinarrizko zenbait konzeptu
+--------------------------------------------------
+*   Klasean erabiltako filminak [pdf](/static/files/1GAIA.pdf)</li>
+*   IPA (Nazioarteko Alfabeto Fonetikoa): Taula osoa euskaraz [pdf](/static/files/IPA_Kiel_2021_full_eus.pdf)
+*   IPA (Nazioarteko Alfabeto Fonetikoa): Taula osoa frantsesez [pdf](/static/files/IPA_Kiel_2019_full_fra.pdf)
+
+2.- Gaia: Euskararen fonologia
+--------------------------------------------------
+*   Klasean erabiltako filminak [pdf](/static/files/2GAIA.pdf)
+*   IPA (Nazioarteko Alfabeto Fonetikoa): Kontsonanteen taula euskaraz [pdf](/static/files/KontsonanteakAFIrenArabera.pdf)
+
+3.- Gaia: Txandakatzeak
+--------------------------------------------------
+*   Klasean erabiltako filminak [pdf](/static/files/3GAIA.pdf)
+
+4.- Gaia: Azentua eta prosodia
+--------------------------------------------------
+*   Klasean erabiltako filminak [pdf](/static/files/4GAIA.pdf)
+--------------------------------------------------
+
+Ariketak
+=========
+*   1. ariketa [pdf](/static/files/ARIKETAK-1.pdf)
+*   2. ariketa [pdf](/static/files/ARIKETAK-2.pdf)
+*   3. lan idatzia [pdf](/static/files/AukeratzekoTestuak.pdf)
+------------------------- 

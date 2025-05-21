@@ -1,0 +1,55 @@
+---
+title: "Sound Change (UPV/EHU)"
+date: "2020-05-06"
+---
+
+This class offers an accessible introduction to the concept of sound change and the different phonological processes it encompasses, using examples from a wide range of languages which can be adapted to the particular interests of the attending students. Several typologies of phonetically natural sound change will be discussed and compared in order to present a comprehensible outline of how the sounds of the world's languages change over time.
+
+--------------------------------------------------
+Course topics:
+==============
+*   Syllabus 2020 [pdf](/static/files/Syllabus.pdf)
+
+--------------------------------------------------
+1.- Introduction to variation and historical change
+--------------------------------------------------
+*   Appendix Probi [pdf](/static/files/AppendixProbi.pdf)</li>
+*   Cantar de Mio Cid [pdf](/static/files/MioCid.pdf) [mp3](/static/files/01r.mp3)
+
+2.- Neogrammarian sound change
+--------------------------------------------------
+*   1st Reading
+*   Sturtevant's Law of Waterloo [slides](/static/files/Sturtevant-Waterloo.pdf)
+
+3.- Kinds of sound change
+--------------------------------------------------
+*   2nd Reading
+*   Kinds of sound change [slides](/static/files/KindsofSC.pdf)
+
+4.- Modern typologies of sound change
+--------------------------------------------------
+*   3rd Reading
+*   4th Reading
+*   Typologies of sound change [slides](/static/files/TypologiesofSC.pdf)
+
+5.- Phonetic motivation in sound change
+--------------------------------------------------
+*   5th Reading
+*   Phonetic motivation in sound change [slides](/static/files/PhoneticSC.pdf)
+
+6.- Models of linguistic diversification
+--------------------------------------------------
+*   6th Reading
+*   Models of linguistic diversification [slides](/static/files/Diversification.pdf)
+
+7.- Phases of sound change
+--------------------------------------------------
+*   Optional Reading
+--------------------------------------------------
+
+Exercices
+=========
+*   set of exercices [pdf](/static/files/TraskExercices1.pdf)
+*   set of exercices [pdf](/static/files/TraskExercices2.pdf)
+*   set of exercices [pdf](/static/files/CampbellExercices.pdf)
+------------------------- 
