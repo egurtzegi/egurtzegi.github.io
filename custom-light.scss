@@ -91,3 +91,41 @@ h2, .h2 {
   color: $headings-color;
   margin-bottom: 1.5rem;
 }
+
+.author-block {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee; // Subtle separator line
+}
+
+.author-image {
+  width: 80px; // Adjust size as needed
+  height: 80px; // Adjust size as needed
+  border-radius: 50%; // Make it round
+  margin-right: 1.5rem;
+  object-fit: cover; // Ensure image covers the area without distortion
+}
+
+.author-info h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem; // Adjust font size
+}
+
+.author-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem; // Adjust font size for title
+  font-weight: normal;
+  color: #666; // Lighter color for title
+}
+
+.author-links a {
+  margin-right: 0.5rem;
+  color: $primary; // Use primary color for links
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}

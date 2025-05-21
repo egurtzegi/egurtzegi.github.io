@@ -38,7 +38,8 @@ format:
   html:
     theme: 
       light: [bootstrap, custom-light.scss]
-      dark: [bootstrap, custom-dark.scss]
+      # dark: [bootstrap, custom-dark.scss] # Temporarily comment out dark theme
+    # theme: bootstrap # Temporarily use only base bootstrap theme
     # theme: custom.scss # This was causing the import error
     # mainfont: "Atkinson Hyperlegible" # Removing this to control fonts via SCSS
     # css: styles.css # Commented out to ensure custom.scss is primary style source

@@ -160,3 +160,42 @@ pre {
   color: $headings-color;
   margin-bottom: 1.5rem;
 } 
+
+.author-block {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #4a4e60; // Subtle separator line for dark theme
+}
+
+.author-image {
+  width: 80px; // Adjust size as needed
+  height: 80px; // Adjust size as needed
+  border-radius: 50%; // Make it round
+  margin-right: 1.5rem;
+  object-fit: cover; // Ensure image covers the area without distortion
+}
+
+.author-info h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem; // Adjust font size
+  color: $body-color; // Ensure heading color is readable in dark mode
+}
+
+.author-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem; // Adjust font size for title
+  font-weight: normal;
+  color: rgba($body-color, 0.7); // Lighter color for title in dark mode
+}
+
+.author-links a {
+  margin-right: 0.5rem;
+  color: $link-color; // Use the general link color for dark mode
+  &:hover {
+    color: lighten($link-color, 10%);
+  }
+} 
