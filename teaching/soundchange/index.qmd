@@ -13,38 +13,38 @@ This class offers an accessible introduction to the concept of sound change and 
 
 ## Course topics
 
-* Syllabus 2020 [[pdf]](Syllabus.pdf)
+* Syllabus 2020 [[pdf]](/static/files/Syllabus.pdf)
 
 ### 1.- Introduction to variation and historical change
 
-* Appendix Probi [[pdf]](AppendixProbi.pdf)
-* Cantar de Mio Cid [[pdf]](MioCid.pdf) [[mp3]](01r.mp3)
+* Appendix Probi [[pdf]](/static/files/AppendixProbi.pdf)
+* Cantar de Mio Cid [[pdf]](/static/files/MioCid.pdf) [[mp3]](01r.mp3)
 
 ### 2.- Neogrammarian sound change
 
 * 1st Reading
-* Sturtevant's Law of Waterloo [[slides]](Sturtevant-Waterloo.pdf)
+* Sturtevant's Law of Waterloo [[slides]](/static/files/Sturtevant-Waterloo.pdf)
 
 ### 3.- Kinds of sound change
 
 * 2nd Reading
-* Kinds of sound change [[slides]](KindsofSC.pdf)
+* Kinds of sound change [[slides]](/static/files/KindsofSC.pdf)
 
 ### 4.- Modern typologies of sound change
 
 * 3rd Reading
 * 4th Reading
-* Typologies of sound change [[slides]](TypologiesofSC.pdf)
+* Typologies of sound change [[slides]](/static/files/TypologiesofSC.pdf)
 
 ### 5.- Phonetic motivation in sound change
 
 * 5th Reading
-* Phonetic motivation in sound change [[slides]](PhoneticSC.pdf)
+* Phonetic motivation in sound change [[slides]](/static/files/PhoneticSC.pdf)
 
 ### 6.- Models of linguistic diversification
 
 * 6th Reading
-* Models of linguistic diversification [[slides]](Diversification.pdf)
+* Models of linguistic diversification [[slides]](/static/files/Diversification.pdf)
 
 ### 7.- Phases of sound change
 
@@ -52,6 +52,6 @@ This class offers an accessible introduction to the concept of sound change and 
 
 ## Exercices
 
-* 1. set of exercices [[pdf]](TraskExercices1.pdf)
-* 2. set of exercices [[pdf]](TraskExercices2.pdf)
-* 3. set of exercices [[pdf]](CampbellExercices.pdf) 
+* 1. set of exercices [[pdf]](/static/files/TraskExercices1.pdf)
+* 2. set of exercices [[pdf]](/static/files/TraskExercices2.pdf)
+* 3. set of exercices [[pdf]](/static/files/CampbellExercices.pdf) 
