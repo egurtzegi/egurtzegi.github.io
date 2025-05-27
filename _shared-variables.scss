@@ -91,6 +91,12 @@ $container-max-widths: (
   xxl: 1320px
 ) !default;
 
+// Container padding
+$container-padding-x: map-get($spacers, 3) !default;
+
+// Grid system
+$grid-gutter-width: map-get($spacers, 4) !default;
+
 // =============================================================================
 // COMPONENT VARIABLES USING BOOTSTRAP SYSTEM
 // =============================================================================
@@ -106,6 +112,12 @@ $border-radius-lg: 0 !default;
 $focus-ring-width: 0.25rem !default;
 $focus-ring-opacity: 0.25 !default;
 $focus-ring-blur: 0 !default;
+$focus-ring-offset: 2px !default;
+
+// Enhanced focus system for better consistency
+$focus-ring-box-shadow: 0 0 0 $focus-ring-width !default;
+$btn-focus-box-shadow: $focus-ring-box-shadow !default;
+$input-btn-focus-box-shadow: $focus-ring-box-shadow !default;
 
 // Transition variables using Bootstrap system
 $transition-base: all 0.15s ease-in-out !default;
@@ -167,6 +179,16 @@ $icon-size-base: 2rem !default;
 $icon-size-sm: 1.5rem !default;
 
 // =============================================================================
+// STANDARDIZED COLOR SHIFT VALUES
+// =============================================================================
+
+// Consistent color shift percentages for theming
+$color-shift-hover: 15% !default;
+$color-shift-focus: 25% !default;
+$color-shift-muted: 40% !default;
+$color-shift-contact: 10% !default;
+
+// =============================================================================
 // CUSTOM PROJECT VARIABLES
 // =============================================================================
 
@@ -174,6 +196,10 @@ $icon-size-sm: 1.5rem !default;
 $portrait-size: $avatar-size-lg !default;
 $nav-link-font-size: 1.0106rem !default;
 $network-icon-size: $icon-size-base !default;
+
+// Performance optimization variables
+$will-change-transform-color: transform, color !default;
+$will-change-transform: transform !default;
 
 // =============================================================================
 // CSS CUSTOM PROPERTIES FOR SHARED VALUES
@@ -188,6 +214,8 @@ $network-icon-size: $icon-size-base !default;
   // Performance optimization
   --contain-layout: layout;
   --contain-style: style;
+  --will-change-transform-color: #{$will-change-transform-color};
+  --will-change-transform: #{$will-change-transform};
   
   // Accessibility preferences
   --animation-duration: var(--transition-duration);
@@ -197,6 +225,7 @@ $network-icon-size: $icon-size-base !default;
   --focus-ring-width: #{$focus-ring-width};
   --focus-ring-blur: #{$focus-ring-blur};
   --focus-ring-opacity: #{$focus-ring-opacity};
+  --focus-ring-offset: #{$focus-ring-offset};
 }
 
 // =============================================================================
