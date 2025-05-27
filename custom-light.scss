@@ -1,131 +1,220 @@
 /*-- scss:defaults --*/
 
-// Overall theme colors
-$primary: #2962ff; 
-$secondary: #6c757d; 
-// ... (other global theme colors like success, info, warning, danger, light, dark if used)
+// Typography - using Bootstrap variables with user specifications
+$font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
-// Body colors
-$body-bg: #fff; 
-$body-color: rgba(0,0,0,0.8); 
-$headings-color: rgba(0,0,0,0.85); 
-$link-color: $primary;
-$link-hover-color: darken($primary, 10%);
+// Base font settings from user specifications
+// Body text: 21px = 1.3125rem, line-height: 34.65px = 2.166rem
+$font-size-base: 1.25rem !default;
+$line-height-base: 1.65 !default; // 2.166 / 1.3125 = 1.65
 
-// Navbar variables for light theme
-$navbar-bg: #fff; 
-$navbar-light-bg: #fff; 
-$navbar-light-color: $primary;
-$navbar-light-active-color: $primary; 
-$navbar-light-brand-color: $headings-color;
-$navbar-brand-font-size: 1.75rem; // Increased site title font size
-$nav-link-font-size: 0.95rem; // Slightly increased nav link font size
-$nav-link-padding-y: 0.85rem; // Increased nav link vertical padding to make them taller
+// Heading sizes from user specifications
+// Main heading: 47.25px = 2.953rem
+// Bio header: 36.75px = 2.297rem  
+$h1-font-size: 2.953rem !default;
+$h2-font-size: 2.297rem !default;
+$h3-font-size: 1.25rem !default;
+$h4-font-size: 1rem !default;
+$h5-font-size: 1rem !default;
+$h6-font-size: 1rem !default;
 
-// Custom SASS variable for navbar brand font weight
-$custom-navbar-brand-font-weight: 900;
+// Font weights
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$headings-font-weight: 400 !default; // User specified 400 for main headings
 
-// Font definitions
-$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-monospace: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$headings-font-family: "Montserrat", $font-family-sans-serif;
-$headings-font-weight: 700; // Default for all headings - will be overridden for h2
+// Colors from user specifications
+$primary: #2962FF !default; // Link text color
+$body-color: #313131 !default; // Body and heading text color
+$headings-color: #313131 !default;
 
-// Font size variables
-$sm-screen-h2-font-size: 1.8rem; // Approx 28.8px if base is 16px, can be tuned
-$lg-screen-base-font-size: 21px;
-$h2-font-size-multiplier: 2.25;
+// Navigation - using proper Bootstrap variables
+$navbar-brand-font-size: 1.575rem !default; // Site title: 25.2px = 1.575rem
+
+// Container
+$container-max-widths: (
+  xl: 1200px
+) !default;
+
+// Custom variables for specific elements
+$portrait-size: 200px;
+$nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap variable for this)
+
+// Links
+$link-decoration: none !default;
 
 /*-- scss:rules --*/
 
-// Base h2 styling (for smaller screens and as a fallback)
-h2, .h2 {
-  font-size: $sm-screen-h2-font-size;
-  font-weight: 400; // Reduced font weight for H2 to match old site
-}
-
-// Navbar adjustments
-.navbar-brand {
-  font-weight: $custom-navbar-brand-font-weight; // Using custom SASS variable, removed !important
-}
-
-.nav-link.active {
-  font-weight: 700; // Make active nav link bold
-}
-
-.navbar-collapse .navbar-nav {
-  margin-left: 20px !important; // Add some space to the left of nav links
-  margin-right: auto !important; // Push nav links to the left of remaining space
-}
-
-// Font size and h2 adjustments for larger screens
-@media screen and (min-width: 58em) {
-    html {
-        font-size: $lg-screen-base-font-size;
-    }
-    body {
-        font-size: $lg-screen-base-font-size;
-    }
-    h2, .h2 {
-      // SASS calculation: 21px * 2.25 = 47.25px
-      font-size: $lg-screen-base-font-size * $h2-font-size-multiplier;
-      font-weight: 400; // Ensure weight remains 400 on larger screens too
-    }
-}
-
-// Example for publication links styling if needed
-.pub-links a {
-  // styles for publication links
-}
-
-// Example for list items if they need specific styling
-.list-group-item {
-  // styles for list group items
-}
-
-// Match the main page title to section headings using SASS variables
-.quarto-title-block .title {
-  font-family: $headings-font-family;
-  font-size: $lg-screen-base-font-size * $h2-font-size-multiplier;
-  font-weight: 400;
-  color: $headings-color;
-  margin-bottom: 1.5rem;
-}
-
-.author-block {
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #eee; // Subtle separator line
-}
-
-.author-image {
-  width: 80px; // Adjust size as needed
-  height: 80px; // Adjust size as needed
-  border-radius: 50%; // Make it round
-  margin-right: 1.5rem;
-  object-fit: cover; // Ensure image covers the area without distortion
-}
-
-.author-info h2 {
-  margin-top: 0;
-  margin-bottom: 0.25rem;
-  font-size: 1.5rem; // Adjust font size
-}
-
-.author-info h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1rem; // Adjust font size for title
-  font-weight: normal;
-  color: #666; // Lighter color for title
-}
-
-.author-links a {
-  margin-right: 0.5rem;
-  color: $primary; // Use primary color for links
-  &:hover {
-    color: darken($primary, 10%);
+// Navigation styling - specific targeting for nav-link font size and active state
+.navbar .nav-link {
+  font-size: $nav-link-font-size;
+  
+  // Make active/current page links bolder
+  &.active,
+  &[aria-current="page"] {
+    font-weight: 700 !important;
   }
 }
+
+// Make navbar brand (site title) bolder
+.navbar-brand {
+  font-weight: 700 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+// Container max width
+.container-fluid,
+.page-layout-full .quarto-title-block .quarto-title-banner {
+  max-width: map-get($container-max-widths, xl) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+// Remove title from header since we're using custom layout
+.quarto-title-block {
+  display: none;
+}
+
+// Portrait styling
+.portrait {
+  width: $portrait-size;
+  height: $portrait-size;
+  margin: 0 auto 1.25rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.portrait-title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  
+  h2 {
+    font-size: 1.8rem; // Reduced from default h2 size to fit in column
+    margin-bottom: 0.5rem;
+  }
+  
+   h3 {
+    font-size: 1.3125rem; // Tenured researcher: 21px = 1.3125rem
+    line-height: 1.25; // 26.25px / 21px = 1.25
+    color: $headings-color;
+    margin-bottom: 0.25rem;
+    
+    a {
+      text-decoration: none;
+      
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Network icons
+.network-icon {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin: 0 0.75rem 0.5rem 0;
+      
+      a {
+        color: $primary;
+        text-decoration: none;
+        font-size: 2rem; // Increased from 1.5rem to make icons larger
+        
+        &:hover {
+          color: darken($primary, 15%);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+// Featured Publications section
+.featured-publications-section {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+  margin: 2rem 0;
+}
+
+// Contact section
+.contact-widget {
+  margin-top: 2rem;
+  
+  .grid {
+    align-items: flex-start;
+  }
+}
+
+.contact-info {
+  margin-top: 1rem;
+  
+  p {
+    display: flex;
+    align-items: flex-start; // Changed from center to flex-start for better text alignment
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  i {
+    color: #000;
+    margin-right: 0.75rem;
+    min-width: 2rem;
+    display: inline-flex;
+    align-items: flex-start; // Changed from center to flex-start to align with text baseline
+    justify-content: center;
+    flex-shrink: 0; // Prevent icon from shrinking
+    margin-top: 0.2rem; // Slightly increased top margin to better align with text baseline
+    line-height: 1; // Ensure icon doesn't inherit line-height
+  }
+  
+  a {
+    color: $primary;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start; // Changed from center to flex-start
+    
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+  
+  .office-hours {
+    display: flex;
+    align-items: flex-start; // Changed from center to flex-start
+  }
+}
+
+// Form styling
+.form-group {
+  margin-bottom: 1rem;
+  
+  .form-control {
+    border-radius: 0;
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
+.btn-outline-primary {
+  border-radius: 0;
+  padding: 0.75rem 1.5rem;
+} 

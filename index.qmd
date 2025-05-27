@@ -1,105 +1,156 @@
 ---
 title: "Ander Egurtzegi"
+page-layout: full
 ---
 
-::: columns
+::: {.container-fluid}
 
-::: {.column width="30%"}
-![](/static/img/avatar.jpg){fig-alt="Ander Egurtzegi" width="200"}
+::: {.grid}
 
-**Ander Egurtzegi**
+::: {.g-col-12 .g-col-md-4}
 
-Chargé de Recherche (tenured researcher)
-
-[Centre National de la Recherche Scientifique](http://www.cnrs.fr/)
-
-[IKER UMR-5478](http://www.iker.cnrs.fr/?lang=en)
-
-<br>
-
-<a href="mailto:ander.egurtzegi@iker.cnrs.fr"><i class="fas fa-envelope"></i></a> &nbsp; <a href="https://twitter.com/egurtzegi"><i class="fab fa-twitter"></i></a> &nbsp; <a href="https://scholar.google.es/citations?user=HyhNsDkAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a> &nbsp; <a href="https://github.com/egurtzegi"><i class="fab fa-github"></i></a> &nbsp; <a href="/static/files/EgurtzegiCV.pdf"><i class="ai ai-cv"></i></a>
+::: {.portrait}
+![Ander Egurtzegi](./static/img/avatar.jpg)
 :::
 
-::: {.column width="70%"}
+::: {.portrait-title}
+## Ander Egurtzegi
+
+### Chargé de Recherche (tenured researcher)
+
+### [Centre National de la Recherche Scientifique](http://www.cnrs.fr/)
+
+### [IKER UMR-5478](http://www.iker.cnrs.fr/?lang=en)
+:::
+
+::: {.network-icon}
+- [<i class="fas fa-envelope"></i>](mailto:ander.egurtzegi@iker.cnrs.fr)
+- [<i class="fab fa-twitter"></i>](https://twitter.com/egurtzegi)
+- [<i class="ai ai-google-scholar"></i>](https://scholar.google.es/citations?user=HyhNsDkAAAAJ&hl=en)
+- [<i class="fab fa-github"></i>](https://github.com/egurtzegi)
+- [<i class="ai ai-cv"></i>](./static/files/EgurtzegiCV.pdf)
+:::
+
+:::
+
+::: {.g-col-12 .g-col-md-8}
+
+::: {#biography}
+## Biography
+
 I am a historical laboratory phonologist at the [Centre National de la Recherche Scientifique](http://www.cnrs.fr/) at [IKER UMR5478](http://www.iker.cnrs.fr/?lang=en). I specialize in phonetically-based sound change, typologically rare sound patterns, metathesis, and the reconstruction of Proto-Basque. I pursue an interdisciplinary approach to the study of sound change by combining historical linguistics, theoretical phonology, experimental phonetics, phonological typology, philology, sociolinguistics, and contact linguistics.
 
 I have worked on a wide range of topics including metathesis, u-fronting, nasalized aspiration, consonant cluster resolution, accentual shifts, final obstruent voicing, and acoustic descriptions of endangered dialects. You can find most of my papers in the publications section of this website.
 
 You might remember me from my time at the [Institute of Phonetics and Speech Processing](https://www.en.phonetik.uni-muenchen.de/index.html) of the [University of Munich](http://www.en.uni-muenchen.de/index.html), the Phonetics Lab of the [University of the Basque Country](https://www.ehu.eus/eu/home), or the briefer periods I spent at the [City University of New York](https://gc.cuny.edu/Home) or the [Complutense University of Madrid](https://www.ucm.es/english/).
 
-I tend to pronounce my name \\\\[ˈan̪deɾ eˈɣ̞urt͡s̻eɣ̞i], but it can also be pronounced \\\\[ˈan̪der eɣ̞urˈt͡s̻eɣ̞i]. Of course, I have answered to many other names, including \\\\[ˈʔandɐ], \\\\[ˈændɚ], \\\\[ˈændə(ɹ)], \\\\[ˈɑn.dər], \\\\[ˈɑndɛɾs] and even \\\\[anˈden]. We\\'re not going to list all the variants of my last name here, but that one runs wild. You can choose any variant or create a new one, as I\\'m happy to be the source of linguistic variation.
+I tend to pronounce my name \[ˈan̪deɾ eˈɣ̞urt͡s̻eɣ̞i], but it can also be pronounced \[ˈan̪der eɣ̞urˈt͡s̻eɣ̞i]. Of course, I have answered to many other names, including \[ˈʔandɐ], \[ˈændɚ], \[ˈændə(ɹ)], \[ˈɑn.dər], \[ˈɑndɛɾs] and even \[anˈden]. We don't have the space here for the variants of my last name, but that one runs wild. You can choose any variant or create a new one, as I'm happy to be the source of linguistic variation.
 
-If my name rings a bell but my face and work don\\'t match with it, note that there is yet another linguist that answers to A. Egurtzegi: Check out [my brother\\'s](https://www.researchgate.net/profile/Aitor_Egurtzegi) work on psycholinguistics at Uni Zurich.
+If my name rings a bell but my face and work don't match with it, note that there is yet another linguist that answers to A. Egurtzegi: Check out [my brother's](https://www.researchgate.net/profile/Aitor_Egurtzegi) work on psycholinguistics at Uni Zurich.
 :::
 
 :::
+
+:::
+
+::: {.featured-publications-section}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
 
 ## Featured Publications
 
-*   In press. Metathesis. In Ledgeway et al. (eds.), _The Wiley Blackwell Companion to Diachronic Linguistics_. Wiley-Blackwell. [<i class = "ai ai-open-access ai-lg"></i>](/static/files/MetathesisDiaComEgurtzegi.pdf)
+:::
 
-*   2023 [with J. Blevins] Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. _Linguistic Typology_ 27.2, 289–311. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class = "ai ai-open-access ai-lg"></i>](https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036)
+::: {.g-col-12 .g-col-md-8}
 
-*   2023 [with G. Elordieta] A history of the Basque prosodic systems. _Diachronica_ 40.1, 30-72. [<i class = "ai ai-doi ai-lg"></i>](http://doi.org/10.1075/dia.34.3.02egu) [<i class = "ai ai-open-access ai-lg"></i>](https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu)
+- **In press.** Metathesis. In Ledgeway et al. (eds.), *The Wiley Blackwell Companion to Diachronic Linguistics*. Wiley-Blackwell. [<i class="ai ai-open-access ai-lg"></i>](./static/papers/MetathesisDiaComEgurtzegi.pdf)
 
-*   2022 [with D. Krajewska & E. Zuloaga] Sibilant mergers in 18th-century Basque: A quantitative study. _Phonological Data & Analysis_ 4.5, 1–31. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.3765/pda.v4art5.67) [<i class = "ai ai-open-access ai-lg"></i>](https://phondata.org/index.php/pda/article/view/67/43) [<i class = "ai ai-osf ai-lg"></i>](https://osf.io/t6a7w/)
+- **2023** [with J. Blevins] Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. *Linguistic Typology* 27.2, 289–311. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class="ai ai-open-access ai-lg"></i>](https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036)
 
-*   2020 [with J. Blevins & J. Ullrich] Final obstruent voicing in Lakota: Phonetic evidence and phonological implications. _Language_ 96.2, 294–337. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1353/lan.2020.0022) [<i class = "ai ai-open-access ai-lg"></i>](https://www.linguisticsociety.org/sites/default/files/05_96.2Blevins_reduced-ed.pdf)
+- **2023** [with G. Elordieta] A history of the Basque prosodic systems. *Diachronica* 40.1, 30-72. [<i class="ai ai-doi ai-lg"></i>](http://doi.org/10.1075/dia.20066.egu) [<i class="ai ai-open-access ai-lg"></i>](https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu)
 
-*   2020 [with C. Carignan] An acoustic description of Mixean Basque. _Journal of the Acoustical Society of America_ 147.4, 2791–2802. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1121/10.0000996) [<i class = "ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/pdf/10.1121/10.0000996) [Suplementary materials<i class = "ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/suppl/10.1121/10.0000996/suppl_file/supppub1.pdf).
+- **2022** [with D. Krajewska & E. Zuloaga] Sibilant mergers in 18th-century Basque: A quantitative study. *Phonological Data & Analysis* 4.5, 1–31. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.3765/pda.v4art5.67) [<i class="ai ai-open-access ai-lg"></i>](https://phondata.org/index.php/pda/article/view/67/43) [<i class="ai ai-osf ai-lg"></i>](https://osf.io/t6a7w/)
 
-*   2018 On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque. _Linguistics_ 56.6, 1353–1367. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1515/ling-2018-0024) [<i class = "ai ai-open-access ai-lg"></i>](/static/files/egurtzegi_2018_linguistics.pdf)
+- **2020** [with J. Blevins & J. Ullrich] Final obstruent voicing in Lakota: Phonetic evidence and phonological implications. *Language* 96.2, 294–337. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1353/lan.2020.0022) [<i class="ai ai-open-access ai-lg"></i>](https://www.linguisticsociety.org/sites/default/files/05_96.2Blevins_reduced-ed.pdf)
 
-*   2017 [with J. Blevins] Unexpected obstruent loss in initial obstruent-sonorant clusters: an apparent example from Basque. _Phonology_ 34.3, 507–522. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0952675717000264) [<i class = "ai ai-open-access ai-lg"></i>](/static/files/blevins_egurtzegi2017phonology.pdf)
+- **2020** [with C. Carignan] An acoustic description of Mixean Basque. *Journal of the Acoustical Society of America* 147.4, 2791–2802. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1121/10.0000996) [<i class="ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/pdf/10.1121/10.0000996) [Supplementary materials [<i class="ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/suppl/10.1121/10.0000996/suppl_file/supppub1.pdf)].
 
-*   2017 Phonetically conditioned sound change: Contact induced /u/-fronting in Zuberoan Basque. _Diachronica_ 34.3, 331–367. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.34.3.02egu) [<i class = "ai ai-open-access ai-lg"></i>](/static/files/Egurtzegi-u-fronting-preprint.pdf)
+- **2018** On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque. *Linguistics* 56.6, 1353–1367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/ling-2018-0024) [<i class="ai ai-open-access ai-lg"></i>](./static/papers/egurtzegi_2018_linguistics.pdf)
 
-## Contact {#contact}
+- **2017** [with J. Blevins] Unexpected obstruent loss in initial obstruent-sonorant clusters: an apparent example from Basque. *Phonology* 34.3, 507–522. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0952675717000264) [<i class="ai ai-open-access ai-lg"></i>](./static/papers/blevins_egurtzegi2017phonology.pdf)
 
-<hr>
+- **2017** Phonetically conditioned sound change: Contact induced /u/-fronting in Zuberoan Basque. *Diachronica* 34.3, 331–367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.34.3.02egu) [<i class="ai ai-open-access ai-lg"></i>](./static/papers/Egurtzegi-u-fronting-preprint.pdf)
+
+:::
+
+:::
+
+:::
+
+::: {.contact-widget}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+
+## Contact
+
+:::
+
+::: {.g-col-12 .g-col-md-8}
 
 ```{=html}
-<div class="row contact-widget">
-    <div class="col-12 col-lg-4 section-heading"><h1>Contact</h1></div>
-    <div class="col-12 col-lg-8">
-        <div class="mb-3">
-            <form name=contact method=POST action=https://formspree.io/ander.egurtzegi@iker.cnrs.fr>
-                <div class="form-group form-inline">
-                    <label class=sr-only for=inputName>Name</label>
-                    <input type=text name=name class="form-control w-100" id=inputName placeholder=Name required>
-                </div>
-                <div class="form-group form-inline">
-                    <label class=sr-only for=inputEmail>Email</label>
-                    <input type=email name=email class="form-control w-100" id=inputEmail placeholder=Email required>
-                </div>
-                <div class=form-group>
-                    <label class=sr-only for=inputMessage>Message</label>
-                    <textarea name=message class=form-control id=inputMessage rows=5 placeholder=Message required></textarea>
-                </div>
-                <button type=submit class="btn btn-outline-primary px-3 py-2">Send</button>
-            </form>
-        </div>
-        <ul class=fa-ul>
-            <li><i class="fa-li fas fa-phone fa-2x" aria-hidden=true></i>
-            <span id=person-telephone><a href=tel:+33%205%2059%2057%2042%2006>+33 5 59 57 42 06</a></span></li>
-            <li><i class="fa-li fas fa-map-marker fa-2x" aria-hidden=true></i>
-            <span id=person-address>CNRS-IKER. Campus de la Nive, Château-Neuf; 15, Place Paul Bert<br>64100 Bayonne</span></li>
-            <li><i class="fa-li fas fa-clock fa-2x" aria-hidden=true></i>
-            <span>Tuesday 10:00 to 13:00<br>Thursday 10:00 to 13:00</span></li>
-            <li><i class="fa-li fab fa-twitter fa-2x" aria-hidden=true></i>
-            <a href=https://twitter.com/egurtzegi target=_blank rel=noopener>DM Me</a></li>
-        </ul>
-    </div>
-</div>
+<form class="w-100" action="https://formspree.io/ander.egurtzegi@iker.cnrs.fr" method="POST">
+  <div class="form-group">
+    <input type="text" name="name" class="form-control" placeholder="Name" required>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" class="form-control" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+    <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-outline-primary">Send</button>
+</form>
 ```
 
-<br>
+::: {.contact-info .mt-4}
+
+<p>[<i class="fas fa-phone fa-2x"></i> +33 5 59 57 42 06](tel:+33559574206)</p>
+
+<p><i class="fas fa-map-marker fa-2x"></i> CNRS-IKER. Campus de la Nive, Château-Neuf; 15, Place Paul Bert 64100 Bayonne, France</p>
+
+<p class="office-hours"><i class="fas fa-clock fa-2x"></i> Tuesday 10:00 to 13:00<br>Thursday 10:00 to 13:00</p>
+
+<p>[<i class="fab fa-twitter fa-2x"></i> DM Me](https://twitter.com/egurtzegi)</p>
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+
+:::
+
+::: {.g-col-12 .g-col-md-8}
 
 ```{r}
 #| echo: false
 library(leaflet)
 
-leaflet() %>%
-  addTiles() %>%
-  addMarkers(lng = -1.470492, lat = 43.489981, popup = "CNRS-IKER")
+leaflet() %>% addTiles() %>% addMarkers(lng = -1.470492, lat = 43.489981, popup = "CNRS-IKER")
 ```
+
+:::
+
+:::
+
+:::
