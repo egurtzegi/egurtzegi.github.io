@@ -63,11 +63,12 @@ $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
 
 :root {
   // Theme-specific colors
-  --primary-color: #{$primary};
-  --primary-hover-color: #{shift-color($primary, $color-shift-hover)};
-  --primary-contact-hover-color: #{shift-color($primary, $color-shift-contact)};
-  --body-color: #{$body-color};
-  --headings-color: #{$headings-color};
+  --color-primary: #{$primary};
+  --color-primary-hover: #{shift-color($primary, $color-shift-hover)};
+  --color-primary-contact-hover: #{shift-color($primary, $color-shift-contact)};
+  --color-body: #{$body-color};
+  --color-headings: #{$headings-color};
+  --color-text-muted: #{$text-muted};
   
   // Navigation colors
   --navbar-bg: #{$navbar-dark-bg};
@@ -89,5 +90,4 @@ $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
   // Component colors
   --featured-bg: #{map-get($grays, "100")};
   --icon-color: #{$body-color};
-  --text-muted-color: #{$text-muted};
 } 

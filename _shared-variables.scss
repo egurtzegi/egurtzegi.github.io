@@ -10,6 +10,11 @@
 $enable-responsive-font-sizes: true !default;
 $enable-smooth-scroll: true !default;
 $enable-reduced-motion: true !default;
+$enable-dark-mode: true !default;
+$enable-negative-margins: true !default;
+
+// Color mode configuration for better theme support
+$color-mode-type: data !default; // or media for prefers-color-scheme
 
 // =============================================================================
 // TYPOGRAPHY VARIABLES
@@ -148,6 +153,16 @@ $form-text-margin-top: map-get($spacers, 1) !default;
 $form-feedback-margin-top: $form-text-margin-top !default;
 $form-feedback-font-size: 0.875em !default;
 
+// Bootstrap 5.3+ Form floating variables
+$form-floating-height: add(3.5rem, $input-border-width * 2) !default;
+$form-floating-line-height: 1.25 !default;
+$form-floating-padding-x: $input-padding-x !default;
+$form-floating-padding-y: 1rem !default;
+$form-floating-input-padding-t: 1.625rem !default;
+$form-floating-input-padding-b: 0.625rem !default;
+$form-floating-label-opacity: 0.65 !default;
+$form-floating-label-transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem) !default;
+
 // Navigation using Bootstrap navbar variables
 $navbar-brand-font-size: 1.575rem !default;
 $navbar-border-radius: $border-radius !default;
@@ -168,6 +183,36 @@ $badge-font-weight: $font-weight-bold !default;
 $badge-padding-y: 0.35em !default;
 $badge-padding-x: 0.65em !default;
 $badge-border-radius: $border-radius !default;
+
+// Bootstrap 5.3+ Offcanvas variables
+$offcanvas-padding-y: map-get($spacers, 4) !default;
+$offcanvas-padding-x: map-get($spacers, 4) !default;
+$offcanvas-horizontal-width: 400px !default;
+$offcanvas-vertical-height: 30vh !default;
+$offcanvas-transition-duration: 0.3s !default;
+$offcanvas-border-color: transparent !default;
+$offcanvas-border-width: $border-width !default;
+
+// Bootstrap 5.3+ Accordion variables
+$accordion-padding-y: map-get($spacers, 4) !default;
+$accordion-padding-x: map-get($spacers, 5) !default;
+$accordion-color: inherit !default;
+$accordion-border-width: $border-width !default;
+$accordion-border-radius: $border-radius !default;
+$accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;
+$accordion-body-padding-y: $accordion-padding-y !default;
+$accordion-body-padding-x: $accordion-padding-x !default;
+$accordion-button-padding-y: $accordion-padding-y !default;
+$accordion-button-padding-x: $accordion-padding-x !default;
+$accordion-button-color: $accordion-color !default;
+$accordion-button-active-color: $accordion-color !default;
+$accordion-button-focus-border-color: transparent !default;
+$accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
+$accordion-icon-width: 1.25rem !default;
+$accordion-icon-color: $accordion-button-color !default;
+$accordion-icon-active-color: $accordion-button-active-color !default;
+$accordion-icon-transition: transform 0.2s ease-in-out !default;
+$accordion-icon-transform: rotate(-180deg) !default;
 
 // Link variables
 $link-decoration: none !default;
@@ -211,11 +256,18 @@ $will-change-transform: transform !default;
   --transition-duration: 0.15s; // Duration from $transition-base
   --transition-timing: ease;
   
-  // Performance optimization
+  // Performance optimization with modern CSS features
   --contain-layout: layout;
   --contain-style: style;
+  --contain-size: size;
+  --contain-paint: paint;
   --will-change-transform-color: #{$will-change-transform-color};
   --will-change-transform: #{$will-change-transform};
+  
+  // Content visibility for better rendering performance
+  --content-visibility-auto: auto;
+  --content-visibility-hidden: hidden;
+  --content-visibility-visible: visible;
   
   // Accessibility preferences
   --animation-duration: var(--transition-duration);
@@ -226,6 +278,12 @@ $will-change-transform: transform !default;
   --focus-ring-blur: #{$focus-ring-blur};
   --focus-ring-opacity: #{$focus-ring-opacity};
   --focus-ring-offset: #{$focus-ring-offset};
+  
+  // Modern CSS logical properties support
+  --border-inline-start-width: #{$border-width};
+  --border-inline-end-width: #{$border-width};
+  --border-block-start-width: #{$border-width};
+  --border-block-end-width: #{$border-width};
 }
 
 // =============================================================================
@@ -254,5 +312,19 @@ $will-change-transform: transform !default;
 @media (prefers-contrast: high) {
   :root {
     --focus-ring-opacity: 1;
+    --focus-ring-width: 3px;
+  }
+}
+
+// Enhanced color scheme support
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
   }
 } 
