@@ -1,0 +1,182 @@
+// =============================================================================
+// SHARED VARIABLES FOR BOTH LIGHT AND DARK THEMES
+// =============================================================================
+// This file contains variables that are consistent across both themes
+
+// =============================================================================
+// TYPOGRAPHY VARIABLES
+// =============================================================================
+
+// Font families using Bootstrap variables
+$font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family: "Montserrat", $font-family-sans-serif !default;
+
+// Base font settings - consistent across themes
+$font-size-base: 1.25rem !default;
+$line-height-base: 1.65 !default;
+
+// Line height variables using Bootstrap system
+$line-height-sm: 1.25 !default;
+$line-height-xs: 1 !default;
+$line-height-md: 1.4 !default;
+
+// Heading sizes using Bootstrap's heading scale
+$h1-font-size: 2.953rem !default;
+$h2-font-size: 2.297rem !default;
+$h3-font-size: 1.25rem !default;
+$h4-font-size: 1rem !default;
+$h5-font-size: 1rem !default;
+$h6-font-size: 1rem !default;
+
+// Font weights using Bootstrap variables
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$headings-font-weight: 400 !default;
+
+// Display font sizes using Bootstrap's display system
+$display-font-sizes: (
+  1: 2rem,
+  2: 1.8rem,
+  3: 1.5rem,
+  4: 1.3125rem
+) !default;
+
+// =============================================================================
+// SPACING SYSTEM USING BOOTSTRAP'S SPACERS MAP
+// =============================================================================
+
+// Base spacer
+$spacer: 1rem !default;
+
+// Bootstrap spacers map - replaces custom spacer variables
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,    // 0.25rem (was $spacer-sm)
+  2: $spacer * 0.5,     // 0.5rem  (was $spacer-md)
+  3: $spacer * 0.75,    // 0.75rem (was $spacer-lg)
+  4: $spacer,           // 1rem
+  5: $spacer * 1.25,    // 1.25rem (was $spacer-xl)
+  6: $spacer * 2,       // 2rem    (was $spacer-xxl)
+  7: $spacer * 3        // 3rem    (was $spacer-xxxl)
+) !default;
+
+// =============================================================================
+// COMPONENT VARIABLES USING BOOTSTRAP SYSTEM
+// =============================================================================
+
+// Container using Bootstrap container system
+$container-max-widths: (
+  xl: 1200px
+) !default;
+
+// Border variables using Bootstrap system
+$border-width: 1px !default;
+$border-style: solid !default;
+$border-radius: 0 !default;
+$border-radius-sm: 0 !default;
+$border-radius-lg: 0 !default;
+
+// Focus ring variables using Bootstrap 5 system
+$focus-ring-width: 0.25rem !default;
+$focus-ring-opacity: 0.25 !default;
+$focus-ring-blur: 0 !default;
+
+// Transition variables using Bootstrap system
+$transition-base: all 0.15s ease-in-out !default;
+$transition-fade: opacity 0.15s linear !default;
+$transition-collapse: height 0.35s ease !default;
+$transition-transform: transform 0.2s ease !default;
+
+// Button variables using Bootstrap system
+$btn-padding-y: 0.75rem !default;
+$btn-padding-x: 1.5rem !default;
+$btn-font-size: $font-size-base !default;
+$btn-border-radius: $border-radius !default;
+$btn-focus-width: $focus-ring-width !default;
+
+// Form variables using Bootstrap form system
+$input-padding-y: 0.75rem !default;
+$input-padding-x: 0.75rem !default;
+$input-font-size: $font-size-base !default;
+$input-border-radius: $border-radius !default;
+$input-focus-width: $focus-ring-width !default;
+$form-group-margin-bottom: map-get($spacers, 4) !default;
+$form-label-margin-bottom: map-get($spacers, 2) !default;
+$form-text-margin-top: map-get($spacers, 1) !default;
+
+// Navigation using Bootstrap navbar variables
+$navbar-brand-font-size: 1.575rem !default;
+$navbar-border-radius: $border-radius !default;
+$navbar-padding-y: map-get($spacers, 2) !default;
+$navbar-padding-x: map-get($spacers, 4) !default;
+$navbar-nav-link-padding-x: map-get($spacers, 2) !default;
+
+// Link variables
+$link-decoration: none !default;
+$link-hover-decoration: none !default;
+
+// Component sizing variables using consistent system
+$avatar-size-lg: 200px !default;
+$icon-size-base: 2rem !default;
+$icon-size-sm: 1.5rem !default;
+
+// =============================================================================
+// CUSTOM PROJECT VARIABLES
+// =============================================================================
+
+// Component-specific sizes using Bootstrap patterns
+$portrait-size: $avatar-size-lg !default;
+$nav-link-font-size: 1.0106rem !default;
+$network-icon-size: $icon-size-base !default;
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES FOR SHARED VALUES
+// =============================================================================
+
+:root {
+  // Animation system with accessibility support
+  --hover-transform: scale(1.1);
+  --transition-duration: 0.15s; // Duration from $transition-base
+  --transition-timing: ease;
+  
+  // Performance optimization
+  --contain-layout: layout;
+  --contain-style: style;
+  
+  // Accessibility preferences
+  --animation-duration: var(--transition-duration);
+  --animation-timing: var(--transition-timing);
+  
+  // Focus ring system
+  --focus-ring-width: #{$focus-ring-width};
+  --focus-ring-blur: #{$focus-ring-blur};
+}
+
+// =============================================================================
+// ACCESSIBILITY MEDIA QUERIES (SHARED)
+// =============================================================================
+
+// Accessibility: Respect user's motion preferences
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration: 0.01ms;
+    --animation-duration: 0.01ms;
+    --hover-transform: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Accessibility: High contrast support
+@media (prefers-contrast: high) {
+  :root {
+    --focus-ring-opacity: 1;
+  }
+} 

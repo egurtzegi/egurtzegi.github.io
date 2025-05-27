@@ -1,5 +1,8 @@
 /*-- scss:defaults --*/
 
+// Import shared variables first
+@import "shared-variables";
+
 // =============================================================================
 // TYPOGRAPHY VARIABLES
 // =============================================================================
@@ -46,13 +49,14 @@ $display-font-sizes: (
 $white: #fff !default;
 $black: #000 !default;
 $primary: #2962FF !default;
+$body-bg: $white !default;
 $body-color: #313131 !default;
 $headings-color: #313131 !default;
 
 // Text color utilities
 $text-muted: lighten($body-color, 40%) !default;
 
-// Bootstrap color map extensions
+// Bootstrap color map extensions for light theme
 $grays: (
   "50": #f8f9fa,
   "100": #f8f9fa,
@@ -63,8 +67,30 @@ $grays: (
 // Theme colors map for consistent color management
 $theme-colors: (
   "primary": $primary,
+  "secondary": #6c757d,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #212529,
   "muted": $text-muted
 ) !default;
+
+// Navigation specific colors
+$navbar-light-bg: $white !default;
+$navbar-light-color: $body-color !default;
+$navbar-light-hover-color: $primary !default;
+$navbar-light-active-color: $primary !default;
+
+// Form specific colors for light theme
+$input-bg: $white !default;
+$input-border-color: #ced4da !default;
+$input-focus-border-color: lighten($primary, 25%) !default;
+$input-focus-box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity) !default;
+
+// Focus ring colors for light theme
+$focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
 
 // =============================================================================
 // COMPONENT VARIABLES
@@ -72,7 +98,6 @@ $theme-colors: (
 
 // Navigation using Bootstrap navbar variables
 $navbar-brand-font-size: 1.575rem !default;
-$navbar-light-bg: $white !default;
 $navbar-border-radius: 0 !default;
 $navbar-padding-y: 0.5rem !default;
 $navbar-padding-x: 1rem !default;
@@ -107,8 +132,8 @@ $input-border-radius: 0 !default;
 $form-group-margin-bottom: $spacer !default;
 $input-padding-y: .75rem !default;
 $input-padding-x: .75rem !default;
-$input-focus-border-color: lighten($primary, 25%) !default;
-$input-focus-box-shadow: 0 0 0 0.2rem rgba($primary, 0.25) !default;
+$input-focus-width: 0.2rem !default;
+$input-font-size: $font-size-base !default;
 
 // Transition variables using Bootstrap system with accessibility support
 $transition-base: all 0.2s ease !default;
@@ -142,8 +167,9 @@ $network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
 :root {
   --featured-bg: #{map-get($grays, "100")};
   --icon-color: #{$black};
-  --navbar-border-color: #{$border-color};
+  --navbar-border-color: transparent;
   --text-muted-color: #{$text-muted};
+  --focus-ring-color: #{$focus-ring-color};
   
   // Animation system with accessibility support
   --hover-transform: scale(1.1);
@@ -190,6 +216,7 @@ $network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
   .contact-info a:focus-visible {
     outline-width: 3px;
     outline-style: solid;
+    outline-color: $primary;
   }
 }
 
@@ -205,26 +232,32 @@ $network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
   
   .nav-link {
     font-size: $nav-link-font-size;
-    transition: color var(--animation-duration) var(--animation-timing);
+    color: $navbar-light-color;
+    padding-left: $navbar-nav-link-padding-x;
+    padding-right: $navbar-nav-link-padding-x;
+    transition: $transition-base;
     
     &.active,
     &[aria-current="page"] {
       font-weight: $font-weight-bold;
+      color: $navbar-light-active-color;
     }
     
     &:hover {
-      color: $primary;
+      color: $navbar-light-hover-color;
     }
     
     &:focus-visible {
-      outline: 2px solid $primary;
+      outline: var(--focus-ring-width) solid var(--focus-ring-color);
       outline-offset: 2px;
+      border-radius: $border-radius-sm;
     }
   }
 }
 
 .navbar-brand {
   font-weight: $font-weight-bold;
+  font-size: $navbar-brand-font-size;
 }
 
 // =============================================================================
@@ -233,6 +266,7 @@ $network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: $headings-font-weight;
+  color: $headings-color;
 }
 
 // =============================================================================
@@ -258,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 .portrait {
   width: $portrait-size;
   height: $portrait-size;
-  margin-block-end: $spacer-xl;
+  margin-block-end: map-get($spacers, 5);
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
@@ -273,22 +307,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .portrait-title {
   text-align: center;
-  margin-block-end: $spacer-xl;
+  margin-block-end: map-get($spacers, 5);
   
   h2 {
-    font-size: map-get($display-font-sizes, 2); // 1.8rem
-    margin-block-end: $spacer-md;
+    font-size: map-get($display-font-sizes, 2);
+    margin-block-end: map-get($spacers, 2);
+    color: $headings-color;
   }
   
   h3 {
-    font-size: map-get($display-font-sizes, 4); // 1.3125rem
+    font-size: map-get($display-font-sizes, 4);
     line-height: $line-height-sm;
     color: $headings-color;
-    margin-block-end: $spacer-sm;
+    margin-block-end: map-get($spacers, 1);
     
     a {
+      color: $headings-color;
       text-decoration: $link-decoration;
-      transition: color var(--animation-duration) var(--animation-timing);
+      transition: $transition-base;
       
       &:hover {
         color: $primary;
@@ -296,8 +332,9 @@ h1, h2, h3, h4, h5, h6 {
       }
       
       &:focus-visible {
-        outline: 2px solid $primary;
+        outline: var(--focus-ring-width) solid var(--focus-ring-color);
         outline-offset: 2px;
+        border-radius: $border-radius-sm;
       }
     }
   }
@@ -309,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .network-icon {
   text-align: center;
-  margin-block-end: $spacer-xl;
+  margin-block-end: map-get($spacers, 5);
   
   ul {
     display: flex;
@@ -317,22 +354,18 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: map-get($spacers, 3);
     
     li {
-      margin-inline-end: $spacer-lg;
-      margin-block-end: $spacer-md;
-      
-      &:last-child {
-        margin-inline-end: 0;
-      }
+      margin-block-end: map-get($spacers, 2);
       
       a {
         color: $primary;
         text-decoration: $link-decoration;
         font-size: $network-icon-size;
-        transition: color var(--animation-duration) var(--animation-timing),
-                   transform var(--animation-duration) var(--animation-timing);
+        transition: $transition-base, $transition-transform;
         will-change: transform, color;
+        display: inline-block;
         
         &:hover {
           color: darken($primary, 15%);
@@ -340,8 +373,9 @@ h1, h2, h3, h4, h5, h6 {
         }
         
         &:focus-visible {
-          outline: 2px solid $primary;
+          outline: var(--focus-ring-width) solid var(--focus-ring-color);
           outline-offset: 2px;
+          border-radius: $border-radius-sm;
         }
       }
     }
@@ -355,8 +389,8 @@ h1, h2, h3, h4, h5, h6 {
 // Featured Publications section using custom properties
 .featured-publications-section {
   background-color: var(--featured-bg);
-  padding-block: $spacer-xxxl;
-  margin-block: $spacer-xxl;
+  padding-block: map-get($spacers, 7);
+  margin-block: map-get($spacers, 6);
   contain: var(--contain-style);
 }
 
@@ -365,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 // =============================================================================
 
 .contact-widget {
-  margin-block-start: $spacer-xxl;
+  margin-block-start: map-get($spacers, 6);
   
   .grid {
     align-items: flex-start;
@@ -373,19 +407,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-info {
-  margin-block-start: $spacer;
+  margin-block-start: map-get($spacers, 4);
   
   p {
     display: flex;
     align-items: flex-start;
-    margin-block-end: $spacer;
+    margin-block-end: map-get($spacers, 4);
     line-height: $line-height-md;
   }
   
   i {
     color: var(--icon-color);
-    margin-inline-end: $spacer-lg;
-    min-width: $spacer-xxl;
+    margin-inline-end: map-get($spacers, 3);
+    min-width: map-get($spacers, 6);
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
@@ -399,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: $link-decoration;
     display: flex;
     align-items: flex-start;
-    transition: color var(--animation-duration) var(--animation-timing);
+    transition: $transition-base;
     
     &:hover {
       color: darken($primary, 10%);
@@ -407,8 +441,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     &:focus-visible {
-      outline: 2px solid $primary;
+      outline: var(--focus-ring-width) solid var(--focus-ring-color);
       outline-offset: 2px;
+      border-radius: $border-radius-sm;
     }
   }
   
@@ -428,13 +463,17 @@ h1, h2, h3, h4, h5, h6 {
   .form-control {
     border-radius: $input-border-radius;
     width: 100%;
+    background-color: $input-bg;
+    border-color: $input-border-color;
+    color: $body-color;
     padding: $input-padding-y $input-padding-x;
-    transition: border-color var(--animation-duration) var(--animation-timing),
-               box-shadow var(--animation-duration) var(--animation-timing);
+    font-size: $input-font-size;
+    transition: $transition-base;
     
     &:focus {
       border-color: $input-focus-border-color;
       box-shadow: $input-focus-box-shadow;
+      outline: none;
     }
     
     &:focus-visible {
@@ -446,9 +485,11 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-primary {
   border-radius: $btn-border-radius;
   padding: $btn-padding-y $btn-padding-x;
-  transition: all var(--animation-duration) var(--animation-timing);
+  font-size: $btn-font-size;
+  transition: $transition-base;
   
   &:focus-visible {
-    box-shadow: 0 0 0 0.2rem rgba($primary, var(--focus-ring-opacity));
+    box-shadow: 0 0 0 $btn-focus-width var(--focus-ring-color);
+    outline: none;
   }
 } 
