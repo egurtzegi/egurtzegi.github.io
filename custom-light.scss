@@ -12,6 +12,11 @@ $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 $font-size-base: 1.25rem !default;
 $line-height-base: 1.65 !default;
 
+// Line height variables using Bootstrap system
+$line-height-sm: 1.25 !default;
+$line-height-xs: 1 !default;
+$line-height-md: 1.4 !default;
+
 // Heading sizes using Bootstrap's heading scale
 $h1-font-size: 2.953rem !default;
 $h2-font-size: 2.297rem !default;
@@ -44,12 +49,21 @@ $primary: #2962FF !default;
 $body-color: #313131 !default;
 $headings-color: #313131 !default;
 
+// Text color utilities
+$text-muted: lighten($body-color, 40%) !default;
+
 // Bootstrap color map extensions
 $grays: (
   "50": #f8f9fa,
   "100": #f8f9fa,
   "700": #333,
   "900": #1e1e1e
+) !default;
+
+// Theme colors map for consistent color management
+$theme-colors: (
+  "primary": $primary,
+  "muted": $text-muted
 ) !default;
 
 // =============================================================================
@@ -60,45 +74,64 @@ $grays: (
 $navbar-brand-font-size: 1.575rem !default;
 $navbar-light-bg: $white !default;
 $navbar-border-radius: 0 !default;
+$navbar-padding-y: 0.5rem !default;
+$navbar-padding-x: 1rem !default;
 
 // Container using Bootstrap container system
 $container-max-widths: (
   xl: 1200px
 ) !default;
 
-// Spacing using Bootstrap spacer system
+// Spacing using Bootstrap spacer system with calculated values
 $spacer: 1rem !default;
+$spacer-sm: $spacer * 0.25 !default;  // 0.25rem
+$spacer-md: $spacer * 0.5 !default;   // 0.5rem
+$spacer-lg: $spacer * 0.75 !default;  // 0.75rem
+$spacer-xl: $spacer * 1.25 !default;  // 1.25rem
+$spacer-xxl: $spacer * 2 !default;    // 2rem
+$spacer-xxxl: $spacer * 3 !default;   // 3rem
 
 // Border variables using Bootstrap system
 $border-width: 1px !default;
+$border-style: solid !default;
 $border-color: transparent !default;
 $border-radius: 0 !default;
-$btn-border-radius: 0 !default;
-$input-border-radius: 0 !default;
 
-// Transition variables using Bootstrap system
-$transition-base: all 0.2s ease !default;
-$transition-fade: opacity 0.15s linear !default;
+// Button variables using Bootstrap system
+$btn-border-radius: 0 !default;
+$btn-padding-y: .75rem !default;
+$btn-padding-x: 1.5rem !default;
 
 // Form variables using Bootstrap form system
+$input-border-radius: 0 !default;
 $form-group-margin-bottom: $spacer !default;
 $input-padding-y: .75rem !default;
 $input-padding-x: .75rem !default;
 $input-focus-border-color: lighten($primary, 25%) !default;
 $input-focus-box-shadow: 0 0 0 0.2rem rgba($primary, 0.25) !default;
 
+// Transition variables using Bootstrap system with accessibility support
+$transition-base: all 0.2s ease !default;
+$transition-fade: opacity 0.15s linear !default;
+$transition-transform: transform 0.2s ease !default;
+
 // Link variables
 $link-decoration: none !default;
 $link-hover-decoration: none !default;
+
+// Component sizing variables
+$avatar-size-lg: 200px !default;
+$icon-size-base: 2rem !default;
+$icon-size-sm: 1.5rem !default;
 
 // =============================================================================
 // CUSTOM PROJECT VARIABLES
 // =============================================================================
 
-// Component-specific sizes
-$portrait-size: 200px;
+// Component-specific sizes using Bootstrap patterns
+$portrait-size: $avatar-size-lg;
 $nav-link-font-size: 1.0106rem;
-$network-icon-size: map-get($display-font-sizes, 1); // 2rem - consistent with dark theme
+$network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
 
 /*-- scss:rules --*/
 
@@ -110,6 +143,54 @@ $network-icon-size: map-get($display-font-sizes, 1); // 2rem - consistent with d
   --featured-bg: #{map-get($grays, "100")};
   --icon-color: #{$black};
   --navbar-border-color: #{$border-color};
+  --text-muted-color: #{$text-muted};
+  
+  // Animation system with accessibility support
+  --hover-transform: scale(1.1);
+  --focus-ring-opacity: 0.25;
+  --transition-duration: 0.2s;
+  --transition-timing: ease;
+  
+  // Performance optimization
+  --contain-layout: layout;
+  --contain-style: style;
+  
+  // Accessibility preferences
+  --animation-duration: var(--transition-duration);
+  --animation-timing: var(--transition-timing);
+}
+
+// Accessibility: Respect user's motion preferences
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration: 0.01ms;
+    --animation-duration: 0.01ms;
+    --hover-transform: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Accessibility: High contrast support
+@media (prefers-contrast: high) {
+  :root {
+    --focus-ring-opacity: 1;
+  }
+  
+  .navbar .nav-link:focus-visible,
+  .portrait-title a:focus-visible,
+  .network-icon a:focus-visible,
+  .contact-info a:focus-visible {
+    outline-width: 3px;
+    outline-style: solid;
+  }
 }
 
 // =============================================================================
@@ -118,11 +199,13 @@ $network-icon-size: map-get($display-font-sizes, 1); // 2rem - consistent with d
 
 .navbar {
   background-color: $navbar-light-bg;
-  border-bottom: $border-width solid var(--navbar-border-color);
+  border-bottom: $border-width $border-style var(--navbar-border-color);
+  padding: $navbar-padding-y $navbar-padding-x;
+  contain: var(--contain-layout);
   
   .nav-link {
     font-size: $nav-link-font-size;
-    transition: $transition-base;
+    transition: color var(--animation-duration) var(--animation-timing);
     
     &.active,
     &[aria-current="page"] {
@@ -131,6 +214,11 @@ $network-icon-size: map-get($display-font-sizes, 1); // 2rem - consistent with d
     
     &:hover {
       color: $primary;
+    }
+    
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
     }
   }
 }
@@ -155,8 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 .container-fluid,
 .page-layout-full .quarto-title-block .quarto-title-banner {
   max-width: map-get($container-max-widths, xl);
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 // Remove title from header since we're using custom layout
@@ -171,9 +258,11 @@ h1, h2, h3, h4, h5, h6 {
 .portrait {
   width: $portrait-size;
   height: $portrait-size;
-  margin: 0 auto ($spacer * 1.25) auto;
+  margin-block-end: $spacer-xl;
+  margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
+  contain: var(--contain-layout) var(--contain-style);
   
   img {
     width: 100%;
@@ -184,26 +273,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .portrait-title {
   text-align: center;
-  margin-bottom: $spacer * 1.25;
+  margin-block-end: $spacer-xl;
   
   h2 {
     font-size: map-get($display-font-sizes, 2); // 1.8rem
-    margin-bottom: $spacer * 0.5;
+    margin-block-end: $spacer-md;
   }
   
   h3 {
     font-size: map-get($display-font-sizes, 4); // 1.3125rem
-    line-height: 1.25;
+    line-height: $line-height-sm;
     color: $headings-color;
-    margin-bottom: $spacer * 0.25;
+    margin-block-end: $spacer-sm;
     
     a {
       text-decoration: $link-decoration;
-      transition: $transition-base;
+      transition: color var(--animation-duration) var(--animation-timing);
       
       &:hover {
         color: $primary;
         text-decoration: $link-hover-decoration;
+      }
+      
+      &:focus-visible {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
       }
     }
   }
@@ -215,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .network-icon {
   text-align: center;
-  margin-bottom: $spacer * 1.25;
+  margin-block-end: $spacer-xl;
   
   ul {
     display: flex;
@@ -225,17 +319,29 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     
     li {
-      margin: 0 ($spacer * 0.75) ($spacer * 0.5) 0;
+      margin-inline-end: $spacer-lg;
+      margin-block-end: $spacer-md;
+      
+      &:last-child {
+        margin-inline-end: 0;
+      }
       
       a {
         color: $primary;
         text-decoration: $link-decoration;
         font-size: $network-icon-size;
-        transition: $transition-base;
+        transition: color var(--animation-duration) var(--animation-timing),
+                   transform var(--animation-duration) var(--animation-timing);
+        will-change: transform, color;
         
         &:hover {
           color: darken($primary, 15%);
-          transform: scale(1.1);
+          transform: var(--hover-transform);
+        }
+        
+        &:focus-visible {
+          outline: 2px solid $primary;
+          outline-offset: 2px;
         }
       }
     }
@@ -249,8 +355,9 @@ h1, h2, h3, h4, h5, h6 {
 // Featured Publications section using custom properties
 .featured-publications-section {
   background-color: var(--featured-bg);
-  padding: ($spacer * 3) 0;
-  margin: ($spacer * 2) 0;
+  padding-block: $spacer-xxxl;
+  margin-block: $spacer-xxl;
+  contain: var(--contain-style);
 }
 
 // =============================================================================
@@ -258,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 // =============================================================================
 
 .contact-widget {
-  margin-top: $spacer * 2;
+  margin-block-start: $spacer-xxl;
   
   .grid {
     align-items: flex-start;
@@ -266,25 +373,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-info {
-  margin-top: $spacer;
+  margin-block-start: $spacer;
   
   p {
     display: flex;
     align-items: flex-start;
-    margin-bottom: $spacer;
-    line-height: 1.4;
+    margin-block-end: $spacer;
+    line-height: $line-height-md;
   }
   
   i {
     color: var(--icon-color);
-    margin-right: $spacer * 0.75;
-    min-width: 2rem;
+    margin-inline-end: $spacer-lg;
+    min-width: $spacer-xxl;
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 0.2rem;
-    line-height: 1;
+    margin-block-start: 0.2rem;
+    line-height: $line-height-xs;
   }
   
   a {
@@ -292,11 +399,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: $link-decoration;
     display: flex;
     align-items: flex-start;
-    transition: $transition-base;
+    transition: color var(--animation-duration) var(--animation-timing);
     
     &:hover {
       color: darken($primary, 10%);
       text-decoration: $link-hover-decoration;
+    }
+    
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
     }
   }
   
@@ -311,23 +423,32 @@ h1, h2, h3, h4, h5, h6 {
 // =============================================================================
 
 .form-group {
-  margin-bottom: $form-group-margin-bottom;
+  margin-block-end: $form-group-margin-bottom;
   
   .form-control {
     border-radius: $input-border-radius;
     width: 100%;
     padding: $input-padding-y $input-padding-x;
-    transition: $transition-base;
+    transition: border-color var(--animation-duration) var(--animation-timing),
+               box-shadow var(--animation-duration) var(--animation-timing);
     
     &:focus {
       border-color: $input-focus-border-color;
       box-shadow: $input-focus-box-shadow;
+    }
+    
+    &:focus-visible {
+      outline: none; // Handled by box-shadow
     }
   }
 }
 
 .btn-outline-primary {
   border-radius: $btn-border-radius;
-  padding: $input-padding-y ($input-padding-x * 2);
-  transition: $transition-base;
+  padding: $btn-padding-y $btn-padding-x;
+  transition: all var(--animation-duration) var(--animation-timing);
+  
+  &:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba($primary, var(--focus-ring-opacity));
+  }
 } 
