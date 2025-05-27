@@ -4,14 +4,11 @@
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
-// Base font settings from user specifications
-// Body text: 21px = 1.3125rem, line-height: 34.65px = 2.166rem
+// Base font settings - consistent across themes
 $font-size-base: 1.25rem !default;
-$line-height-base: 1.65 !default; // 2.166 / 1.3125 = 1.65
+$line-height-base: 1.65 !default;
 
-// Heading sizes from user specifications
-// Main heading: 47.25px = 2.953rem
-// Bio header: 36.75px = 2.297rem  
+// Heading sizes using Bootstrap's heading scale
 $h1-font-size: 2.953rem !default;
 $h2-font-size: 2.297rem !default;
 $h3-font-size: 1.25rem !default;
@@ -19,59 +16,95 @@ $h4-font-size: 1rem !default;
 $h5-font-size: 1rem !default;
 $h6-font-size: 1rem !default;
 
-// Font weights
+// Font weights using Bootstrap variables
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
-$headings-font-weight: 400 !default; // User specified 400 for main headings
+$headings-font-weight: 400 !default;
 
-// Colors from user specifications
-$primary: #2962FF !default; // Link text color
-$body-color: #313131 !default; // Body and heading text color
+// Colors using Bootstrap color system
+$white: #fff !default;
+$black: #000 !default;
+$primary: #2962FF !default;
+$body-color: #313131 !default;
 $headings-color: #313131 !default;
 
-// Navigation - using proper Bootstrap variables
-$navbar-brand-font-size: 1.575rem !default; // Site title: 25.2px = 1.575rem
+// Bootstrap color map extensions
+$grays: (
+  "50": #f8f9fa,
+  "100": #f8f9fa,
+  "700": #333,
+  "900": #1e1e1e
+) !default;
 
-// Container
+// Navigation using Bootstrap navbar variables
+$navbar-brand-font-size: 1.575rem !default;
+$navbar-light-bg: $white !default;
+$navbar-border-radius: 0 !default;
+
+// Container using Bootstrap container system
 $container-max-widths: (
   xl: 1200px
 ) !default;
 
-// Custom variables for specific elements
-$portrait-size: 200px;
-$nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap variable for this)
+// Spacing using Bootstrap spacer system
+$spacer: 1rem !default;
+
+// Border radius using Bootstrap variables
+$border-radius: 0 !default;
+$btn-border-radius: 0 !default;
+$input-border-radius: 0 !default;
+
+// Form variables
+$form-group-margin-bottom: $spacer !default;
+$input-padding-y: .75rem !default;
+$input-padding-x: .75rem !default;
 
 // Links
 $link-decoration: none !default;
 
+// Custom variables for project-specific elements
+$portrait-size: 200px;
+$nav-link-font-size: 1.0106rem;
+
 /*-- scss:rules --*/
 
-// Navigation styling - specific targeting for nav-link font size and active state
-.navbar .nav-link {
-  font-size: $nav-link-font-size;
+// CSS Custom Properties for theme-specific values
+:root {
+  --featured-bg: #{map-get($grays, "100")};
+  --icon-color: #{$black};
+  --navbar-border-color: transparent;
+}
+
+// Navigation styling
+.navbar {
+  background-color: $navbar-light-bg;
+  border-bottom: 1px solid var(--navbar-border-color);
   
-  // Make active/current page links bolder
-  &.active,
-  &[aria-current="page"] {
-    font-weight: 700 !important;
+  .nav-link {
+    font-size: $nav-link-font-size;
+    
+    &.active,
+    &[aria-current="page"] {
+      font-weight: $font-weight-bold;
+    }
   }
 }
 
-// Make navbar brand (site title) bolder
 .navbar-brand {
-  font-weight: 700 !important;
+  font-weight: $font-weight-bold;
 }
 
+// Typography
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: $headings-font-weight;
 }
 
-// Container max width
+// Container max width using Bootstrap map function
 .container-fluid,
 .page-layout-full .quarto-title-block .quarto-title-banner {
-  max-width: map-get($container-max-widths, xl) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-width: map-get($container-max-widths, xl);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Remove title from header since we're using custom layout
@@ -79,11 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-// Portrait styling
+// Portrait styling using custom properties and Bootstrap spacing
 .portrait {
   width: $portrait-size;
   height: $portrait-size;
-  margin: 0 auto 1.25rem auto;
+  margin: 0 auto ($spacer * 1.25) auto;
   border-radius: 50%;
   overflow: hidden;
   
@@ -96,18 +129,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .portrait-title {
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: $spacer * 1.25;
   
   h2 {
-    font-size: 1.8rem; // Reduced from default h2 size to fit in column
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: $spacer * 0.5;
   }
   
-   h3 {
-    font-size: 1.3125rem; // Tenured researcher: 21px = 1.3125rem
-    line-height: 1.25; // 26.25px / 21px = 1.25
+  h3 {
+    font-size: 1.3125rem;
+    line-height: 1.25;
     color: $headings-color;
-    margin-bottom: 0.25rem;
+    margin-bottom: $spacer * 0.25;
     
     a {
       text-decoration: none;
@@ -119,10 +152,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Network icons
+// Network icons using Bootstrap spacing
 .network-icon {
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: $spacer * 1.25;
   
   ul {
     display: flex;
@@ -132,12 +165,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     
     li {
-      margin: 0 0.75rem 0.5rem 0;
+      margin: 0 ($spacer * 0.75) ($spacer * 0.5) 0;
       
       a {
         color: $primary;
         text-decoration: none;
-        font-size: 2rem; // Increased from 1.5rem to make icons larger
+        font-size: 2rem;
+        transition: all 0.2s ease;
         
         &:hover {
           color: darken($primary, 15%);
@@ -148,16 +182,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Featured Publications section
+// Featured Publications section using custom properties
 .featured-publications-section {
-  background-color: #f8f9fa;
-  padding: 3rem 0;
-  margin: 2rem 0;
+  background-color: var(--featured-bg);
+  padding: ($spacer * 3) 0;
+  margin: ($spacer * 2) 0;
 }
 
-// Contact section
+// Contact section using Bootstrap spacing
 .contact-widget {
-  margin-top: 2rem;
+  margin-top: $spacer * 2;
   
   .grid {
     align-items: flex-start;
@@ -165,32 +199,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-info {
-  margin-top: 1rem;
+  margin-top: $spacer;
   
   p {
     display: flex;
-    align-items: flex-start; // Changed from center to flex-start for better text alignment
-    margin-bottom: 1rem;
+    align-items: flex-start;
+    margin-bottom: $spacer;
     line-height: 1.4;
   }
   
   i {
-    color: #000;
-    margin-right: 0.75rem;
+    color: var(--icon-color);
+    margin-right: $spacer * 0.75;
     min-width: 2rem;
     display: inline-flex;
-    align-items: flex-start; // Changed from center to flex-start to align with text baseline
+    align-items: flex-start;
     justify-content: center;
-    flex-shrink: 0; // Prevent icon from shrinking
-    margin-top: 0.2rem; // Slightly increased top margin to better align with text baseline
-    line-height: 1; // Ensure icon doesn't inherit line-height
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    line-height: 1;
   }
   
   a {
     color: $primary;
     text-decoration: none;
     display: flex;
-    align-items: flex-start; // Changed from center to flex-start
+    align-items: flex-start;
     
     &:hover {
       color: darken($primary, 10%);
@@ -199,22 +233,22 @@ h1, h2, h3, h4, h5, h6 {
   
   .office-hours {
     display: flex;
-    align-items: flex-start; // Changed from center to flex-start
+    align-items: flex-start;
   }
 }
 
-// Form styling
+// Form styling using Bootstrap form variables
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: $form-group-margin-bottom;
   
   .form-control {
-    border-radius: 0;
+    border-radius: $input-border-radius;
     width: 100%;
-    padding: 0.75rem;
+    padding: $input-padding-y $input-padding-x;
   }
 }
 
 .btn-outline-primary {
-  border-radius: 0;
-  padding: 0.75rem 1.5rem;
+  border-radius: $btn-border-radius;
+  padding: $input-padding-y ($input-padding-x * 2);
 } 

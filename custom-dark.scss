@@ -4,14 +4,11 @@
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
-// Base font settings from user specifications
-// Body text: 21px = 1.3125rem, line-height: 34.65px = 2.166rem
-$font-size-base: 1.3125rem !default;
-$line-height-base: 1.65 !default; // 2.166 / 1.3125 = 1.65
+// Base font settings - consistent across themes
+$font-size-base: 1.25rem !default;
+$line-height-base: 1.65 !default;
 
-// Heading sizes from user specifications
-// Main heading: 47.25px = 2.953rem
-// Bio header: 36.75px = 2.297rem  
+// Heading sizes using Bootstrap's heading scale
 $h1-font-size: 2.953rem !default;
 $h2-font-size: 2.297rem !default;
 $h3-font-size: 1.25rem !default;
@@ -19,59 +16,93 @@ $h4-font-size: 1rem !default;
 $h5-font-size: 1rem !default;
 $h6-font-size: 1rem !default;
 
-// Font weights
+// Font weights using Bootstrap variables
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
-$headings-font-weight: 400 !default; // User specified 400 for main headings
+$headings-font-weight: 400 !default;
 
-// Dark theme colors
-$primary: #5c87ff !default; // Adjusted link color for dark theme
+// Dark theme colors using Bootstrap color system
+$primary: #5c87ff !default;
 $body-bg: #282a36 !default;
-$body-color: #f8f8f2 !default; // Light text for dark background
-$headings-color: #f8f8f2 !default; // Light headings for dark theme
+$body-color: #f8f8f2 !default;
+$headings-color: #f8f8f2 !default;
 
-// Navigation - using proper Bootstrap variables
-$navbar-brand-font-size: 1.575rem !default; // Site title: 25.2px = 1.575rem
+// Bootstrap color map extensions for dark theme
+$grays: (
+  "50": #f8f9fa,
+  "100": #3a3d4c,
+  "700": #333,
+  "900": #1e1e1e
+) !default;
 
-// Container
+// Navigation using Bootstrap navbar variables
+$navbar-brand-font-size: 1.575rem !default;
+$navbar-dark-bg: map-get($grays, "900") !default;
+$navbar-border-radius: 0 !default;
+
+// Container using Bootstrap container system
 $container-max-widths: (
   xl: 1200px
 ) !default;
 
-// Custom variables for specific elements
+// Spacing using Bootstrap spacer system
+$spacer: 1rem !default;
+
+// Border radius using Bootstrap variables
+$border-radius: 0 !default;
+$btn-border-radius: 0 !default;
+$input-border-radius: 0 !default;
+
+// Form variables for dark theme
+$form-group-margin-bottom: $spacer !default;
+$input-padding-y: .75rem !default;
+$input-padding-x: .75rem !default;
+$input-bg: #44475a !default;
+$input-border-color: #5a5e73 !default;
+
+// Custom variables for project-specific elements
 $portrait-size: 200px;
-$nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap variable for this)
+$nav-link-font-size: 1.0106rem;
 
 /*-- scss:rules --*/
 
-// Navigation styling - specific targeting for nav-link font size and active state
-.navbar .nav-link {
-  font-size: $nav-link-font-size;
-  
-  // Make active/current page links bolder
-  &.active,
-  &[aria-current="page"] {
-    font-weight: 700 !important;
-  }
-}
-
-// Make navbar brand (site title) bolder
-.navbar-brand {
-  font-weight: 700 !important;
+// CSS Custom Properties for dark theme-specific values
+:root {
+  --featured-bg: #{map-get($grays, "100")};
+  --icon-color: #{$body-color};
+  --navbar-border-color: #{map-get($grays, "700")};
 }
 
 // Navigation styling for dark theme
 .navbar {
-  background-color: #1e1e1e !important;
-  border-bottom: 1px solid #333;
+  background-color: $navbar-dark-bg;
+  border-bottom: 1px solid var(--navbar-border-color);
+  
+  .nav-link {
+    font-size: $nav-link-font-size;
+    
+    &.active,
+    &[aria-current="page"] {
+      font-weight: $font-weight-bold;
+    }
+  }
 }
 
-// Container max width
+.navbar-brand {
+  font-weight: $font-weight-bold;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $headings-font-weight;
+}
+
+// Container max width using Bootstrap map function
 .container-fluid,
 .page-layout-full .quarto-title-block .quarto-title-banner {
-  max-width: map-get($container-max-widths, xl) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-width: map-get($container-max-widths, xl);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Remove title from header since we're using custom layout
@@ -79,11 +110,11 @@ $nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap
   display: none;
 }
 
-// Portrait styling
+// Portrait styling using custom properties and Bootstrap spacing
 .portrait {
   width: $portrait-size;
   height: $portrait-size;
-  margin: 0 auto 1.25rem auto;
+  margin: 0 auto ($spacer * 1.25) auto;
   border-radius: 50%;
   overflow: hidden;
   
@@ -96,19 +127,24 @@ $nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap
 
 .portrait-title {
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: $spacer * 1.25;
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: $spacer * 0.5;
+  }
   
   h3 {
-    font-size: 1.3125rem; // Tenured researcher: 21px = 1.3125rem
-    line-height: 1.25; // 26.25px / 21px = 1.25
-    font-weight: 700;
+    font-size: 1.3125rem;
+    line-height: 1.25;
+    font-weight: $font-weight-bold;
     color: $headings-color;
-    margin-bottom: 0.25rem;
+    margin-bottom: $spacer * 0.25;
     
     a {
       color: $headings-color;
       text-decoration: none;
-      font-weight: 700;
+      font-weight: $font-weight-bold;
       
       &:hover {
         color: $primary;
@@ -117,10 +153,10 @@ $nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap
   }
 }
 
-// Network icons
+// Network icons using Bootstrap spacing
 .network-icon {
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: $spacer * 1.25;
   
   ul {
     display: flex;
@@ -130,12 +166,13 @@ $nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap
     margin: 0;
     
     li {
-      margin: 0 0.75rem 0.5rem 0;
+      margin: 0 ($spacer * 0.75) ($spacer * 0.5) 0;
       
       a {
         color: $primary;
         text-decoration: none;
         font-size: 1.5rem;
+        transition: all 0.2s ease;
         
         &:hover {
           color: lighten($primary, 15%);
@@ -146,45 +183,49 @@ $nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap
   }
 }
 
-// Featured Publications section
+// Featured Publications section using custom properties
 .featured-publications-section {
-  background-color: #3a3d4c;
-  padding: 3rem 0;
-  margin: 2rem 0;
+  background-color: var(--featured-bg);
+  padding: ($spacer * 3) 0;
+  margin: ($spacer * 2) 0;
 }
 
-// Contact section
+// Contact section using Bootstrap spacing
 .contact-widget {
-  margin-top: 2rem;
+  margin-top: $spacer * 2;
+  
+  .grid {
+    align-items: flex-start;
+  }
 }
 
 .contact-info {
-  margin-top: 1rem;
+  margin-top: $spacer;
   
   p {
     display: flex;
-    align-items: flex-start; // Changed from center to flex-start for better text alignment
-    margin-bottom: 1rem;
+    align-items: flex-start;
+    margin-bottom: $spacer;
     line-height: 1.4;
   }
   
   i {
-    color: $body-color;
-    margin-right: 0.75rem;
+    color: var(--icon-color);
+    margin-right: $spacer * 0.75;
     min-width: 2rem;
     display: inline-flex;
-    align-items: flex-start; // Changed from center to flex-start to align with text baseline
+    align-items: flex-start;
     justify-content: center;
-    flex-shrink: 0; // Prevent icon from shrinking
-    margin-top: 0.2rem; // Slightly increased top margin to better align with text baseline
-    line-height: 1; // Ensure icon doesn't inherit line-height
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    line-height: 1;
   }
   
   a {
     color: $primary;
     text-decoration: none;
     display: flex;
-    align-items: flex-start; // Changed from center to flex-start
+    align-items: flex-start;
     
     &:hover {
       color: lighten($primary, 10%);
@@ -193,25 +234,25 @@ $nav-link-font-size: 1.0106rem; // Menu items: 16.17px = 1.0106rem (no Bootstrap
   
   .office-hours {
     display: flex;
-    align-items: flex-start; // Changed from center to flex-start
+    align-items: flex-start;
   }
 }
 
-// Form styling
+// Form styling using Bootstrap form variables for dark theme
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: $form-group-margin-bottom;
   
   .form-control {
-    border-radius: 0;
+    border-radius: $input-border-radius;
     width: 100%;
-    background-color: #44475a;
-    border-color: #5a5e73;
+    background-color: $input-bg;
+    border-color: $input-border-color;
     color: $body-color;
-    padding: 0.75rem;
+    padding: $input-padding-y $input-padding-x;
   }
 }
 
 .btn-outline-primary {
-  border-radius: 0;
-  padding: 0.75rem 1.5rem;
+  border-radius: $btn-border-radius;
+  padding: $input-padding-y ($input-padding-x * 2);
 } 
