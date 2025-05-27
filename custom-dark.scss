@@ -14,7 +14,7 @@ $body-color: #f8f8f2 !default;
 $headings-color: #f8f8f2 !default;
 
 // Text color utilities for dark theme
-$text-muted: darken($body-color, 40%) !default;
+$text-muted: shift-color($body-color, -40%) !default;
 
 // Bootstrap color map extensions for dark theme
 $grays: (
@@ -46,7 +46,7 @@ $navbar-dark-active-color: $primary !default;
 // Form specific colors for dark theme
 $input-bg: #44475a !default;
 $input-border-color: #5a5e73 !default;
-$input-focus-border-color: lighten($primary, 25%) !default;
+$input-focus-border-color: shift-color($primary, 25%) !default;
 $input-focus-box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity) !default;
 
 // Focus ring colors for dark theme
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
         display: inline-block;
         
         &:hover {
-          color: lighten($primary, 15%);
+          color: shift-color($primary, 15%);
           transform: var(--hover-transform);
         }
         
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: $transition-base;
     
     &:hover {
-      color: lighten($primary, 10%);
+      color: shift-color($primary, 10%);
       text-decoration: $link-hover-decoration;
     }
     

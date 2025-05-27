@@ -4,6 +4,14 @@
 // This file contains variables that are consistent across both themes
 
 // =============================================================================
+// BOOTSTRAP FEATURE FLAGS
+// =============================================================================
+
+$enable-responsive-font-sizes: true !default;
+$enable-smooth-scroll: true !default;
+$enable-reduced-motion: true !default;
+
+// =============================================================================
 // TYPOGRAPHY VARIABLES
 // =============================================================================
 
@@ -61,13 +69,31 @@ $spacers: (
 ) !default;
 
 // =============================================================================
-// COMPONENT VARIABLES USING BOOTSTRAP SYSTEM
+// RESPONSIVE BREAKPOINTS AND CONTAINERS
 // =============================================================================
+
+// Bootstrap breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
 
 // Container using Bootstrap container system
 $container-max-widths: (
-  xl: 1200px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1320px
 ) !default;
+
+// =============================================================================
+// COMPONENT VARIABLES USING BOOTSTRAP SYSTEM
+// =============================================================================
 
 // Border variables using Bootstrap system
 $border-width: 1px !default;
@@ -93,6 +119,7 @@ $btn-padding-x: 1.5rem !default;
 $btn-font-size: $font-size-base !default;
 $btn-border-radius: $border-radius !default;
 $btn-focus-width: $focus-ring-width !default;
+$btn-font-weight: $font-weight-normal !default;
 
 // Form variables using Bootstrap form system
 $input-padding-y: 0.75rem !default;
@@ -100,9 +127,14 @@ $input-padding-x: 0.75rem !default;
 $input-font-size: $font-size-base !default;
 $input-border-radius: $border-radius !default;
 $input-focus-width: $focus-ring-width !default;
+$input-border-width: $border-width !default;
 $form-group-margin-bottom: map-get($spacers, 4) !default;
 $form-label-margin-bottom: map-get($spacers, 2) !default;
 $form-text-margin-top: map-get($spacers, 1) !default;
+
+// Form validation variables
+$form-feedback-margin-top: $form-text-margin-top !default;
+$form-feedback-font-size: 0.875em !default;
 
 // Navigation using Bootstrap navbar variables
 $navbar-brand-font-size: 1.575rem !default;
@@ -110,6 +142,20 @@ $navbar-border-radius: $border-radius !default;
 $navbar-padding-y: map-get($spacers, 2) !default;
 $navbar-padding-x: map-get($spacers, 4) !default;
 $navbar-nav-link-padding-x: map-get($spacers, 2) !default;
+$navbar-brand-padding-y: map-get($spacers, 2) !default;
+
+// Card variables for potential card components
+$card-spacer-y: map-get($spacers, 4) !default;
+$card-spacer-x: map-get($spacers, 4) !default;
+$card-border-radius: $border-radius !default;
+$card-border-width: $border-width !default;
+
+// Badge variables for potential badge components
+$badge-font-size: 0.75em !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-padding-y: 0.35em !default;
+$badge-padding-x: 0.65em !default;
+$badge-border-radius: $border-radius !default;
 
 // Link variables
 $link-decoration: none !default;
@@ -150,6 +196,7 @@ $network-icon-size: $icon-size-base !default;
   // Focus ring system
   --focus-ring-width: #{$focus-ring-width};
   --focus-ring-blur: #{$focus-ring-blur};
+  --focus-ring-opacity: #{$focus-ring-opacity};
 }
 
 // =============================================================================

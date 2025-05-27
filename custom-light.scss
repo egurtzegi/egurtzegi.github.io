@@ -4,45 +4,7 @@
 @import "shared-variables";
 
 // =============================================================================
-// TYPOGRAPHY VARIABLES
-// =============================================================================
-
-// Font families using Bootstrap variables
-$font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
-$headings-font-family: "Montserrat", $font-family-sans-serif !default;
-
-// Base font settings - consistent across themes
-$font-size-base: 1.25rem !default;
-$line-height-base: 1.65 !default;
-
-// Line height variables using Bootstrap system
-$line-height-sm: 1.25 !default;
-$line-height-xs: 1 !default;
-$line-height-md: 1.4 !default;
-
-// Heading sizes using Bootstrap's heading scale
-$h1-font-size: 2.953rem !default;
-$h2-font-size: 2.297rem !default;
-$h3-font-size: 1.25rem !default;
-$h4-font-size: 1rem !default;
-$h5-font-size: 1rem !default;
-$h6-font-size: 1rem !default;
-
-// Font weights using Bootstrap variables
-$font-weight-normal: 400 !default;
-$font-weight-bold: 700 !default;
-$headings-font-weight: 400 !default;
-
-// Display font sizes for larger text elements
-$display-font-sizes: (
-  1: 2rem,
-  2: 1.8rem,
-  3: 1.5rem,
-  4: 1.3125rem
-) !default;
-
-// =============================================================================
-// COLOR VARIABLES
+// LIGHT THEME SPECIFIC COLOR VARIABLES
 // =============================================================================
 
 // Base colors using Bootstrap color system
@@ -86,77 +48,11 @@ $navbar-light-active-color: $primary !default;
 // Form specific colors for light theme
 $input-bg: $white !default;
 $input-border-color: #ced4da !default;
-$input-focus-border-color: lighten($primary, 25%) !default;
+$input-focus-border-color: shift-color($primary, 25%) !default;
 $input-focus-box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity) !default;
 
 // Focus ring colors for light theme
 $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
-
-// =============================================================================
-// COMPONENT VARIABLES
-// =============================================================================
-
-// Navigation using Bootstrap navbar variables
-$navbar-brand-font-size: 1.575rem !default;
-$navbar-border-radius: 0 !default;
-$navbar-padding-y: 0.5rem !default;
-$navbar-padding-x: 1rem !default;
-
-// Container using Bootstrap container system
-$container-max-widths: (
-  xl: 1200px
-) !default;
-
-// Spacing using Bootstrap spacer system with calculated values
-$spacer: 1rem !default;
-$spacer-sm: $spacer * 0.25 !default;  // 0.25rem
-$spacer-md: $spacer * 0.5 !default;   // 0.5rem
-$spacer-lg: $spacer * 0.75 !default;  // 0.75rem
-$spacer-xl: $spacer * 1.25 !default;  // 1.25rem
-$spacer-xxl: $spacer * 2 !default;    // 2rem
-$spacer-xxxl: $spacer * 3 !default;   // 3rem
-
-// Border variables using Bootstrap system
-$border-width: 1px !default;
-$border-style: solid !default;
-$border-color: transparent !default;
-$border-radius: 0 !default;
-
-// Button variables using Bootstrap system
-$btn-border-radius: 0 !default;
-$btn-padding-y: .75rem !default;
-$btn-padding-x: 1.5rem !default;
-
-// Form variables using Bootstrap form system
-$input-border-radius: 0 !default;
-$form-group-margin-bottom: $spacer !default;
-$input-padding-y: .75rem !default;
-$input-padding-x: .75rem !default;
-$input-focus-width: 0.2rem !default;
-$input-font-size: $font-size-base !default;
-
-// Transition variables using Bootstrap system with accessibility support
-$transition-base: all 0.2s ease !default;
-$transition-fade: opacity 0.15s linear !default;
-$transition-transform: transform 0.2s ease !default;
-
-// Link variables
-$link-decoration: none !default;
-$link-hover-decoration: none !default;
-
-// Component sizing variables
-$avatar-size-lg: 200px !default;
-$icon-size-base: 2rem !default;
-$icon-size-sm: 1.5rem !default;
-
-// =============================================================================
-// CUSTOM PROJECT VARIABLES
-// =============================================================================
-
-// Component-specific sizes using Bootstrap patterns
-$portrait-size: $avatar-size-lg;
-$nav-link-font-size: 1.0106rem;
-$network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
 
 /*-- scss:rules --*/
 
@@ -170,38 +66,6 @@ $network-icon-size: $icon-size-base; // 2rem - consistent with dark theme
   --navbar-border-color: transparent;
   --text-muted-color: #{$text-muted};
   --focus-ring-color: #{$focus-ring-color};
-  
-  // Animation system with accessibility support
-  --hover-transform: scale(1.1);
-  --focus-ring-opacity: 0.25;
-  --transition-duration: 0.2s;
-  --transition-timing: ease;
-  
-  // Performance optimization
-  --contain-layout: layout;
-  --contain-style: style;
-  
-  // Accessibility preferences
-  --animation-duration: var(--transition-duration);
-  --animation-timing: var(--transition-timing);
-}
-
-// Accessibility: Respect user's motion preferences
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --transition-duration: 0.01ms;
-    --animation-duration: 0.01ms;
-    --hover-transform: none;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
 
 // Accessibility: High contrast support
@@ -368,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
         display: inline-block;
         
         &:hover {
-          color: darken($primary, 15%);
+          color: shift-color($primary, -15%);
           transform: var(--hover-transform);
         }
         
@@ -436,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: $transition-base;
     
     &:hover {
-      color: darken($primary, 10%);
+      color: shift-color($primary, -10%);
       text-decoration: $link-hover-decoration;
     }
     
