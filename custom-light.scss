@@ -1,6 +1,10 @@
 /*-- scss:defaults --*/
 
-// Typography - using Bootstrap variables with user specifications
+// =============================================================================
+// TYPOGRAPHY VARIABLES
+// =============================================================================
+
+// Font families using Bootstrap variables
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
@@ -21,7 +25,19 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $headings-font-weight: 400 !default;
 
-// Colors using Bootstrap color system
+// Display font sizes for larger text elements
+$display-font-sizes: (
+  1: 2rem,
+  2: 1.8rem,
+  3: 1.5rem,
+  4: 1.3125rem
+) !default;
+
+// =============================================================================
+// COLOR VARIABLES
+// =============================================================================
+
+// Base colors using Bootstrap color system
 $white: #fff !default;
 $black: #000 !default;
 $primary: #2962FF !default;
@@ -36,6 +52,10 @@ $grays: (
   "900": #1e1e1e
 ) !default;
 
+// =============================================================================
+// COMPONENT VARIABLES
+// =============================================================================
+
 // Navigation using Bootstrap navbar variables
 $navbar-brand-font-size: 1.575rem !default;
 $navbar-light-bg: $white !default;
@@ -49,43 +69,68 @@ $container-max-widths: (
 // Spacing using Bootstrap spacer system
 $spacer: 1rem !default;
 
-// Border radius using Bootstrap variables
+// Border variables using Bootstrap system
+$border-width: 1px !default;
+$border-color: transparent !default;
 $border-radius: 0 !default;
 $btn-border-radius: 0 !default;
 $input-border-radius: 0 !default;
 
-// Form variables
+// Transition variables using Bootstrap system
+$transition-base: all 0.2s ease !default;
+$transition-fade: opacity 0.15s linear !default;
+
+// Form variables using Bootstrap form system
 $form-group-margin-bottom: $spacer !default;
 $input-padding-y: .75rem !default;
 $input-padding-x: .75rem !default;
+$input-focus-border-color: lighten($primary, 25%) !default;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba($primary, 0.25) !default;
 
-// Links
+// Link variables
 $link-decoration: none !default;
+$link-hover-decoration: none !default;
 
-// Custom variables for project-specific elements
+// =============================================================================
+// CUSTOM PROJECT VARIABLES
+// =============================================================================
+
+// Component-specific sizes
 $portrait-size: 200px;
 $nav-link-font-size: 1.0106rem;
+$network-icon-size: map-get($display-font-sizes, 1); // 2rem - consistent with dark theme
 
 /*-- scss:rules --*/
 
-// CSS Custom Properties for theme-specific values
+// =============================================================================
+// CSS CUSTOM PROPERTIES FOR THEME-SPECIFIC VALUES
+// =============================================================================
+
 :root {
   --featured-bg: #{map-get($grays, "100")};
   --icon-color: #{$black};
-  --navbar-border-color: transparent;
+  --navbar-border-color: #{$border-color};
 }
 
-// Navigation styling
+// =============================================================================
+// NAVIGATION STYLING
+// =============================================================================
+
 .navbar {
   background-color: $navbar-light-bg;
-  border-bottom: 1px solid var(--navbar-border-color);
+  border-bottom: $border-width solid var(--navbar-border-color);
   
   .nav-link {
     font-size: $nav-link-font-size;
+    transition: $transition-base;
     
     &.active,
     &[aria-current="page"] {
       font-weight: $font-weight-bold;
+    }
+    
+    &:hover {
+      color: $primary;
     }
   }
 }
@@ -94,10 +139,17 @@ $nav-link-font-size: 1.0106rem;
   font-weight: $font-weight-bold;
 }
 
-// Typography
+// =============================================================================
+// TYPOGRAPHY STYLING
+// =============================================================================
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: $headings-font-weight;
 }
+
+// =============================================================================
+// LAYOUT COMPONENTS
+// =============================================================================
 
 // Container max width using Bootstrap map function
 .container-fluid,
@@ -112,7 +164,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-// Portrait styling using custom properties and Bootstrap spacing
+// =============================================================================
+// PORTRAIT AND PROFILE STYLING
+// =============================================================================
+
 .portrait {
   width: $portrait-size;
   height: $portrait-size;
@@ -132,27 +187,32 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: $spacer * 1.25;
   
   h2 {
-    font-size: 1.8rem;
+    font-size: map-get($display-font-sizes, 2); // 1.8rem
     margin-bottom: $spacer * 0.5;
   }
   
   h3 {
-    font-size: 1.3125rem;
+    font-size: map-get($display-font-sizes, 4); // 1.3125rem
     line-height: 1.25;
     color: $headings-color;
     margin-bottom: $spacer * 0.25;
     
     a {
-      text-decoration: none;
+      text-decoration: $link-decoration;
+      transition: $transition-base;
       
       &:hover {
         color: $primary;
+        text-decoration: $link-hover-decoration;
       }
     }
   }
 }
 
-// Network icons using Bootstrap spacing
+// =============================================================================
+// NETWORK ICONS STYLING
+// =============================================================================
+
 .network-icon {
   text-align: center;
   margin-bottom: $spacer * 1.25;
@@ -169,9 +229,9 @@ h1, h2, h3, h4, h5, h6 {
       
       a {
         color: $primary;
-        text-decoration: none;
-        font-size: 2rem;
-        transition: all 0.2s ease;
+        text-decoration: $link-decoration;
+        font-size: $network-icon-size;
+        transition: $transition-base;
         
         &:hover {
           color: darken($primary, 15%);
@@ -182,6 +242,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// =============================================================================
+// CONTENT SECTIONS
+// =============================================================================
+
 // Featured Publications section using custom properties
 .featured-publications-section {
   background-color: var(--featured-bg);
@@ -189,7 +253,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: ($spacer * 2) 0;
 }
 
-// Contact section using Bootstrap spacing
+// =============================================================================
+// CONTACT SECTION STYLING
+// =============================================================================
+
 .contact-widget {
   margin-top: $spacer * 2;
   
@@ -222,12 +289,14 @@ h1, h2, h3, h4, h5, h6 {
   
   a {
     color: $primary;
-    text-decoration: none;
+    text-decoration: $link-decoration;
     display: flex;
     align-items: flex-start;
+    transition: $transition-base;
     
     &:hover {
       color: darken($primary, 10%);
+      text-decoration: $link-hover-decoration;
     }
   }
   
@@ -237,7 +306,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Form styling using Bootstrap form variables
+// =============================================================================
+// FORM STYLING
+// =============================================================================
+
 .form-group {
   margin-bottom: $form-group-margin-bottom;
   
@@ -245,10 +317,17 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: $input-border-radius;
     width: 100%;
     padding: $input-padding-y $input-padding-x;
+    transition: $transition-base;
+    
+    &:focus {
+      border-color: $input-focus-border-color;
+      box-shadow: $input-focus-box-shadow;
+    }
   }
 }
 
 .btn-outline-primary {
   border-radius: $btn-border-radius;
   padding: $input-padding-y ($input-padding-x * 2);
+  transition: $transition-base;
 } 
