@@ -17,6 +17,85 @@ $enable-negative-margins: true !default;
 $color-mode-type: data !default; // or media for prefers-color-scheme
 
 // =============================================================================
+// BASE THEME COLORS (SHARED ACROSS THEMES)
+// =============================================================================
+
+// Base theme colors map - extended by individual themes
+$base-theme-colors: (
+  "secondary": #6c757d,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #212529
+) !default;
+
+// Base grays map - extended by individual themes
+$base-grays: (
+  "50": #f8f8f2,
+  "700": #333,
+  "900": #1e1e1e
+) !default;
+
+// =============================================================================
+// THEME MIXINS FOR REDUCING DUPLICATION
+// =============================================================================
+
+// Mixin for generating theme-specific CSS custom properties
+@mixin theme-custom-properties(
+  $primary,
+  $body-color,
+  $headings-color,
+  $text-muted,
+  $navbar-bg,
+  $navbar-color,
+  $navbar-hover-color,
+  $navbar-active-color,
+  $navbar-border-color,
+  $input-bg,
+  $input-border-color,
+  $input-focus-border-color,
+  $input-focus-box-shadow,
+  $focus-ring-color,
+  $featured-bg,
+  $icon-color,
+  $primary-hover: null,
+  $primary-contact-hover: null
+) {
+  :root {
+    // Theme-specific colors
+    --color-primary: #{$primary};
+    --color-primary-hover: #{if($primary-hover, $primary-hover, shift-color($primary, $color-shift-hover))};
+    --color-primary-contact-hover: #{if($primary-contact-hover, $primary-contact-hover, shift-color($primary, $color-shift-contact))};
+    --color-body: #{$body-color};
+    --color-headings: #{$headings-color};
+    --color-text-muted: #{$text-muted};
+    
+    // Navigation colors
+    --navbar-bg: #{$navbar-bg};
+    --navbar-color: #{$navbar-color};
+    --navbar-hover-color: #{$navbar-hover-color};
+    --navbar-active-color: #{$navbar-active-color};
+    --navbar-border-color: #{$navbar-border-color};
+    
+    // Form colors
+    --input-bg: #{$input-bg};
+    --input-border-color: #{$input-border-color};
+    --input-focus-border-color: #{$input-focus-border-color};
+    --input-focus-box-shadow: #{$input-focus-box-shadow};
+    
+    // Focus system
+    --focus-ring-color: #{$focus-ring-color};
+    --btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} #{$focus-ring-color};
+    
+    // Component colors
+    --featured-bg: #{$featured-bg};
+    --icon-color: #{$icon-color};
+  }
+}
+
+// =============================================================================
 // TYPOGRAPHY VARIABLES
 // =============================================================================
 
@@ -101,6 +180,10 @@ $container-padding-x: map-get($spacers, 3) !default;
 
 // Grid system
 $grid-gutter-width: map-get($spacers, 4) !default;
+
+// Custom container settings for this project
+$custom-container-max-width: map-get($container-max-widths, xl) !default;
+$custom-container-padding: map-get($spacers, 4) !default;
 
 // =============================================================================
 // COMPONENT VARIABLES USING BOOTSTRAP SYSTEM

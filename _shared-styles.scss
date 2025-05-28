@@ -57,11 +57,12 @@ h1, h2, h3, h4, h5, h6 {
 // LAYOUT COMPONENTS
 // =============================================================================
 
-// Container max width using Bootstrap map function
+// Custom container system using Bootstrap variables
 .container-fluid,
 .page-layout-full .quarto-title-block .quarto-title-banner {
-  max-width: map-get($container-max-widths, xl);
+  max-width: $custom-container-max-width;
   margin-inline: auto;
+  padding-inline: $custom-container-padding;
 }
 
 // Remove title from header since we're using custom layout

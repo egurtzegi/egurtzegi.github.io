@@ -17,25 +17,15 @@ $headings-color: #f8f8f2 !default;
 $text-muted: shift-color($body-color, -$color-shift-muted) !default;
 
 // Bootstrap color map extensions for dark theme
-$grays: (
-  "50": #f8f9fa,
-  "100": #3a3d4c,
-  "700": #333,
-  "900": #1e1e1e
-) !default;
+$grays: map-merge($base-grays, (
+  "100": #3a3d4c
+)) !default;
 
-// Theme colors map for consistent color management
-$theme-colors: (
+// Theme colors map using shared base and theme-specific additions
+$theme-colors: map-merge($base-theme-colors, (
   "primary": $primary,
-  "secondary": #6c757d,
-  "success": #198754,
-  "info": #0dcaf0,
-  "warning": #ffc107,
-  "danger": #dc3545,
-  "light": #f8f9fa,
-  "dark": #212529,
   "muted": $text-muted
-) !default;
+)) !default;
 
 // Navigation specific colors for dark theme
 $navbar-dark-bg: map-get($grays, "900") !default;
@@ -58,36 +48,26 @@ $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
 @import "shared-styles";
 
 // =============================================================================
-// CSS CUSTOM PROPERTIES FOR DARK THEME-SPECIFIC VALUES
+// DARK THEME CUSTOM PROPERTIES USING MIXIN
 // =============================================================================
 
-:root {
-  // Theme-specific colors
-  --color-primary: #{$primary};
-  --color-primary-hover: #{shift-color($primary, $color-shift-hover)};
-  --color-primary-contact-hover: #{shift-color($primary, $color-shift-contact)};
-  --color-body: #{$body-color};
-  --color-headings: #{$headings-color};
-  --color-text-muted: #{$text-muted};
-  
-  // Navigation colors
-  --navbar-bg: #{$navbar-dark-bg};
-  --navbar-color: #{$navbar-dark-color};
-  --navbar-hover-color: #{$navbar-dark-hover-color};
-  --navbar-active-color: #{$navbar-dark-active-color};
-  --navbar-border-color: #{map-get($grays, "700")};
-  
-  // Form colors
-  --input-bg: #{$input-bg};
-  --input-border-color: #{$input-border-color};
-  --input-focus-border-color: #{$input-focus-border-color};
-  --input-focus-box-shadow: #{$input-focus-box-shadow};
-  
-  // Focus system
-  --focus-ring-color: #{$focus-ring-color};
-  --btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} #{$focus-ring-color};
-  
-  // Component colors
-  --featured-bg: #{map-get($grays, "100")};
-  --icon-color: #{$body-color};
-} 
+@include theme-custom-properties(
+  $primary: $primary,
+  $body-color: $body-color,
+  $headings-color: $headings-color,
+  $text-muted: $text-muted,
+  $navbar-bg: $navbar-dark-bg,
+  $navbar-color: $navbar-dark-color,
+  $navbar-hover-color: $navbar-dark-hover-color,
+  $navbar-active-color: $navbar-dark-active-color,
+  $navbar-border-color: map-get($grays, "700"),
+  $input-bg: $input-bg,
+  $input-border-color: $input-border-color,
+  $input-focus-border-color: $input-focus-border-color,
+  $input-focus-box-shadow: $input-focus-box-shadow,
+  $focus-ring-color: $focus-ring-color,
+  $featured-bg: map-get($grays, "100"),
+  $icon-color: $body-color,
+  $primary-hover: shift-color($primary, $color-shift-hover),
+  $primary-contact-hover: shift-color($primary, $color-shift-contact)
+); 
