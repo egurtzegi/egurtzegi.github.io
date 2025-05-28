@@ -259,7 +259,7 @@ $badge-border-radius: $border-radius !default;
 
 // Link variables
 $link-decoration: none !default;
-$link-hover-decoration: none !default;
+$link-hover-decoration: underline !default;
 
 // Component sizing variables using consistent system
 $avatar-size-lg: 200px !default;

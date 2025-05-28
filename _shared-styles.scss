@@ -20,6 +20,7 @@
     padding-left: $navbar-nav-link-padding-x;
     padding-right: $navbar-nav-link-padding-x;
     transition: $transition-base;
+    text-decoration: none;
     
     &.active,
     &[aria-current="page"] {
@@ -29,6 +30,7 @@
     
     &:hover {
       color: var(--navbar-hover-color);
+      text-decoration: none;
     }
     
     &:focus-visible {
@@ -42,6 +44,11 @@
 .navbar-brand {
   font-weight: $font-weight-bold;
   font-size: $navbar-brand-font-size;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // =============================================================================
@@ -107,12 +114,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-block-end: map-get($spacers, 1);
     
     a {
-      color: var(--color-headings);
+      color: var(--color-primary);
       text-decoration: $link-decoration;
       transition: $transition-base;
       
       &:hover {
-        color: var(--color-primary);
+        color: var(--color-primary-hover);
         text-decoration: $link-hover-decoration;
       }
       
@@ -146,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
       
       a {
         color: var(--color-primary);
-        text-decoration: $link-decoration;
+        text-decoration: none;
         font-size: $network-icon-size;
         transition: $transition-base, $transition-transform;
         will-change: var(--will-change-transform-color);
@@ -155,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
         &:hover {
           color: var(--color-primary-hover);
           transform: var(--hover-transform);
+          text-decoration: none;
         }
         
         &:focus-visible {
@@ -216,8 +224,6 @@ h1, h2, h3, h4, h5, h6 {
   a {
     color: var(--color-primary);
     text-decoration: $link-decoration;
-    display: flex;
-    align-items: flex-start;
     transition: $transition-base;
     
     &:hover {
@@ -274,6 +280,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: $btn-padding-y $btn-padding-x;
   font-size: $btn-font-size;
   transition: $transition-base;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
   
   &:focus-visible {
     box-shadow: var(--btn-focus-box-shadow);
