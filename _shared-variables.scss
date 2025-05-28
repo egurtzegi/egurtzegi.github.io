@@ -64,13 +64,13 @@ $spacer: 1rem !default;
 // Bootstrap spacers map - replaces custom spacer variables
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,    // 0.25rem (was $spacer-sm)
-  2: $spacer * 0.5,     // 0.5rem  (was $spacer-md)
-  3: $spacer * 0.75,    // 0.75rem (was $spacer-lg)
+  1: $spacer * 0.25,    // 0.25rem
+  2: $spacer * 0.5,     // 0.5rem
+  3: $spacer * 0.75,    // 0.75rem
   4: $spacer,           // 1rem
-  5: $spacer * 1.25,    // 1.25rem (was $spacer-xl)
-  6: $spacer * 2,       // 2rem    (was $spacer-xxl)
-  7: $spacer * 3        // 3rem    (was $spacer-xxxl)
+  5: $spacer * 1.25,    // 1.25rem
+  6: $spacer * 2,       // 2rem
+  7: $spacer * 3        // 3rem
 ) !default;
 
 // =============================================================================
@@ -153,16 +153,6 @@ $form-text-margin-top: map-get($spacers, 1) !default;
 $form-feedback-margin-top: $form-text-margin-top !default;
 $form-feedback-font-size: 0.875em !default;
 
-// Bootstrap 5.3+ Form floating variables
-$form-floating-height: add(3.5rem, $input-border-width * 2) !default;
-$form-floating-line-height: 1.25 !default;
-$form-floating-padding-x: $input-padding-x !default;
-$form-floating-padding-y: 1rem !default;
-$form-floating-input-padding-t: 1.625rem !default;
-$form-floating-input-padding-b: 0.625rem !default;
-$form-floating-label-opacity: 0.65 !default;
-$form-floating-label-transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem) !default;
-
 // Navigation using Bootstrap navbar variables
 $navbar-brand-font-size: 1.575rem !default;
 $navbar-border-radius: $border-radius !default;
@@ -183,36 +173,6 @@ $badge-font-weight: $font-weight-bold !default;
 $badge-padding-y: 0.35em !default;
 $badge-padding-x: 0.65em !default;
 $badge-border-radius: $border-radius !default;
-
-// Bootstrap 5.3+ Offcanvas variables
-$offcanvas-padding-y: map-get($spacers, 4) !default;
-$offcanvas-padding-x: map-get($spacers, 4) !default;
-$offcanvas-horizontal-width: 400px !default;
-$offcanvas-vertical-height: 30vh !default;
-$offcanvas-transition-duration: 0.3s !default;
-$offcanvas-border-color: transparent !default;
-$offcanvas-border-width: $border-width !default;
-
-// Bootstrap 5.3+ Accordion variables
-$accordion-padding-y: map-get($spacers, 4) !default;
-$accordion-padding-x: map-get($spacers, 5) !default;
-$accordion-color: inherit !default;
-$accordion-border-width: $border-width !default;
-$accordion-border-radius: $border-radius !default;
-$accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;
-$accordion-body-padding-y: $accordion-padding-y !default;
-$accordion-body-padding-x: $accordion-padding-x !default;
-$accordion-button-padding-y: $accordion-padding-y !default;
-$accordion-button-padding-x: $accordion-padding-x !default;
-$accordion-button-color: $accordion-color !default;
-$accordion-button-active-color: $accordion-color !default;
-$accordion-button-focus-border-color: transparent !default;
-$accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
-$accordion-icon-width: 1.25rem !default;
-$accordion-icon-color: $accordion-button-color !default;
-$accordion-icon-active-color: $accordion-button-active-color !default;
-$accordion-icon-transition: transform 0.2s ease-in-out !default;
-$accordion-icon-transform: rotate(-180deg) !default;
 
 // Link variables
 $link-decoration: none !default;
@@ -253,7 +213,7 @@ $will-change-transform: transform !default;
 :root {
   // Animation system with accessibility support
   --hover-transform: scale(1.1);
-  --transition-duration: 0.15s; // Duration from $transition-base
+  --transition-duration: 0.15s;
   --transition-timing: ease;
   
   // Performance optimization with modern CSS features
@@ -263,15 +223,6 @@ $will-change-transform: transform !default;
   --contain-paint: paint;
   --will-change-transform-color: #{$will-change-transform-color};
   --will-change-transform: #{$will-change-transform};
-  
-  // Content visibility for better rendering performance
-  --content-visibility-auto: auto;
-  --content-visibility-hidden: hidden;
-  --content-visibility-visible: visible;
-  
-  // Accessibility preferences
-  --animation-duration: var(--transition-duration);
-  --animation-timing: var(--transition-timing);
   
   // Focus ring system
   --focus-ring-width: #{$focus-ring-width};
@@ -294,7 +245,6 @@ $will-change-transform: transform !default;
 @media (prefers-reduced-motion: reduce) {
   :root {
     --transition-duration: 0.01ms;
-    --animation-duration: 0.01ms;
     --hover-transform: none;
   }
   

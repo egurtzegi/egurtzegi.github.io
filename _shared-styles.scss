@@ -261,7 +261,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     &:focus-visible {
-      outline: none; // Handled by box-shadow
+      outline: var(--focus-ring-width) solid var(--focus-ring-color);
+      outline-offset: var(--focus-ring-offset);
+      border-radius: $border-radius-sm;
     }
   }
 }
