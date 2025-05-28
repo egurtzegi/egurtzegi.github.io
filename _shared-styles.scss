@@ -204,27 +204,27 @@ h1, h2, h3, h4, h5, h6 {
   
   p {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-block-end: map-get($spacers, 4);
     line-height: $line-height-md;
   }
   
   i {
     color: var(--icon-color);
-    margin-inline-end: map-get($spacers, 3);
-    min-width: map-get($spacers, 6);
+    margin-inline-end: map-get($spacers, 4);
+    min-width: map-get($spacers, 7);
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-block-start: 0.2rem;
-    line-height: $line-height-xs;
+    line-height: 1;
   }
   
   a {
     color: var(--color-primary);
     text-decoration: $link-decoration;
     transition: $transition-base;
+    line-height: $line-height-md;
     
     &:hover {
       color: var(--color-primary-contact-hover);
@@ -241,6 +241,10 @@ h1, h2, h3, h4, h5, h6 {
   .office-hours {
     display: flex;
     align-items: flex-start;
+    
+    br + * {
+      line-height: $line-height-md;
+    }
   }
 }
 
