@@ -28,7 +28,11 @@ bib <- ReadBib(bibfile)
 convert_url <- function(url) {
   if (!is.null(url) && url != "") {
     # Convert egurtzegi.github.io URLs to internal /static/ paths
+<<<<<<< HEAD
     url <- gsub("https://egurtzegi.github.io/papers/", "/static/papers/", url, fixed = TRUE)
+=======
+    url <- gsub("https://egurtzegi.github.io/papers/", "/static/files/", url, fixed = TRUE)
+>>>>>>> 8baf5a6 (refactor: Update publication links in index.qmd to use internal paths)
     return(url)
   }
   return(url)

@@ -65,7 +65,7 @@ If my name rings a bell but my face and work don't match with it, note that ther
 
 ::: {.g-col-12 .g-col-md-8}
 
-- **In press.** Metathesis. In Ledgeway et al. (eds.), *The Wiley Blackwell Companion to Diachronic Linguistics*. Wiley-Blackwell. [<i class="ai ai-open-access ai-lg"></i>](./static/papers/MetathesisDiaComEgurtzegi.pdf)
+- **In press.** Metathesis. In Ledgeway et al. (eds.), *The Wiley Blackwell Companion to Diachronic Linguistics*. Wiley-Blackwell. [<i class="ai ai-open-access ai-lg"></i>](./static/files/MetathesisDiaComEgurtzegi.pdf)
 
 - **2023** [with J. Blevins] Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. *Linguistic Typology* 27.2, 289–311. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class="ai ai-open-access ai-lg"></i>](https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036)
 
@@ -77,11 +77,11 @@ If my name rings a bell but my face and work don't match with it, note that ther
 
 - **2020** [with C. Carignan] An acoustic description of Mixean Basque. *Journal of the Acoustical Society of America* 147.4, 2791–2802. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1121/10.0000996) [<i class="ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/pdf/10.1121/10.0000996) [Supplementary materials [<i class="ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/suppl/10.1121/10.0000996/suppl_file/supppub1.pdf)].
 
-- **2018** On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque. *Linguistics* 56.6, 1353–1367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/ling-2018-0024) [<i class="ai ai-open-access ai-lg"></i>](./static/papers/egurtzegi_2018_linguistics.pdf)
+- **2018** On the phonemic status of nasalized /h̃/ in Modern Zuberoan Basque. *Linguistics* 56.6, 1353–1367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/ling-2018-0024) [<i class="ai ai-open-access ai-lg"></i>](./static/files/egurtzegi_2018_linguistics.pdf)
 
-- **2017** [with J. Blevins] Unexpected obstruent loss in initial obstruent-sonorant clusters: an apparent example from Basque. *Phonology* 34.3, 507–522. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0952675717000264) [<i class="ai ai-open-access ai-lg"></i>](./static/papers/blevins_egurtzegi2017phonology.pdf)
+- **2017** [with J. Blevins] Unexpected obstruent loss in initial obstruent-sonorant clusters: an apparent example from Basque. *Phonology* 34.3, 507–522. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0952675717000264) [<i class="ai ai-open-access ai-lg"></i>](./static/files/blevins_egurtzegi2017phonology.pdf)
 
-- **2017** Phonetically conditioned sound change: Contact induced /u/-fronting in Zuberoan Basque. *Diachronica* 34.3, 331–367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.34.3.02egu) [<i class="ai ai-open-access ai-lg"></i>](./static/papers/Egurtzegi-u-fronting-preprint.pdf)
+- **2017** Phonetically conditioned sound change: Contact induced /u/-fronting in Zuberoan Basque. *Diachronica* 34.3, 331–367. [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.34.3.02egu) [<i class="ai ai-open-access ai-lg"></i>](./static/files/Egurtzegi-u-fronting-preprint.pdf)
 
 :::
 
