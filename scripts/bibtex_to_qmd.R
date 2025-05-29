@@ -28,11 +28,7 @@ bib <- ReadBib(bibfile)
 convert_url <- function(url) {
   if (!is.null(url) && url != "") {
     # Convert egurtzegi.github.io URLs to internal /static/ paths
-<<<<<<< HEAD
-    url <- gsub("https://egurtzegi.github.io/papers/", "/static/papers/", url, fixed = TRUE)
-=======
     url <- gsub("https://egurtzegi.github.io/papers/", "/static/files/", url, fixed = TRUE)
->>>>>>> 8baf5a6 (refactor: Update publication links in index.qmd to use internal paths)
     return(url)
   }
   return(url)
@@ -67,13 +63,25 @@ opena_icon <- function(url) {
   } else ''
 }
 arxiv_icon <- function(arxiv) {
-  if (!is.null(arxiv) && arxiv != "") paste0('[<i class="ai ai-arxiv ai-lg"></i>](https://arxiv.org/abs/', arxiv, ')') else ''
+  if (!is.null(arxiv) && arxiv != "") {
+    # Handle both full URLs and just arXiv IDs
+    if (grepl("^https://arxiv.org/abs/", arxiv)) {
+      # Already a full URL, use as-is
+      paste0('[<i class="ai ai-arxiv ai-lg"></i>](', arxiv, ')')
+    } else {
+      # Just an ID, add the prefix
+      paste0('[<i class="ai ai-arxiv ai-lg"></i>](https://arxiv.org/abs/', arxiv, ')')
+    }
+  } else ''
 }
 github_icon <- function(github) {
   if (!is.null(github) && github != "") paste0('[<i class="fab fa-github"></i>](', github, ')') else ''
 }
 osf_icon <- function(osf) {
   if (!is.null(osf) && osf != "") paste0('[<i class="ai ai-osf ai-lg"></i>](', osf, ')') else ''
+}
+osf2_icon <- function(osf2) {
+  if (!is.null(osf2) && osf2 != "") paste0('[<i class="ai ai-osf ai-lg"></i>](', osf2, ')') else ''
 }
 supplementary_icon <- function(supplementary) {
   if (!is.null(supplementary) && supplementary != "") {
@@ -255,6 +263,7 @@ for (type in section_order) {
         arxiv_icon(entry$arxiv),
         github_icon(entry$github),
         osf_icon(entry$osf),
+        osf2_icon(entry$osf2),
         supplementary_icon(entry$supplementary),
         preprint_icon(entry$preprint)
       )
