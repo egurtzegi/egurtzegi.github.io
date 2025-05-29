@@ -5,6 +5,38 @@
 // Theme-specific values are handled via CSS custom properties
 
 // =============================================================================
+// GLOBAL RESPONSIVE STYLES (Revised for direct body font scaling - Mobile First)
+// =============================================================================
+
+html {
+  font-size: 100%; // Keep root font size consistent (browser default, usually 16px)
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  line-height: $line-height-base;
+  color: var(--color-body);
+  background-color: var(--body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Smallest font size (xs and up, until overridden by larger breakpoints)
+  font-size: 0.9rem; // e.g., 14.4px
+
+  @include media-breakpoint-up(sm) { // Small tablets/phones and up (e.g., >= 576px)
+    font-size: 1rem; // e.g., 16px
+  }
+
+  @include media-breakpoint-up(md) { // Medium desktops/tablets and up (e.g., >= 768px)
+    font-size: 1.1rem; // e.g., 17.6px
+  }
+  
+  @include media-breakpoint-up(lg) { // Large desktops and up (e.g., >= 992px)
+    font-size: $font-size-base; // This is 1.25rem (e.g., 20px if 1rem=16px)
+  }
+}
+
+// =============================================================================
 // NAVIGATION STYLING
 // =============================================================================
 
