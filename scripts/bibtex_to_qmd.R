@@ -6,23 +6,61 @@ library(RefManageR)
 library(stringr)
 
 # Paths
-# Try project-root-relative path first, then fallback to script-relative
-bibfile <- file.path('egurtzegi-quarto-website', 'publications', 'references.bib')
-qmdfile <- file.path('egurtzegi-quarto-website', 'publications', 'index.qmd')
-if (!file.exists(bibfile)) {
-  bibfile <- file.path('..', 'publications', 'references.bib')
-  qmdfile <- file.path('..', 'publications', 'index.qmd')
+# Check if we're in the project root or scripts directory
+if (file.exists('publications/references.bib')) {
+  # We're in the project root
+  bibfile <- 'publications/references.bib'
+  qmdfile <- 'publications/index.qmd'
+} else if (file.exists('../publications/references.bib')) {
+  # We're in the scripts directory
+  bibfile <- '../publications/references.bib'
+  qmdfile <- '../publications/index.qmd'
+} else {
+  # Try the original fallback path for compatibility
+  bibfile <- file.path('egurtzegi-quarto-website', 'publications', 'references.bib')
+  qmdfile <- file.path('egurtzegi-quarto-website', 'publications', 'index.qmd')
 }
 
 # Read BibTeX
 bib <- ReadBib(bibfile)
+
+# Helper: Convert external egurtzegi.github.io URLs to internal paths
+convert_url <- function(url) {
+  if (!is.null(url) && url != "") {
+    # Convert egurtzegi.github.io URLs to internal /static/ paths
+    url <- gsub("https://egurtzegi.github.io/papers/", "/static/papers/", url, fixed = TRUE)
+    return(url)
+  }
+  return(url)
+}
+
+# Convert URLs in the BibTeX entries themselves
+for (i in seq_along(bib)) {
+  entry <- bib[[i]]
+  # Convert URL field
+  if (!is.null(entry$url)) {
+    bib[[i]]$url <- convert_url(entry$url)
+  }
+  # Convert supplementary field
+  if (!is.null(entry$supplementary)) {
+    bib[[i]]$supplementary <- convert_url(entry$supplementary)
+  }
+  # Convert preprint field
+  if (!is.null(entry$preprint)) {
+    bib[[i]]$preprint <- convert_url(entry$preprint)
+  }
+}
 
 # Helper: icon link if field exists
 doi_icon <- function(doi) {
   if (!is.null(doi) && doi != "") paste0('[<i class="ai ai-doi ai-lg"></i>](https://doi.org/', doi, ')') else ''
 }
 opena_icon <- function(url) {
-  if (!is.null(url) && url != "") paste0('[<i class="ai ai-open-access ai-lg"></i>](', url, ')') else ''
+  if (!is.null(url) && url != "") {
+    # Convert URLs before creating the icon link
+    url <- convert_url(url)
+    paste0('[<i class="ai ai-open-access ai-lg"></i>](', url, ')')
+  } else ''
 }
 arxiv_icon <- function(arxiv) {
   if (!is.null(arxiv) && arxiv != "") paste0('[<i class="ai ai-arxiv ai-lg"></i>](https://arxiv.org/abs/', arxiv, ')') else ''
