@@ -75,6 +75,18 @@ github_icon <- function(github) {
 osf_icon <- function(osf) {
   if (!is.null(osf) && osf != "") paste0('[<i class="ai ai-osf ai-lg"></i>](', osf, ')') else ''
 }
+supplementary_icon <- function(supplementary) {
+  if (!is.null(supplementary) && supplementary != "") {
+    supplementary <- convert_url(supplementary)
+    paste0('[<i class="ai ai-open-access ai-lg"></i>](', supplementary, ')')
+  } else ''
+}
+preprint_icon <- function(preprint) {
+  if (!is.null(preprint) && preprint != "") {
+    preprint <- convert_url(preprint)
+    paste0('[<i class="ai ai-open-access ai-lg"></i>](', preprint, ')')
+  } else ''
+}
 
 # Group mapping (edit as needed)
 type_map <- list(
@@ -230,18 +242,26 @@ for (type in section_order) {
         if (!is.null(address)) paste0(address, ". ") else ""
       )
 
+      # --- Add note field information ---
+      note_text <- ""
+      if (!is.null(entry$note) && entry$note != "") {
+        note_text <- paste0(" [", entry$note, "]")
+      }
+
       # Icons
       icons <- paste(
         doi_icon(entry$doi),
         opena_icon(entry$url),
         arxiv_icon(entry$arxiv),
         github_icon(entry$github),
-        osf_icon(entry$osf)
+        osf_icon(entry$osf),
+        supplementary_icon(entry$supplementary),
+        preprint_icon(entry$preprint)
       )
       # Clean up trailing commas/spaces
       cite <- str_replace(cite, ", \\.", ".")
       cite <- str_replace(cite, ", $", ". ")
-      qmd <- c(qmd, paste0("- ", cite, icons))
+      qmd <- c(qmd, paste0("- ", cite, note_text, " ", icons))
     }
     qmd <- c(qmd, '')
   }
