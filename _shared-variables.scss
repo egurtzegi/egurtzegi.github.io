@@ -96,42 +96,23 @@ $base-grays: (
 }
 
 // =============================================================================
-// TYPOGRAPHY VARIABLES
+// TYPOGRAPHY VARIABLES (Simplified for Bootstrap RFS)
 // =============================================================================
 
 // Font families using Bootstrap variables
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
-// Base font settings - consistent across themes
-$font-size-base: 1.3125rem !default;
+// Let Bootstrap RFS handle font sizes - only keep essential line height settings
 $line-height-base: 1.65 !default;
-
-// Line height variables using Bootstrap system
 $line-height-sm: 1.25 !default;
 $line-height-xs: 1 !default;
 $line-height-md: 1.4 !default;
-
-// Heading sizes using Bootstrap's heading scale
-$h1-font-size: 2.953rem !default;
-$h2-font-size: 2.297rem !default;
-$h3-font-size: 1.25rem !default;
-$h4-font-size: 1rem !default;
-$h5-font-size: 1rem !default;
-$h6-font-size: 1rem !default;
 
 // Font weights using Bootstrap variables
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $headings-font-weight: 400 !default;
-
-// Display font sizes using Bootstrap's display system
-$display-font-sizes: (
-  1: 2rem,
-  2: 1.8rem,
-  3: 1.5rem,
-  4: 1.3125rem
-) !default;
 
 // =============================================================================
 // SPACING SYSTEM USING BOOTSTRAP'S SPACERS MAP
@@ -213,18 +194,16 @@ $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: height 0.35s ease !default;
 $transition-transform: transform 0.2s ease !default;
 
-// Button variables using Bootstrap system
+// Button variables using Bootstrap system (sizes handled by RFS)
 $btn-padding-y: 0.75rem !default;
 $btn-padding-x: 1.5rem !default;
-$btn-font-size: $font-size-base !default;
 $btn-border-radius: $border-radius !default;
 $btn-focus-width: $focus-ring-width !default;
 $btn-font-weight: $font-weight-normal !default;
 
-// Form variables using Bootstrap form system
+// Form variables using Bootstrap form system (sizes handled by RFS)
 $input-padding-y: 0.75rem !default;
 $input-padding-x: 0.75rem !default;
-$input-font-size: $font-size-base !default;
 $input-border-radius: $border-radius !default;
 $input-focus-width: $focus-ring-width !default;
 $input-border-width: $border-width !default;
@@ -234,10 +213,8 @@ $form-text-margin-top: map-get($spacers, 1) !default;
 
 // Form validation variables
 $form-feedback-margin-top: $form-text-margin-top !default;
-$form-feedback-font-size: 0.875em !default;
 
-// Navigation using Bootstrap navbar variables
-$navbar-brand-font-size: 1.575rem !default;
+// Navigation using Bootstrap navbar variables (sizes handled by RFS)
 $navbar-border-radius: $border-radius !default;
 $navbar-padding-y: map-get($spacers, 2) !default;
 $navbar-padding-x: map-get($spacers, 4) !default;
@@ -250,8 +227,7 @@ $card-spacer-x: map-get($spacers, 4) !default;
 $card-border-radius: $border-radius !default;
 $card-border-width: $border-width !default;
 
-// Badge variables for potential badge components
-$badge-font-size: 0.75em !default;
+// Badge variables for potential badge components (sizes handled by RFS)
 $badge-font-weight: $font-weight-bold !default;
 $badge-padding-y: 0.35em !default;
 $badge-padding-x: 0.65em !default;
@@ -261,10 +237,8 @@ $badge-border-radius: $border-radius !default;
 $link-decoration: none !default;
 $link-hover-decoration: underline !default;
 
-// Component sizing variables using consistent system
+// Component sizing variables (non-font sizes)
 $avatar-size-lg: 200px !default;
-$icon-size-base: 2rem !default;
-$icon-size-sm: 1.5rem !default;
 
 // =============================================================================
 // STANDARDIZED COLOR SHIFT VALUES
@@ -277,13 +251,11 @@ $color-shift-muted: 40% !default;
 $color-shift-contact: 10% !default;
 
 // =============================================================================
-// CUSTOM PROJECT VARIABLES
+// CUSTOM PROJECT VARIABLES (Non-font sizes)
 // =============================================================================
 
-// Component-specific sizes using Bootstrap patterns
+// Component-specific sizes using Bootstrap patterns (non-font sizes only)
 $portrait-size: $avatar-size-lg !default;
-$nav-link-font-size: 1.0106rem !default;
-$network-icon-size: $icon-size-base !default;
 
 // Performance optimization variables
 $will-change-transform-color: transform, color !default;

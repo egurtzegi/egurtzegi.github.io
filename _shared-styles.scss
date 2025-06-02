@@ -5,7 +5,7 @@
 // Theme-specific values are handled via CSS custom properties
 
 // =============================================================================
-// GLOBAL RESPONSIVE STYLES (Revised for direct body font scaling - Mobile First)
+// GLOBAL STYLES (Using Bootstrap RFS)
 // =============================================================================
 
 html {
@@ -19,21 +19,7 @@ body {
   background-color: var(--body-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  // Smallest font size (xs and up, until overridden by larger breakpoints)
-  font-size: 0.9rem; // e.g., 14.4px
-
-  @include media-breakpoint-up(sm) { // Small tablets/phones and up (e.g., >= 576px)
-    font-size: 1rem; // e.g., 16px
-  }
-
-  @include media-breakpoint-up(md) { // Medium desktops/tablets and up (e.g., >= 768px)
-    font-size: 1.1rem; // e.g., 17.6px
-  }
-  
-  @include media-breakpoint-up(lg) { // Large desktops and up (e.g., >= 992px)
-    font-size: $font-size-base; // This is 1.25rem (e.g., 20px if 1rem=16px)
-  }
+  // Font size now handled by Bootstrap RFS - no manual breakpoint scaling
 }
 
 // =============================================================================
@@ -47,7 +33,6 @@ body {
   contain: var(--contain-layout);
   
   .nav-link {
-    font-size: $nav-link-font-size;
     color: var(--navbar-color);
     padding-left: $navbar-nav-link-padding-x;
     padding-right: $navbar-nav-link-padding-x;
@@ -75,7 +60,6 @@ body {
 
 .navbar-brand {
   font-weight: $font-weight-bold;
-  font-size: $navbar-brand-font-size;
   text-decoration: none;
   
   &:hover {
@@ -134,13 +118,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-block-end: map-get($spacers, 5);
   
   h2 {
-    font-size: map-get($display-font-sizes, 2);
     margin-block-end: map-get($spacers, 2);
     color: var(--color-headings);
   }
   
   h3 {
-    font-size: map-get($display-font-sizes, 4);
     line-height: $line-height-sm;
     color: var(--color-headings);
     margin-block-end: map-get($spacers, 1);
@@ -186,7 +168,6 @@ h1, h2, h3, h4, h5, h6 {
       a {
         color: var(--color-primary);
         text-decoration: none;
-        font-size: $network-icon-size;
         transition: $transition-base, $transition-transform;
         will-change: var(--will-change-transform-color);
         display: inline-block;
@@ -294,7 +275,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--input-border-color);
     color: var(--color-body);
     padding: $input-padding-y $input-padding-x;
-    font-size: $input-font-size;
     transition: $transition-base;
     
     &:focus {
@@ -314,7 +294,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-primary {
   border-radius: $btn-border-radius;
   padding: $btn-padding-y $btn-padding-x;
-  font-size: $btn-font-size;
   transition: $transition-base;
   text-decoration: none;
   
