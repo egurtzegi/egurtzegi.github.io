@@ -329,6 +329,79 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // =============================================================================
+// CSS CUSTOM PROPERTIES FOR SHARED VALUES
+// =============================================================================
+
+:root {
+  // Animation system with accessibility support
+  --hover-transform: scale(1.1);
+  --transition-duration: 0.15s;
+  --transition-timing: ease;
+  
+  // Performance optimization with modern CSS features
+  --contain-layout: layout;
+  --contain-style: style;
+  --contain-size: size;
+  --contain-paint: paint;
+  --will-change-transform-color: #{$will-change-transform-color};
+  --will-change-transform: #{$will-change-transform};
+  
+  // Focus ring system
+  --focus-ring-width: #{$focus-ring-width};
+  --focus-ring-blur: #{$focus-ring-blur};
+  --focus-ring-opacity: #{$focus-ring-opacity};
+  --focus-ring-offset: #{$focus-ring-offset};
+  
+  // Modern CSS logical properties support
+  --border-inline-start-width: #{$border-width};
+  --border-inline-end-width: #{$border-width};
+  --border-block-start-width: #{$border-width};
+  --border-block-end-width: #{$border-width};
+}
+
+// =============================================================================
+// ACCESSIBILITY MEDIA QUERIES (SHARED)
+// =============================================================================
+
+// Accessibility: Respect user's motion preferences
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration: 0.01ms;
+    --hover-transform: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Accessibility: High contrast support
+@media (prefers-contrast: high) {
+  :root {
+    --focus-ring-opacity: 1;
+    --focus-ring-width: 3px;
+  }
+}
+
+// Enhanced color scheme support
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+// =============================================================================
 // ACCESSIBILITY ENHANCEMENTS
 // =============================================================================
 
