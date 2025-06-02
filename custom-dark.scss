@@ -37,6 +37,9 @@ $featured-bg-dark: #1e293b !default;
 
 /*-- scss:rules --*/
 
+// Import shared styles that contain all the CSS rules
+@import "shared-styles";
+
 // Apply theme using the shared mixin
 @include theme-custom-properties(
   $primary: $primary,
