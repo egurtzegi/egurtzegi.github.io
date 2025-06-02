@@ -55,6 +55,7 @@ $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
 
 @include theme-custom-properties(
   $primary: $primary,
+  $body-bg: $body-bg,
   $body-color: $body-color,
   $headings-color: $headings-color,
   $text-muted: $text-muted,

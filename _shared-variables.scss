@@ -45,6 +45,7 @@ $base-grays: (
 // Mixin for generating theme-specific CSS custom properties
 @mixin theme-custom-properties(
   $primary,
+  $body-bg,
   $body-color,
   $headings-color,
   $text-muted,
@@ -68,6 +69,7 @@ $base-grays: (
     --color-primary: #{$primary};
     --color-primary-hover: #{if($primary-hover, $primary-hover, shift-color($primary, $color-shift-hover))};
     --color-primary-contact-hover: #{if($primary-contact-hover, $primary-contact-hover, shift-color($primary, $color-shift-contact))};
+    --body-bg: #{$body-bg};
     --color-body: #{$body-color};
     --color-headings: #{$headings-color};
     --color-text-muted: #{$text-muted};

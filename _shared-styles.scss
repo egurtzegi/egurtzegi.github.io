@@ -373,11 +373,19 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-body);
     padding: $input-padding-y $input-padding-x;
     transition: $transition-base;
+    border: $border-width $border-style var(--input-border-color);
+    
+    // Enhanced placeholder styling for dark mode
+    &::placeholder {
+      color: var(--color-text-muted);
+      opacity: 0.7;
+    }
     
     &:focus {
       border-color: var(--input-focus-border-color);
       box-shadow: var(--input-focus-box-shadow);
       outline: none;
+      background-color: var(--input-bg);
     }
     
     &:focus-visible {
@@ -393,12 +401,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: $btn-padding-y $btn-padding-x;
   transition: $transition-base;
   text-decoration: none;
+  background-color: transparent;
+  border: $border-width $border-style var(--color-primary);
+  color: var(--color-primary);
+  font-weight: $btn-font-weight;
   
   &:hover {
+    background-color: var(--color-primary);
+    color: var(--body-bg);
+    border-color: var(--color-primary);
     text-decoration: none;
   }
   
+  &:focus,
   &:focus-visible {
+    background-color: var(--color-primary);
+    color: var(--body-bg);
+    border-color: var(--color-primary);
     box-shadow: var(--btn-focus-box-shadow);
     outline: none;
   }

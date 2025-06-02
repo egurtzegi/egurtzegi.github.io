@@ -7,40 +7,63 @@
 // DARK THEME SPECIFIC COLOR VARIABLES
 // =============================================================================
 
-// Dark theme colors using Bootstrap color system
-$primary: #5c87ff !default;
+// Enhanced dark theme colors using Bootstrap color system
+$white: #f8f8f2 !default;
+$black: #282a36 !default;
+$primary: #6272ff !default;  // More vibrant blue for dark mode
 $body-bg: #282a36 !default;
 $body-color: #f8f8f2 !default;
-$headings-color: #f8f8f2 !default;
+$headings-color: #ffffff !default;  // Pure white for better contrast
 
 // Text color utilities for dark theme using standardized shift values
 $text-muted: shift-color($body-color, -$color-shift-muted) !default;
 
 // Bootstrap color map extensions for dark theme
 $grays: map-merge($base-grays, (
-  "100": #3a3d4c
+  "100": #44475a,  // Lighter background for featured sections
+  "200": #6272a4,  // For borders and dividers
+  "300": #44475a,  // For subtle backgrounds
+  "700": #6272a4,  // For navbar borders
+  "800": #44475a,  // For darker elements
+  "900": #282a36   // Primary dark background
 )) !default;
 
 // Theme colors map using shared base and theme-specific additions
 $theme-colors: map-merge($base-theme-colors, (
   "primary": $primary,
-  "muted": $text-muted
+  "muted": $text-muted,
+  "dark": $black,
+  "light": $white
 )) !default;
 
 // Navigation specific colors for dark theme
-$navbar-dark-bg: map-get($grays, "900") !default;
+$navbar-dark-bg: $black !default;
 $navbar-dark-color: $body-color !default;
 $navbar-dark-hover-color: $primary !default;
 $navbar-dark-active-color: $primary !default;
+$navbar-dark-border-color: map-get($grays, "700") !default;
 
-// Form specific colors for dark theme
+// Enhanced form specific colors for dark theme
 $input-bg: #44475a !default;
-$input-border-color: #5a5e73 !default;
+$input-color: $body-color !default;
+$input-border-color: #6272a4 !default;
 $input-focus-border-color: shift-color($primary, $color-shift-focus) !default;
 $input-focus-box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity) !default;
+$input-placeholder-color: shift-color($body-color, -30%) !default;
+
+// Enhanced button colors for dark theme
+$btn-bg: transparent !default;
+$btn-border-color: $primary !default;
+$btn-color: $primary !default;
+$btn-hover-bg: $primary !default;
+$btn-hover-color: $black !default;
 
 // Focus ring colors for dark theme
 $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
+
+// Enhanced link colors for dark theme
+$link-color: $primary !default;
+$link-hover-color: shift-color($primary, $color-shift-hover) !default;
 
 /*-- scss:rules --*/
 
@@ -53,6 +76,7 @@ $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
 
 @include theme-custom-properties(
   $primary: $primary,
+  $body-bg: $body-bg,
   $body-color: $body-color,
   $headings-color: $headings-color,
   $text-muted: $text-muted,
@@ -60,7 +84,7 @@ $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
   $navbar-color: $navbar-dark-color,
   $navbar-hover-color: $navbar-dark-hover-color,
   $navbar-active-color: $navbar-dark-active-color,
-  $navbar-border-color: map-get($grays, "700"),
+  $navbar-border-color: $navbar-dark-border-color,
   $input-bg: $input-bg,
   $input-border-color: $input-border-color,
   $input-focus-border-color: $input-focus-border-color,
