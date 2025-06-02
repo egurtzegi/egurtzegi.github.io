@@ -76,6 +76,16 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-headings);
 }
 
+// Add responsive font sizes for smaller viewports to prevent wrapping
+@include media-breakpoint-down(sm) { // Targets viewports <576px (Bootstrap's xs breakpoint)
+  h1, .h1 { font-size: rfs-fluid-value(1.8rem); }
+  h2, .h2 { font-size: rfs-fluid-value(1.6rem); }
+  h3, .h3 { font-size: rfs-fluid-value(1.4rem); }
+  h4, .h4 { font-size: rfs-fluid-value(1.2rem); }
+  h5, .h5 { font-size: rfs-fluid-value(1.1rem); }
+  h6, .h6 { font-size: rfs-fluid-value(0.9rem); }
+}
+
 // =============================================================================
 // LAYOUT COMPONENTS
 // =============================================================================
