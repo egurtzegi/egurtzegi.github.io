@@ -7,7 +7,7 @@ page-layout: full
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-lg-4}
 
 ::: {.portrait}
 ![Ander Egurtzegi](./static/img/avatar.jpg)
@@ -33,7 +33,7 @@ page-layout: full
 
 :::
 
-::: {.g-col-12 .g-col-md-8}
+::: {.g-col-12 .g-col-lg-8}
 
 ::: {#biography}
 ## Biography
@@ -57,13 +57,13 @@ If my name rings a bell but my face and work don't match with it, note that ther
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-lg-4}
 
 ## Featured Publications
 
 :::
 
-::: {.g-col-12 .g-col-md-8}
+::: {.g-col-12 .g-col-lg-8}
 
 - **In press.** Metathesis. In Ledgeway et al. (eds.), *The Wiley Blackwell Companion to Diachronic Linguistics*. Wiley-Blackwell. [<i class="ai ai-open-access ai-lg"></i>](./static/files/MetathesisDiaComEgurtzegi.pdf)
 
@@ -93,13 +93,13 @@ If my name rings a bell but my face and work don't match with it, note that ther
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-lg-4}
 
 ## Contact
 
 :::
 
-::: {.g-col-12 .g-col-md-8}
+::: {.g-col-12 .g-col-lg-8}
 
 ```{=html}
 <form class="w-100" action="https://formspree.io/ander.egurtzegi@iker.cnrs.fr" method="POST">
@@ -136,11 +136,11 @@ If my name rings a bell but my face and work don't match with it, note that ther
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-lg-4}
 
 :::
 
-::: {.g-col-12 .g-col-md-8}
+::: {.g-col-12 .g-col-lg-8}
 
 ```{r}
 #| echo: false

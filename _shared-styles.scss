@@ -23,6 +23,47 @@ body {
 }
 
 // =============================================================================
+// ENHANCED TYPOGRAPHY FOR TABLET OPTIMIZATION
+// =============================================================================
+
+// Improved paragraph spacing for tablet readability
+p {
+  margin-bottom: map-get($spacers, 5); // Increased spacing between paragraphs
+  
+  @include media-breakpoint-up(md) { // Tablet and above
+    margin-bottom: map-get($spacers, 6); // Even more spacing on larger screens
+  }
+}
+
+// Enhanced biography section spacing
+#biography {
+  p {
+    margin-bottom: map-get($spacers, 6); // Generous paragraph spacing
+    line-height: $line-height-md;
+    
+    @include media-breakpoint-up(md) {
+      margin-bottom: map-get($spacers, 7);
+      line-height: $line-height-base; // Use SASS variable instead of hardcoded 1.7
+    }
+  }
+}
+
+// Enhanced typography for tablet optimization
+@include media-breakpoint-up(md) { // Tablet and above
+  body {
+    line-height: $line-height-base; // Use SASS variable instead of hardcoded 1.8
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: map-get($spacers, 5); // More space after headings
+  }
+  
+  h2 {
+    margin-bottom: map-get($spacers, 6); // Extra space for section headers
+  }
+}
+
+// =============================================================================
 // NAVIGATION STYLING
 // =============================================================================
 
@@ -90,17 +131,32 @@ h1, h2, h3, h4, h5, h6 {
 // LAYOUT COMPONENTS
 // =============================================================================
 
-// Custom container system using Bootstrap variables
+// Enhanced container system with tablet optimizations
 .container-fluid,
 .page-layout-full .quarto-title-block .quarto-title-banner {
   max-width: $custom-container-max-width;
   margin-inline: auto;
   padding-inline: $custom-container-padding;
+  
+  @include media-breakpoint-up(md) {
+    padding-inline: map-get($spacers, 6); // More generous padding on tablet+
+  }
 }
 
 // Remove title from header since we're using custom layout
 .quarto-title-block {
   display: none;
+}
+
+// Enhanced section spacing with tablet optimizations
+.grid {
+  margin-bottom: map-get($spacers, 8); // Increased section separation
+  gap: map-get($spacers, 6); // Increased default gap
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: map-get($spacers, 9); // Even more separation on tablet+
+    gap: map-get($spacers, 7); // Larger gap on tablet+
+  }
 }
 
 // =============================================================================
@@ -110,11 +166,15 @@ h1, h2, h3, h4, h5, h6 {
 .portrait {
   width: $portrait-size;
   height: $portrait-size;
-  margin-block-end: map-get($spacers, 5);
+  margin-block-end: map-get($spacers, 6);
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
   contain: var(--contain-layout) var(--contain-style);
+  
+  @include media-breakpoint-up(md) {
+    margin-block-end: map-get($spacers, 7);
+  }
   
   img {
     width: 100%;
@@ -125,17 +185,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .portrait-title {
   text-align: center;
-  margin-block-end: map-get($spacers, 5);
+  margin-block-end: map-get($spacers, 6);
+  
+  @include media-breakpoint-up(md) {
+    margin-block-end: map-get($spacers, 8);
+  }
   
   h2 {
-    margin-block-end: map-get($spacers, 2);
+    margin-block-end: map-get($spacers, 3);
     color: var(--color-headings);
   }
   
   h3 {
-    line-height: $line-height-sm;
+    line-height: $line-height-md;
     color: var(--color-headings);
-    margin-block-end: map-get($spacers, 1);
+    margin-block-end: map-get($spacers, 2);
     
     a {
       color: var(--color-primary);
@@ -202,12 +266,27 @@ h1, h2, h3, h4, h5, h6 {
 // CONTENT SECTIONS
 // =============================================================================
 
-// Featured Publications section using custom properties
+// Enhanced featured publications section with better tablet spacing
 .featured-publications-section {
   background-color: var(--featured-bg);
-  padding-block: map-get($spacers, 7);
-  margin-block: map-get($spacers, 6);
+  padding-block: map-get($spacers, 8); // Increased padding
+  margin-block: map-get($spacers, 8);  // Increased margin
   contain: var(--contain-style);
+  
+  @include media-breakpoint-up(md) {
+    padding-block: map-get($spacers, 9);
+    margin-block: map-get($spacers, 9);
+  }
+  
+  ul {
+    li {
+      margin-bottom: map-get($spacers, 6); // More space between publications
+      
+      @include media-breakpoint-up(md) {
+        margin-bottom: map-get($spacers, 7);
+      }
+    }
+  }
 }
 
 // =============================================================================
@@ -215,7 +294,11 @@ h1, h2, h3, h4, h5, h6 {
 // =============================================================================
 
 .contact-widget {
-  margin-block-start: map-get($spacers, 6);
+  margin-block-start: map-get($spacers, 8);
+  
+  @include media-breakpoint-up(md) {
+    margin-block-start: map-get($spacers, 9);
+  }
   
   .grid {
     align-items: flex-start;
@@ -223,13 +306,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-info {
-  margin-block-start: map-get($spacers, 4);
+  margin-block-start: map-get($spacers, 6);
   
   p {
     display: flex;
     align-items: center;
-    margin-block-end: map-get($spacers, 4);
+    margin-block-end: map-get($spacers, 5);
     line-height: $line-height-md;
+    
+    @include media-breakpoint-up(md) {
+      margin-block-end: map-get($spacers, 6);
+    }
   }
   
   i {

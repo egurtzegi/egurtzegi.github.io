@@ -103,11 +103,11 @@ $base-grays: (
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
-// Let Bootstrap RFS handle font sizes - only keep essential line height settings
-$line-height-base: 1.65 !default;
+// Enhanced line heights for better tablet readability
+$line-height-base: 1.8 !default;  // Increased from 1.65
 $line-height-sm: 1.25 !default;
 $line-height-xs: 1 !default;
-$line-height-md: 1.4 !default;
+$line-height-md: 1.6 !default;    // Increased from 1.4
 
 // Font weights using Bootstrap variables
 $font-weight-normal: 400 !default;
@@ -121,7 +121,7 @@ $headings-font-weight: 400 !default;
 // Base spacer
 $spacer: 1rem !default;
 
-// Bootstrap spacers map - replaces custom spacer variables
+// Enhanced spacers map with larger values for better tablet spacing
 $spacers: (
   0: 0,
   1: $spacer * 0.25,    // 0.25rem
@@ -130,7 +130,10 @@ $spacers: (
   4: $spacer,           // 1rem
   5: $spacer * 1.25,    // 1.25rem
   6: $spacer * 2,       // 2rem
-  7: $spacer * 3        // 3rem
+  7: $spacer * 3,       // 3rem
+  8: $spacer * 4,       // 4rem - new larger spacing
+  9: $spacer * 5,       // 5rem - new larger spacing
+  10: $spacer * 6       // 6rem - new larger spacing
 ) !default;
 
 // =============================================================================
