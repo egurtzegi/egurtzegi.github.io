@@ -1,9 +1,7 @@
 ---
 title: "Ander Egurtzegi"
-page-layout: full
+page-layout: custom
 ---
-
-::: {.container-fluid}
 
 ::: {.grid}
 
@@ -148,8 +146,6 @@ library(leaflet)
 
 leaflet() %>% addTiles() %>% addMarkers(lng = -1.470492, lat = 43.489981, popup = "CNRS-IKER")
 ```
-
-:::
 
 :::
 
