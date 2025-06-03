@@ -131,6 +131,29 @@ h1, h2, h3, h4, h5, h6 {
 // LAYOUT COMPONENTS
 // =============================================================================
 
+// Custom layout centering for homepage
+.page-layout-custom {
+  max-width: $custom-container-max-width;
+  margin-inline: auto;
+  padding-inline: $custom-container-padding;
+  
+  @include media-breakpoint-up(sm) {
+    padding-inline: map-get($spacers, 4);
+  }
+  
+  @include media-breakpoint-up(md) {
+    padding-inline: map-get($spacers, 6);
+  }
+  
+  @include media-breakpoint-up(lg) {
+    padding-inline: map-get($spacers, 7);
+  }
+  
+  @include media-breakpoint-up(xl) {
+    padding-inline: map-get($spacers, 8);
+  }
+}
+
 // Enhanced container system with tablet optimizations
 .container-fluid,
 .page-layout-full .quarto-title-block .quarto-title-banner {
