@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Apply RFS to all headings for smooth mobile scaling
+// Using RFS with increased font sizes to match the old Hugo site appearance
 h1, .h1 { @include rfs($h1-font-size); }
 h2, .h2 { @include rfs($h2-font-size); }
 h3, .h3 { @include rfs($h3-font-size); }

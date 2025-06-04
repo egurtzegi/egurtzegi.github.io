@@ -111,9 +111,9 @@ $font-size-sm: 0.875rem !default; // 14px minimum readable size
 $font-size-lg: 1.125rem !default; // 18px for larger text
 
 // Mobile-optimized heading scale (smaller for 320px screens)
-$h1-font-size: 1.75rem !default; // 28px on mobile, scales up with RFS
-$h2-font-size: 1.5rem !default;  // 24px on mobile
-$h3-font-size: 1.25rem !default; // 20px on mobile  
+$h1-font-size: 2.25rem !default; // 28px on mobile, scales up with RFS
+$h2-font-size: 2.25rem !default;  // 36px to match Hugo's h1
+$h3-font-size: 1.35rem !default; // 20px on mobile  
 $h4-font-size: 1.125rem !default; // 18px on mobile
 $h5-font-size: 1rem !default;    // 16px on mobile
 $h6-font-size: 0.875rem !default; // 14px on mobile
@@ -287,4 +287,4 @@ $will-change-transform: transform !default;
 $icon-size-sm: 1rem !default;     // 16px for small icons
 $icon-size-base: 1.25rem !default; // 20px for standard icons
 $icon-size-lg: 1.5rem !default;    // 24px for large touch targets
-$icon-size-xl: 2rem !default;      // 32px for prominent icons 
+$icon-size-xl: 2rem !default;      // 32px for prominent icons
