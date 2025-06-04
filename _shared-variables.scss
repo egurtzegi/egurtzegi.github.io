@@ -98,58 +98,106 @@ $base-grays: (
 }
 
 // =============================================================================
-// TYPOGRAPHY VARIABLES (Simplified for Bootstrap RFS)
+// MOBILE-FIRST TYPOGRAPHY VARIABLES
 // =============================================================================
 
 // Font families using Bootstrap variables
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Montserrat", $font-family-sans-serif !default;
 
-// Enhanced line heights for better tablet readability
-$line-height-base: 1.8 !default;  // Increased from 1.65
+// Mobile-first base typography (minimum 16px for accessibility)
+$font-size-base: 1rem !default; // 16px base for mobile readability
+$font-size-sm: 0.875rem !default; // 14px minimum readable size
+$font-size-lg: 1.125rem !default; // 18px for larger text
+
+// Mobile-optimized heading scale (smaller for 320px screens)
+$h1-font-size: 1.75rem !default; // 28px on mobile, scales up with RFS
+$h2-font-size: 1.5rem !default;  // 24px on mobile
+$h3-font-size: 1.25rem !default; // 20px on mobile  
+$h4-font-size: 1.125rem !default; // 18px on mobile
+$h5-font-size: 1rem !default;    // 16px on mobile
+$h6-font-size: 0.875rem !default; // 14px on mobile
+
+// Enhanced line heights optimized for mobile reading
+$line-height-base: 1.5 !default;  // Optimized for mobile readability
 $line-height-sm: 1.25 !default;
-$line-height-xs: 1 !default;
-$line-height-md: 1.6 !default;    // Increased from 1.4
+$line-height-xs: 1.2 !default;    // Tighter for small elements
+$line-height-md: 1.4 !default;    // Medium for various content
+$line-height-lg: 1.6 !default;    // Looser for better readability
 
 // Font weights using Bootstrap variables
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
-$headings-font-weight: 400 !default;
+$headings-font-weight: 600 !default; // Slightly bolder for mobile
+
+// Enhanced RFS configuration for aggressive mobile scaling
+$rfs-base-value: 1rem !default;    // 16px base
+$rfs-unit: rem !default;
+$rfs-breakpoint: 576px !default;   // Start scaling at small breakpoint
+$rfs-factor: 5 !default;           // More aggressive scaling for mobile
+$rfs-breakpoint-unit: px !default;
+$rfs-minimum-font-size: 16px !default; // Never go below 16px
 
 // =============================================================================
-// SPACING SYSTEM USING BOOTSTRAP'S SPACERS MAP
+// MOBILE-FIRST SPACING SYSTEM
 // =============================================================================
 
-// Base spacer
-$spacer: 1rem !default;
+// Mobile-optimized base spacer
+$spacer: 1rem !default; // Keep standard rem base
 
-// Enhanced spacers map with larger values for better tablet spacing
+// Mobile-first spacing with reduced values for small screens
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,    // 0.25rem
-  2: $spacer * 0.5,     // 0.5rem
-  3: $spacer * 0.75,    // 0.75rem
-  4: $spacer,           // 1rem
-  5: $spacer * 1.25,    // 1.25rem
-  6: $spacer * 2,       // 2rem
-  7: $spacer * 3,       // 3rem
-  8: $spacer * 4,       // 4rem - new larger spacing
-  9: $spacer * 5,       // 5rem - new larger spacing
-  10: $spacer * 6       // 6rem - new larger spacing
+  1: $spacer * 0.25,    // 0.25rem (4px) - minimal spacing
+  2: $spacer * 0.5,     // 0.5rem (8px) - small spacing
+  3: $spacer * 0.75,    // 0.75rem (12px) - medium spacing
+  4: $spacer,           // 1rem (16px) - standard spacing
+  5: $spacer * 1.25,    // 1.25rem (20px) - large spacing
+  6: $spacer * 1.5,     // 1.5rem (24px) - extra large spacing
+  7: $spacer * 2,       // 2rem (32px) - section spacing
+  8: $spacer * 2.5,     // 2.5rem (40px) - large section spacing
+  9: $spacer * 3,       // 3rem (48px) - generous spacing for tablet+
+  10: $spacer * 4       // 4rem (64px) - maximum spacing for desktop
 ) !default;
+
+// =============================================================================
+// MOBILE-FIRST TOUCH TARGET SYSTEM
+// =============================================================================
+
+// Minimum touch target size (WCAG accessibility requirement)
+$min-touch-target: 44px !default;
+
+// Button and input sizing optimized for mobile touch
+$btn-padding-y: 0.75rem !default;        // Ensure 44px minimum height
+$btn-padding-x: 1rem !default;           // Sufficient horizontal padding
+$btn-padding-y-sm: 0.5rem !default;      // Smaller buttons still touch-friendly
+$btn-padding-x-sm: 0.75rem !default;
+$btn-padding-y-lg: 1rem !default;        // Large buttons for primary actions
+$btn-padding-x-lg: 1.25rem !default;
+
+// Input controls optimized for mobile
+$input-padding-y: 0.75rem !default;      // Touch-friendly input height
+$input-padding-x: 1rem !default;         // Sufficient padding for thumb typing
+$input-padding-y-sm: 0.5rem !default;
+$input-padding-x-sm: 0.75rem !default;
+$input-padding-y-lg: 1rem !default;
+$input-padding-x-lg: 1.25rem !default;
+
+// Form group spacing for mobile
+$form-group-margin-bottom: map-get($spacers, 4) !default; // 16px between form elements
 
 // =============================================================================
 // RESPONSIVE BREAKPOINTS AND CONTAINERS
 // =============================================================================
 
-// Bootstrap breakpoints
+// Bootstrap breakpoints (keeping standard)
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  xs: 0,        // Mobile first: 0-575px
+  sm: 576px,    // Small tablets: 576px+
+  md: 768px,    // Tablets: 768px+
+  lg: 992px,    // Desktops: 992px+
+  xl: 1200px,   // Large desktops: 1200px+
+  xxl: 1400px   // Extra large: 1400px+
 ) !default;
 
 // Container using Bootstrap container system
@@ -157,111 +205,86 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px,
+  xl: 1140px,  // Slightly reduced for better reading experience
   xxl: 1320px
 ) !default;
 
-// Container padding
-$container-padding-x: map-get($spacers, 3) !default;
+// Mobile-first container padding
+$container-padding-x: map-get($spacers, 3) !default; // 12px on mobile
 
-// Grid system
-$grid-gutter-width: map-get($spacers, 4) !default;
+// Grid system optimized for mobile
+$grid-gutter-width: map-get($spacers, 4) !default; // 16px base gutter
 
-// Custom container settings for this project
+// Custom container settings for this project with mobile optimization
 $custom-container-max-width: map-get($container-max-widths, xl) !default;
-$custom-container-padding: map-get($spacers, 4) !default;
+$custom-container-padding: map-get($spacers, 3) !default; // Start with smaller padding on mobile
 
 // =============================================================================
-// COMPONENT VARIABLES USING BOOTSTRAP SYSTEM
+// MOBILE-OPTIMIZED COMPONENT VARIABLES
 // =============================================================================
 
 // Border variables using Bootstrap system
 $border-width: 1px !default;
 $border-style: solid !default;
-$border-radius: 0 !default;
-$border-radius-sm: 0 !default;
-$border-radius-lg: 0 !default;
+$border-radius: 0.375rem !default;      // Slightly larger for mobile touch
+$border-radius-sm: 0.25rem !default;
+$border-radius-lg: 0.5rem !default;
 
-// Focus ring variables using Bootstrap 5 system
+// Enhanced focus ring for mobile accessibility
 $focus-ring-width: 0.25rem !default;
 $focus-ring-opacity: 0.25 !default;
 $focus-ring-blur: 0 !default;
 $focus-ring-offset: 2px !default;
 
-// Enhanced focus system for better consistency
+// Enhanced focus system for better mobile interaction
 $focus-ring-box-shadow: 0 0 0 $focus-ring-width !default;
 $btn-focus-box-shadow: $focus-ring-box-shadow !default;
 $input-btn-focus-box-shadow: $focus-ring-box-shadow !default;
+$btn-focus-width: $focus-ring-width !default;
 
-// Transition variables using Bootstrap system
-$transition-base: all 0.15s ease-in-out !default;
+// Transition variables optimized for mobile performance
+$transition-base: all 0.2s ease-in-out !default;     // Slightly longer for mobile
 $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: height 0.35s ease !default;
 $transition-transform: transform 0.2s ease !default;
 
-// Button variables using Bootstrap system (sizes handled by RFS)
-$btn-padding-y: 0.75rem !default;
-$btn-padding-x: 1.5rem !default;
-$btn-border-radius: $border-radius !default;
-$btn-focus-width: $focus-ring-width !default;
-$btn-font-weight: $font-weight-normal !default;
-
-// Form variables using Bootstrap form system (sizes handled by RFS)
-$input-padding-y: 0.75rem !default;
-$input-padding-x: 0.75rem !default;
-$input-border-radius: $border-radius !default;
-$input-focus-width: $focus-ring-width !default;
-$input-border-width: $border-width !default;
-$form-group-margin-bottom: map-get($spacers, 4) !default;
-$form-label-margin-bottom: map-get($spacers, 2) !default;
-$form-text-margin-top: map-get($spacers, 1) !default;
-
-// Form validation variables
-$form-feedback-margin-top: $form-text-margin-top !default;
-
-// Navigation using Bootstrap navbar variables (sizes handled by RFS)
-$navbar-border-radius: $border-radius !default;
-$navbar-padding-y: map-get($spacers, 2) !default;
-$navbar-padding-x: map-get($spacers, 4) !default;
-$navbar-nav-link-padding-x: map-get($spacers, 2) !default;
-$navbar-brand-padding-y: map-get($spacers, 2) !default;
-
-// Card variables for potential card components
-$card-spacer-y: map-get($spacers, 4) !default;
-$card-spacer-x: map-get($spacers, 4) !default;
-$card-border-radius: $border-radius !default;
-$card-border-width: $border-width !default;
-
-// Badge variables for potential badge components (sizes handled by RFS)
-$badge-font-weight: $font-weight-bold !default;
-$badge-padding-y: 0.35em !default;
-$badge-padding-x: 0.65em !default;
-$badge-border-radius: $border-radius !default;
-
-// Link variables
-$link-decoration: none !default;
-$link-hover-decoration: underline !default;
-
-// Component sizing variables (non-font sizes)
-$avatar-size-lg: 200px !default;
-
 // =============================================================================
-// STANDARDIZED COLOR SHIFT VALUES
+// MOBILE NAVIGATION VARIABLES
 // =============================================================================
 
-// Consistent color shift percentages for theming
+// Navbar sizing optimized for mobile touch
+$navbar-padding-y: map-get($spacers, 3) !default;    // 12px vertical padding
+$navbar-padding-x: map-get($spacers, 3) !default;    // 12px horizontal padding
+$navbar-nav-link-padding-x: map-get($spacers, 3) !default; // Touch-friendly link padding
+
+// =============================================================================
+// MOBILE TYPOGRAPHY HIERARCHY
+// =============================================================================
+
+// Portrait sizing for mobile optimization
+$portrait-size: 150px !default; // Smaller on mobile, will scale up
+
+// Color shift values for hover effects (optimized for mobile)
 $color-shift-hover: 15% !default;
-$color-shift-focus: 25% !default;
-$color-shift-muted: 40% !default;
-$color-shift-contact: 10% !default;
+$color-shift-focus: 10% !default;
+$color-shift-contact: 20% !default;
+$color-shift-muted: 60% !default;
 
-// =============================================================================
-// CUSTOM PROJECT VARIABLES (Non-font sizes)
-// =============================================================================
+// CSS containment optimizations for mobile performance
+$contain-layout: layout !default;
+$contain-style: style !default;
 
-// Component-specific sizes using Bootstrap patterns (non-font sizes only)
-$portrait-size: $avatar-size-lg !default;
-
-// Performance optimization variables
+// Transform and animation optimizations for mobile
+$hover-transform: scale(1.05) !default;  // Subtle scale for mobile
 $will-change-transform-color: transform, color !default;
-$will-change-transform: transform !default; 
+$will-change-transform: transform !default;
+
+// =============================================================================
+// MOBILE ICON AND MEDIA VARIABLES
+// =============================================================================
+
+// Icon sizing optimized for mobile touch
+$icon-size-sm: 1rem !default;     // 16px for small icons
+$icon-size-base: 1.25rem !default; // 20px for standard icons
+$icon-size-lg: 1.5rem !default;    // 24px for large touch targets
+$icon-size-xl: 2rem !default;      // 32px for prominent icons 

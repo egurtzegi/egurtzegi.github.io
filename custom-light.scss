@@ -39,6 +39,7 @@ $navbar-light-active-color: $primary !default;
 $input-bg: $white !default;
 $input-border-color: #ced4da !default;
 $input-focus-border-color: shift-color($primary, $color-shift-focus) !default;
+$input-focus-width: $focus-ring-width !default;
 $input-focus-box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity) !default;
 
 // Focus ring colors for light theme

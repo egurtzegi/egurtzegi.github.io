@@ -5,80 +5,125 @@
 // Theme-specific values are handled via CSS custom properties
 
 // =============================================================================
-// GLOBAL STYLES (Using Bootstrap RFS)
+// MOBILE-FIRST GLOBAL STYLES
 // =============================================================================
 
 html {
   font-size: 100%; // Keep root font size consistent (browser default, usually 16px)
+  -webkit-text-size-adjust: 100%; // Prevent iOS zoom on orientation change
+  -ms-text-size-adjust: 100%;
 }
 
 body {
   font-family: $font-family-sans-serif;
+  @include rfs($font-size-base); // Mobile-first responsive font sizing
   line-height: $line-height-base;
   color: var(--color-body);
   background-color: var(--body-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // Font size now handled by Bootstrap RFS - no manual breakpoint scaling
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Prevent horizontal scroll on mobile
 }
 
 // =============================================================================
-// ENHANCED TYPOGRAPHY FOR TABLET OPTIMIZATION
+// MOBILE-FIRST TYPOGRAPHY SYSTEM
 // =============================================================================
 
-// Improved paragraph spacing for tablet readability
-p {
-  margin-bottom: map-get($spacers, 5); // Increased spacing between paragraphs
+// Responsive heading system with mobile-first scaling
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  color: var(--color-headings);
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: map-get($spacers, 4); // 16px base margin
   
-  @include media-breakpoint-up(md) { // Tablet and above
-    margin-bottom: map-get($spacers, 6); // Even more spacing on larger screens
+  // Ensure headings break properly on mobile
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+// Apply RFS to all headings for smooth mobile scaling
+h1, .h1 { @include rfs($h1-font-size); }
+h2, .h2 { @include rfs($h2-font-size); }
+h3, .h3 { @include rfs($h3-font-size); }
+h4, .h4 { @include rfs($h4-font-size); }
+h5, .h5 { @include rfs($h5-font-size); }
+h6, .h6 { @include rfs($h6-font-size); }
+
+// Section headings get extra spacing on larger screens
+h2 {
+  margin-bottom: map-get($spacers, 5); // Larger margin for section headers
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: map-get($spacers, 6);
   }
 }
 
-// Enhanced biography section spacing
+// Optimized paragraph spacing for mobile readability
+p {
+  margin-top: 0;
+  margin-bottom: map-get($spacers, 4); // 16px base spacing
+  line-height: $line-height-base;
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: map-get($spacers, 5); // Larger spacing on tablet+
+    line-height: $line-height-lg; // More generous line height
+  }
+}
+
+// Enhanced biography section for mobile
 #biography {
   p {
-    margin-bottom: map-get($spacers, 6); // Generous paragraph spacing
+    margin-bottom: map-get($spacers, 5);
     line-height: $line-height-md;
     
     @include media-breakpoint-up(md) {
-      margin-bottom: map-get($spacers, 7);
-      line-height: $line-height-base; // Use SASS variable instead of hardcoded 1.7
+      margin-bottom: map-get($spacers, 6);
+      line-height: $line-height-lg;
     }
   }
 }
 
-// Enhanced typography for tablet optimization
-@include media-breakpoint-up(md) { // Tablet and above
-  body {
-    line-height: $line-height-base; // Use SASS variable instead of hardcoded 1.8
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: map-get($spacers, 5); // More space after headings
-  }
-  
-  h2 {
-    margin-bottom: map-get($spacers, 6); // Extra space for section headers
-  }
-}
-
 // =============================================================================
-// NAVIGATION STYLING
+// MOBILE-FIRST NAVIGATION
 // =============================================================================
 
 .navbar {
   background-color: var(--navbar-bg);
   border-bottom: $border-width $border-style var(--navbar-border-color);
   padding: $navbar-padding-y $navbar-padding-x;
-  contain: var(--contain-layout);
+  
+  // Mobile-first navbar improvements
+  min-height: $min-touch-target; // Ensure touch-friendly height
+  
+  .navbar-nav {
+    // Ensure proper spacing on mobile
+    .nav-item {
+      margin-bottom: map-get($spacers, 2);
+      
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+  }
   
   .nav-link {
     color: var(--navbar-color);
-    padding-left: $navbar-nav-link-padding-x;
-    padding-right: $navbar-nav-link-padding-x;
+    padding: map-get($spacers, 3) $navbar-nav-link-padding-x;
     transition: $transition-base;
     text-decoration: none;
+    
+    // Ensure touch-friendly target size
+    min-height: $min-touch-target;
+    display: flex;
+    align-items: center;
+    
+    // Mobile-optimized font size
+    @include rfs($font-size-base);
     
     &.active,
     &[aria-current="page"] {
@@ -86,14 +131,15 @@ p {
       color: var(--navbar-active-color);
     }
     
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--navbar-hover-color);
       text-decoration: none;
     }
     
     &:focus-visible {
-      outline: var(--focus-ring-width) solid var(--focus-ring-color);
-      outline-offset: var(--focus-ring-offset);
+      outline: $focus-ring-width solid var(--focus-ring-color);
+      outline-offset: $focus-ring-offset;
       border-radius: $border-radius-sm;
     }
   }
@@ -102,37 +148,59 @@ p {
 .navbar-brand {
   font-weight: $font-weight-bold;
   text-decoration: none;
+  @include rfs($h4-font-size); // Responsive brand sizing
   
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 }
 
-// =============================================================================
-// TYPOGRAPHY STYLING
-// =============================================================================
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $headings-font-weight;
-  color: var(--color-headings);
-}
-
-// Add responsive font sizes for smaller viewports to prevent wrapping
-@include media-breakpoint-down(sm) { // Targets viewports <576px (Bootstrap's xs breakpoint)
-  h1, .h1 { font-size: rfs-fluid-value(1.8rem); }
-  h2, .h2 { font-size: rfs-fluid-value(1.6rem); }
-  h3, .h3 { font-size: rfs-fluid-value(1.4rem); }
-  h4, .h4 { font-size: rfs-fluid-value(1.2rem); }
-  h5, .h5 { font-size: rfs-fluid-value(1.1rem); }
-  h6, .h6 { font-size: rfs-fluid-value(0.9rem); }
+// Mobile navbar toggle improvements
+.navbar-toggler {
+  padding: map-get($spacers, 2) map-get($spacers, 3);
+  font-size: $icon-size-lg;
+  border: none;
+  border-radius: $border-radius;
+  
+  &:focus {
+    outline: $focus-ring-width solid var(--focus-ring-color);
+    outline-offset: $focus-ring-offset;
+    box-shadow: none;
+  }
 }
 
 // =============================================================================
-// LAYOUT COMPONENTS
+// MOBILE-FIRST LAYOUT COMPONENTS
 // =============================================================================
 
-// Custom layout centering for homepage
+// Custom layout with mobile-first responsive padding
 .page-layout-custom {
+  max-width: $custom-container-max-width;
+  margin-inline: auto;
+  padding-inline: $custom-container-padding; // Start with 12px on mobile
+  
+  // Progressive padding increases
+  @include media-breakpoint-up(sm) {
+    padding-inline: map-get($spacers, 4); // 16px
+  }
+  
+  @include media-breakpoint-up(md) {
+    padding-inline: map-get($spacers, 5); // 20px
+  }
+  
+  @include media-breakpoint-up(lg) {
+    padding-inline: map-get($spacers, 6); // 24px
+  }
+  
+  @include media-breakpoint-up(xl) {
+    padding-inline: map-get($spacers, 7); // 32px
+  }
+}
+
+// Enhanced container system with mobile optimization
+.container-fluid,
+.page-layout-full .quarto-title-block .quarto-title-banner {
   max-width: $custom-container-max-width;
   margin-inline: auto;
   padding-inline: $custom-container-padding;
@@ -142,27 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   @include media-breakpoint-up(md) {
-    padding-inline: map-get($spacers, 6);
-  }
-  
-  @include media-breakpoint-up(lg) {
-    padding-inline: map-get($spacers, 7);
-  }
-  
-  @include media-breakpoint-up(xl) {
-    padding-inline: map-get($spacers, 8);
-  }
-}
-
-// Enhanced container system with tablet optimizations
-.container-fluid,
-.page-layout-full .quarto-title-block .quarto-title-banner {
-  max-width: $custom-container-max-width;
-  margin-inline: auto;
-  padding-inline: $custom-container-padding;
-  
-  @include media-breakpoint-up(md) {
-    padding-inline: map-get($spacers, 6); // More generous padding on tablet+
+    padding-inline: map-get($spacers, 5);
   }
 }
 
@@ -171,32 +219,49 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-// Enhanced section spacing with tablet optimizations
+// Mobile-first section spacing
 .grid {
-  margin-bottom: map-get($spacers, 8); // Increased section separation
-  gap: map-get($spacers, 6); // Increased default gap
+  margin-bottom: map-get($spacers, 6); // 24px on mobile
+  gap: map-get($spacers, 4); // 16px gap on mobile
+  
+  @include media-breakpoint-up(sm) {
+    margin-bottom: map-get($spacers, 7); // 32px
+    gap: map-get($spacers, 5); // 20px
+  }
   
   @include media-breakpoint-up(md) {
-    margin-bottom: map-get($spacers, 9); // Even more separation on tablet+
-    gap: map-get($spacers, 7); // Larger gap on tablet+
+    margin-bottom: map-get($spacers, 8); // 40px
+    gap: map-get($spacers, 6); // 24px
+  }
+  
+  @include media-breakpoint-up(lg) {
+    margin-bottom: map-get($spacers, 9); // 48px
+    gap: map-get($spacers, 7); // 32px
   }
 }
 
 // =============================================================================
-// PORTRAIT AND PROFILE STYLING
+// MOBILE-FIRST PORTRAIT AND PROFILE
 // =============================================================================
 
 .portrait {
-  width: $portrait-size;
+  width: $portrait-size; // 150px base for mobile
   height: $portrait-size;
-  margin-block-end: map-get($spacers, 6);
+  margin-block-end: map-get($spacers, 5);
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
-  contain: var(--contain-layout) var(--contain-style);
+  
+  // Scale up portrait on larger screens
+  @include media-breakpoint-up(sm) {
+    width: calc($portrait-size * 1.2); // 180px
+    height: calc($portrait-size * 1.2);
+  }
   
   @include media-breakpoint-up(md) {
-    margin-block-end: map-get($spacers, 7);
+    width: calc($portrait-size * 1.33); // 200px
+    height: calc($portrait-size * 1.33);
+    margin-block-end: map-get($spacers, 6);
   }
   
   img {
@@ -208,35 +273,42 @@ h1, h2, h3, h4, h5, h6 {
 
 .portrait-title {
   text-align: center;
-  margin-block-end: map-get($spacers, 6);
+  margin-block-end: map-get($spacers, 5);
   
   @include media-breakpoint-up(md) {
-    margin-block-end: map-get($spacers, 8);
+    margin-block-end: map-get($spacers, 6);
   }
   
   h2 {
     margin-block-end: map-get($spacers, 3);
     color: var(--color-headings);
+    @include rfs(1.5rem); // Responsive name sizing
+    
+    @include media-breakpoint-up(md) {
+      @include rfs(1.75rem); // Larger on tablet+
+    }
   }
   
   h3 {
     line-height: $line-height-md;
     color: var(--color-headings);
     margin-block-end: map-get($spacers, 2);
+    @include rfs(1.125rem); // Responsive affiliation sizing
     
     a {
       color: var(--color-primary);
-      text-decoration: $link-decoration;
+      text-decoration: none;
       transition: $transition-base;
       
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--color-primary-hover);
-        text-decoration: $link-hover-decoration;
+        text-decoration: underline;
       }
       
       &:focus-visible {
-        outline: var(--focus-ring-width) solid var(--focus-ring-color);
-        outline-offset: var(--focus-ring-offset);
+        outline: $focus-ring-width solid var(--focus-ring-color);
+        outline-offset: $focus-ring-offset;
         border-radius: $border-radius-sm;
       }
     }
@@ -244,205 +316,433 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // =============================================================================
-// NETWORK ICONS STYLING
+// MOBILE-FIRST NETWORK ICONS
 // =============================================================================
 
 .network-icon {
   text-align: center;
-  margin-block-end: map-get($spacers, 5);
+  margin-block-end: map-get($spacers, 4);
   
   ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; // Allow wrapping on small screens
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: map-get($spacers, 3);
+    gap: map-get($spacers, 3); // 12px gap on mobile
     
-    li {
-      margin-block-end: map-get($spacers, 2);
+    @include media-breakpoint-up(sm) {
+      gap: map-get($spacers, 4); // 16px gap on tablet+
+    }
+  }
+  
+  li {
+    margin-block-end: map-get($spacers, 2);
+    
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: $transition-base, $transition-transform;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       
-      a {
-        color: var(--color-primary);
+      // Touch-friendly icon sizing
+      font-size: $icon-size-lg; // 24px for good touch targets
+      min-width: $min-touch-target;
+      min-height: $min-touch-target;
+      border-radius: $border-radius;
+      
+      @include media-breakpoint-up(md) {
+        font-size: $icon-size-xl; // 32px on larger screens
+      }
+      
+      &:hover,
+      &:focus {
+        color: var(--color-primary-hover);
+        transform: $hover-transform;
         text-decoration: none;
-        transition: $transition-base, $transition-transform;
-        will-change: var(--will-change-transform-color);
-        display: inline-block;
-        
-        &:hover {
-          color: var(--color-primary-hover);
-          transform: var(--hover-transform);
-          text-decoration: none;
-        }
-        
-        &:focus-visible {
-          outline: var(--focus-ring-width) solid var(--focus-ring-color);
-          outline-offset: var(--focus-ring-offset);
-          border-radius: $border-radius-sm;
-        }
+      }
+      
+      &:focus-visible {
+        outline: $focus-ring-width solid var(--focus-ring-color);
+        outline-offset: $focus-ring-offset;
       }
     }
   }
 }
 
 // =============================================================================
-// CONTENT SECTIONS
+// MOBILE-FIRST CONTENT SECTIONS
 // =============================================================================
 
-// Enhanced featured publications section with better tablet spacing
+// Featured publications with mobile optimization
 .featured-publications-section {
   background-color: var(--featured-bg);
-  padding-block: map-get($spacers, 8); // Increased padding
-  margin-block: map-get($spacers, 8);  // Increased margin
-  contain: var(--contain-style);
+  padding-block: map-get($spacers, 6); // 24px on mobile
+  margin-block: map-get($spacers, 6);
+  border-radius: $border-radius-lg;
+  
+  @include media-breakpoint-up(sm) {
+    padding-block: map-get($spacers, 7); // 32px
+    margin-block: map-get($spacers, 7);
+  }
   
   @include media-breakpoint-up(md) {
-    padding-block: map-get($spacers, 9);
-    margin-block: map-get($spacers, 9);
+    padding-block: map-get($spacers, 8); // 40px
+    margin-block: map-get($spacers, 8);
+  }
+  
+  h2 {
+    margin-bottom: map-get($spacers, 5);
+    text-align: center;
   }
   
   ul {
     li {
-      margin-bottom: map-get($spacers, 6); // More space between publications
+      margin-bottom: map-get($spacers, 5); // Good spacing between publications
       
       @include media-breakpoint-up(md) {
-        margin-bottom: map-get($spacers, 7);
+        margin-bottom: map-get($spacers, 6);
+      }
+      
+      // Publication title styling
+      strong {
+        display: block;
+        margin-bottom: map-get($spacers, 2);
+        @include rfs($font-size-base);
+        line-height: $line-height-md;
+      }
+      
+      // Publication meta info
+      em {
+        display: block;
+        margin-bottom: map-get($spacers, 2);
+        color: var(--color-text-muted);
+        @include rfs($font-size-sm);
+      }
+      
+      // Publication links
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: map-get($spacers, 2);
+        padding: map-get($spacers, 2) map-get($spacers, 3);
+        background-color: var(--color-primary);
+        color: white;
+        text-decoration: none;
+        border-radius: $border-radius;
+        font-size: $font-size-sm;
+        margin-right: map-get($spacers, 2);
+        margin-bottom: map-get($spacers, 2);
+        transition: $transition-base;
+        
+        // Touch-friendly sizing
+        min-height: $min-touch-target;
+        
+        &:hover,
+        &:focus {
+          background-color: var(--color-primary-hover);
+          transform: translateY(-2px);
+        }
+        
+        &:focus-visible {
+          outline: $focus-ring-width solid var(--focus-ring-color);
+          outline-offset: $focus-ring-offset;
+        }
       }
     }
   }
 }
 
 // =============================================================================
-// CONTACT SECTION STYLING
+// MOBILE-FIRST CONTACT SECTION
 // =============================================================================
 
 .contact-widget {
-  margin-block-start: map-get($spacers, 8);
+  margin-block-start: map-get($spacers, 7);
   
   @include media-breakpoint-up(md) {
-    margin-block-start: map-get($spacers, 9);
+    margin-block-start: map-get($spacers, 8);
   }
   
   .grid {
     align-items: flex-start;
+    
+    // Stack on mobile, side-by-side on tablet+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
 .contact-info {
-  margin-block-start: map-get($spacers, 6);
+  margin-block-start: map-get($spacers, 5);
+  
+  @include media-breakpoint-up(md) {
+    margin-block-start: map-get($spacers, 6);
+  }
   
   p {
     display: flex;
-    align-items: center;
-    margin-block-end: map-get($spacers, 5);
+    align-items: flex-start; // Better alignment for multi-line content
+    margin-block-end: map-get($spacers, 4);
     line-height: $line-height-md;
     
     @include media-breakpoint-up(md) {
-      margin-block-end: map-get($spacers, 6);
+      margin-block-end: map-get($spacers, 5);
+      align-items: center; // Center align on larger screens
     }
   }
   
   i {
     color: var(--icon-color);
-    margin-inline-end: map-get($spacers, 4);
-    min-width: map-get($spacers, 7);
+    margin-inline-end: map-get($spacers, 3);
+    min-width: $icon-size-xl; // Touch-friendly icon area
+    height: $icon-size-xl;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    line-height: 1;
+    font-size: $icon-size-lg;
+    
+    @include media-breakpoint-up(md) {
+      margin-inline-end: map-get($spacers, 4);
+    }
   }
   
   a {
     color: var(--color-primary);
-    text-decoration: $link-decoration;
+    text-decoration: none;
     transition: $transition-base;
     line-height: $line-height-md;
     
-    &:hover {
+    // Touch-friendly link padding
+    padding: map-get($spacers, 1) map-get($spacers, 2);
+    margin: calc(-#{map-get($spacers, 1)}) calc(-#{map-get($spacers, 2)});
+    border-radius: $border-radius-sm;
+    
+    &:hover,
+    &:focus {
       color: var(--color-primary-contact-hover);
-      text-decoration: $link-hover-decoration;
+      text-decoration: underline;
+      background-color: rgba(var(--color-primary), 0.1);
     }
     
     &:focus-visible {
-      outline: var(--focus-ring-width) solid var(--focus-ring-color);
-      outline-offset: var(--focus-ring-offset);
-      border-radius: $border-radius-sm;
+      outline: $focus-ring-width solid var(--focus-ring-color);
+      outline-offset: $focus-ring-offset;
     }
   }
   
   .office-hours {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     
     br + * {
+      margin-top: map-get($spacers, 1);
       line-height: $line-height-md;
     }
   }
 }
 
 // =============================================================================
-// FORM STYLING
+// MOBILE-FIRST FORM STYLING
 // =============================================================================
 
 .form-group {
   margin-block-end: $form-group-margin-bottom;
   
+  label {
+    display: block;
+    margin-bottom: map-get($spacers, 2);
+    font-weight: $font-weight-bold;
+    @include rfs($font-size-base);
+  }
+  
   .form-control {
-    border-radius: $input-border-radius;
+    display: block;
     width: 100%;
-    background-color: var(--input-bg);
-    border-color: var(--input-border-color);
-    color: var(--color-body);
     padding: $input-padding-y $input-padding-x;
+    @include rfs($font-size-base);
+    line-height: $line-height-base;
+    color: var(--color-body);
+    background-color: var(--input-bg);
+    background-clip: padding-box;
+    border: $border-width solid var(--input-border-color);
+    border-radius: $border-radius;
     transition: $transition-base;
-    border: $border-width $border-style var(--input-border-color);
     
-    // Enhanced placeholder styling for dark mode
-    &::placeholder {
-      color: var(--color-text-muted);
-      opacity: 0.7;
-    }
+    // Touch-friendly minimum height
+    min-height: $min-touch-target;
     
     &:focus {
-      border-color: var(--input-focus-border-color);
-      box-shadow: var(--input-focus-box-shadow);
-      outline: none;
+      color: var(--color-body);
       background-color: var(--input-bg);
+      border-color: var(--input-focus-border-color);
+      outline: 0;
+      box-shadow: var(--input-focus-box-shadow);
     }
     
-    &:focus-visible {
-      outline: var(--focus-ring-width) solid var(--focus-ring-color);
-      outline-offset: var(--focus-ring-offset);
-      border-radius: $border-radius-sm;
+    &::placeholder {
+      color: var(--color-text-muted);
+      opacity: 1;
     }
+    
+    &:disabled,
+    &[readonly] {
+      background-color: var(--color-text-muted);
+      opacity: 1;
+    }
+  }
+  
+  textarea.form-control {
+    min-height: calc($min-touch-target * 2); // Larger minimum for textarea
+    resize: vertical;
+  }
+}
+
+// Mobile-optimized button styling
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: map-get($spacers, 2);
+  padding: $btn-padding-y $btn-padding-x;
+  margin-bottom: 0;
+  @include rfs($font-size-base);
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+  color: var(--color-body);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: $border-width solid transparent;
+  border-radius: $border-radius;
+  transition: $transition-base;
+  
+  // Touch-friendly sizing
+  min-height: $min-touch-target;
+  min-width: $min-touch-target;
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  
+  &:focus-visible {
+    outline: $focus-ring-width solid var(--focus-ring-color);
+    outline-offset: $focus-ring-offset;
+  }
+  
+  &:disabled,
+  &.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
   }
 }
 
 .btn-outline-primary {
-  border-radius: $btn-border-radius;
-  padding: $btn-padding-y $btn-padding-x;
-  transition: $transition-base;
-  text-decoration: none;
-  background-color: transparent;
-  border: $border-width $border-style var(--color-primary);
   color: var(--color-primary);
-  font-weight: $btn-font-weight;
+  border-color: var(--color-primary);
   
-  &:hover {
+  &:hover,
+  &:focus {
+    color: white;
     background-color: var(--color-primary);
-    color: var(--body-bg);
     border-color: var(--color-primary);
-    text-decoration: none;
+  }
+}
+
+// =============================================================================
+// MOBILE-FIRST MAP SECTION
+// =============================================================================
+
+.leaflet-container {
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  
+  // Responsive height
+  height: 300px;
+  
+  @include media-breakpoint-up(sm) {
+    height: 350px;
   }
   
-  &:focus,
-  &:focus-visible {
-    background-color: var(--color-primary);
-    color: var(--body-bg);
-    border-color: var(--color-primary);
-    box-shadow: var(--btn-focus-box-shadow);
-    outline: none;
+  @include media-breakpoint-up(md) {
+    height: 400px;
+  }
+}
+
+// =============================================================================
+// MOBILE ACCESSIBILITY IMPROVEMENTS
+// =============================================================================
+
+// Skip link for keyboard navigation
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: $border-radius;
+  z-index: 1000;
+  
+  &:focus {
+    top: 6px;
+  }
+}
+
+// Focus improvements for mobile screen readers
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .btn,
+  .form-control {
+    border-width: 2px;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
