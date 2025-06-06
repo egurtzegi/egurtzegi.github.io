@@ -402,13 +402,20 @@ p {
   
   ul {
     li {
-      margin-bottom: map-get($spacers, 5); // Good spacing between publications
+      margin-bottom: map-get($spacers, 2); // Very tight spacing between publications
+      padding-bottom: map-get($spacers, 1); // Minimal internal padding
       
-      @include media-breakpoint-up(md) {
-        margin-bottom: map-get($spacers, 6);
+      // Remove default paragraph margins inside publication items
+      p {
+        margin-bottom: 0 !important;
       }
       
-      // Publication title styling
+      @include media-breakpoint-up(md) {
+        margin-bottom: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 2);
+      }
+      
+      // Publication layout - Default: Multi-line for touch devices
       strong {
         display: block;
         margin-bottom: map-get($spacers, 2);
@@ -422,6 +429,33 @@ p {
         margin-bottom: map-get($spacers, 2);
         color: var(--color-text-muted);
         @include rfs($font-size-sm);
+      }
+      
+      // Override for desktop: Single line layout like old site
+      @media (hover: hover) and (pointer: fine) {
+        // Make everything flow inline on one line
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.25em;
+        
+        strong {
+          display: inline;
+          margin-bottom: 0;
+          margin-right: 0.25em;
+        }
+        
+        em {
+          display: inline;
+          margin-bottom: 0;
+          margin-right: 0.25em;
+        }
+        
+        // Make text content flow inline too
+        > text,
+        > * {
+          display: inline;
+        }
       }
       
       // Touch-capability-based publication links
@@ -461,16 +495,16 @@ p {
         
         // Override for precise pointing devices (mouse/trackpad)
         @media (hover: hover) and (pointer: fine) {
-          // Reset to small inline icons for mouse/trackpad
+          // Reset to small inline icons for mouse/trackpad - optimized for single line
           display: inline;
-          padding: map-get($spacers, 1);
+          padding: 2px 4px; // Minimal padding for single line layout
           background-color: transparent;
           color: var(--color-primary);
-          @include rfs($font-size-base);
+          @include rfs($font-size-sm); // Slightly smaller for compact single line
           min-height: auto;
           border-radius: $border-radius-sm;
-          margin-right: map-get($spacers, 1) * 0.5; // Further reduced to 4px for tighter spacing
-          margin-bottom: map-get($spacers, 1);
+          margin-right: 3px; // Very tight spacing for single line
+          margin-bottom: 0; // No bottom margin for single line
           
           // All publication links use the same blue color
           &[href*="doi.org"],
@@ -484,9 +518,9 @@ p {
             color: $publication-link-color;
           }
           
-          // Icon-specific styling for desktop
+          // Icon-specific styling for desktop - smaller for compact layout
           i {
-            @include font-size($pub-icon-size-desktop);
+            @include font-size(1.25rem); // 20px - smaller than current for single line
             margin: 0; // Remove internal icon margins for tighter spacing
           }
           
