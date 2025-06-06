@@ -424,8 +424,9 @@ p {
         @include rfs($font-size-sm);
       }
       
-      // Publication links
+      // Touch-capability-based publication links
       a {
+        // Default: Touch-friendly buttons for coarse pointing devices
         display: inline-flex;
         align-items: center;
         gap: map-get($spacers, 2);
@@ -434,13 +435,13 @@ p {
         color: white;
         text-decoration: none;
         border-radius: $border-radius;
-        font-size: $font-size-sm;
+        @include rfs($font-size-sm);
         margin-right: map-get($spacers, 2);
         margin-bottom: map-get($spacers, 2);
         transition: $transition-base;
         
-        // Touch-friendly sizing
-        min-height: $min-touch-target;
+        // Touch-friendly sizing using Bootstrap variables
+        min-height: $min-touch-target; // 44px minimum
         
         &:hover,
         &:focus {
@@ -451,6 +452,60 @@ p {
         &:focus-visible {
           outline: $focus-ring-width solid var(--focus-ring-color);
           outline-offset: $focus-ring-offset;
+        }
+        
+        // Icon styling for touch devices
+        i {
+          @include rfs($icon-size-base);
+        }
+        
+        // Override for precise pointing devices (mouse/trackpad)
+        @media (hover: hover) and (pointer: fine) {
+          // Reset to small inline icons for mouse/trackpad
+          display: inline;
+          padding: map-get($spacers, 1);
+          background-color: transparent;
+          color: var(--color-primary);
+          @include rfs($font-size-base);
+          min-height: auto;
+          border-radius: $border-radius-sm;
+          margin-right: map-get($spacers, 2);
+          margin-bottom: map-get($spacers, 1);
+          
+          // All publication links use the same blue color
+          &[href*="doi.org"],
+          &[href*="dx.doi.org"],
+          &[href*="arxiv.org"],
+          &[href*="github.com"],
+          &[href*="osf.io"],
+          &[href$=".pdf"],
+          &[title*="open access"],
+          &[title*="Open Access"] {
+            color: $publication-link-color;
+          }
+          
+          // Icon-specific styling for desktop
+          i {
+            @include rfs($pub-icon-size-desktop);
+            margin: 0 map-get($spacers, 1);
+          }
+          
+          &:hover {
+            background-color: var(--bs-primary-bg-subtle);
+            transform: none;
+            text-decoration: none;
+          }
+          
+          &:focus {
+            background-color: var(--bs-primary-bg-subtle);
+            transform: none;
+          }
+        }
+        
+        // Fallback for devices that support both touch and hover
+        // Ensures touch-friendly styling is maintained
+        @media (hover: none) or (pointer: coarse) {
+          // Uses the default button styling defined above
         }
       }
     }
@@ -839,5 +894,21 @@ p {
 @include media-breakpoint-up(md) {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
+  }
+}
+
+// =============================================================================
+// GLOBAL OVERRIDES FOR PUBLICATION LINKS
+// =============================================================================
+
+// Ensure all publication links are blue on desktop (override any nested styles)
+@media (hover: hover) and (pointer: fine) {
+  a[href$=".pdf"],
+  a[href*="doi.org"],
+  a[href*="dx.doi.org"],
+  a[href*="arxiv.org"],
+  a[href*="github.com"],
+  a[href*="osf.io"] {
+    color: $publication-link-color !important;
   }
 } 
