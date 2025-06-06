@@ -294,8 +294,7 @@ $icon-size-xl: 2rem !default;      // 32px for prominent icons
 // =============================================================================
 
 // Publication link icon sizing for precise pointing devices (mouse/trackpad)
-$pub-icon-size-desktop: 1rem !default;      // 16px for desktop icons
-$pub-icon-size-desktop-lg: 1.125rem !default; // 18px for slightly larger icons
+$pub-icon-size-desktop: 1.5rem !default;      // 24px to match ai-lg icons on publications page
 
 // Publication link color - single blue for all types
 $publication-link-color: #007bff !default; // Blue for all publication links

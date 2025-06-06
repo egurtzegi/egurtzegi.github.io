@@ -469,7 +469,7 @@ p {
           @include rfs($font-size-base);
           min-height: auto;
           border-radius: $border-radius-sm;
-          margin-right: map-get($spacers, 2);
+          margin-right: map-get($spacers, 1) * 0.5; // Further reduced to 4px for tighter spacing
           margin-bottom: map-get($spacers, 1);
           
           // All publication links use the same blue color
@@ -486,8 +486,8 @@ p {
           
           // Icon-specific styling for desktop
           i {
-            @include rfs($pub-icon-size-desktop);
-            margin: 0 map-get($spacers, 1);
+            @include font-size($pub-icon-size-desktop);
+            margin: 0; // Remove internal icon margins for tighter spacing
           }
           
           &:hover {
