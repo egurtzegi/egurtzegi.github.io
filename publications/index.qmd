@@ -2,6 +2,8 @@
 title: "Publications"
 ---
 
+# Publications
+
 In all papers, the open-access icon <i class="ai ai-open-access ai-lg"></i> links to a freely accessible pdf. The DOI icon <i class="ai ai-doi ai-lg"></i> links to the DOI or paper webpage (whenever available) and the arXiv icon <i class="ai ai-arxiv ai-lg"></i> links to arXiv. <i class="fab fa-github"></i> links to the Github repo and <i class="ai ai-osf ai-lg"></i> to the OSF repo (code + extra materials).
 
 <hr>
