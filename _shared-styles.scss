@@ -460,26 +460,25 @@ p {
       
       // Touch-capability-based publication links
       a {
-        // Default: Touch-friendly buttons for coarse pointing devices
-        display: inline-flex;
-        align-items: center;
-        gap: map-get($spacers, 2);
-        padding: map-get($spacers, 2) map-get($spacers, 3);
-        background-color: var(--color-primary);
-        color: white;
-        text-decoration: none;
-        border-radius: $border-radius;
+        // ALWAYS start with touch-friendly buttons
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: map-get($spacers, 2) !important;
+        padding: map-get($spacers, 2) map-get($spacers, 3) !important;
+        background-color: $primary !important;
+        color: white !important;
+        text-decoration: none !important;
+        border-radius: $border-radius !important;
         @include rfs($font-size-sm);
-        margin-right: map-get($spacers, 2);
-        margin-bottom: map-get($spacers, 2);
+        margin-right: map-get($spacers, 2) !important;
+        margin-bottom: map-get($spacers, 2) !important;
         transition: $transition-base;
-        
-        // Touch-friendly sizing using Bootstrap variables
-        min-height: $min-touch-target; // 44px minimum
+        min-height: $min-touch-target !important; // 44px minimum
         
         &:hover,
         &:focus {
-          background-color: var(--color-primary-hover);
+          background-color: shift-color($primary, -$color-shift-hover) !important;
+          color: white !important;
           transform: translateY(-2px);
         }
         
@@ -492,19 +491,20 @@ p {
         i {
           @include rfs($icon-size-base);
         }
-        
-        // Override for precise pointing devices (mouse/trackpad)
-        @media (hover: hover) and (pointer: fine) {
-          // Reset to small inline icons for mouse/trackpad - optimized for single line
-          display: inline;
-          padding: 2px 4px; // Minimal padding for single line layout
-          background-color: transparent;
-          color: var(--color-primary);
-          @include rfs($font-size-sm); // Slightly smaller for compact single line
-          min-height: auto;
-          border-radius: $border-radius-sm;
-          margin-right: 3px; // Very tight spacing for single line
-          margin-bottom: 0; // No bottom margin for single line
+      }
+      
+      // Only apply desktop styling on large screens (desktop-first approach)
+      @media (min-width: 992px) {
+        a {
+          // Reset to small inline icons for desktop only
+          display: inline !important;
+          padding: 2px 4px !important;
+          background-color: transparent !important;
+          color: var(--color-primary) !important;
+          min-height: auto !important;
+          border-radius: $border-radius-sm !important;
+          margin-right: 3px !important;
+          margin-bottom: 0 !important;
           
           // All publication links use the same blue color
           &[href*="doi.org"],
@@ -515,31 +515,38 @@ p {
           &[href$=".pdf"],
           &[title*="open access"],
           &[title*="Open Access"] {
-            color: $publication-link-color;
+            color: $publication-link-color !important;
           }
           
-          // Icon-specific styling for desktop - smaller for compact layout
+          // Talk-specific link colors
+          &.slides-link {
+            color: #6f42c1 !important; // Purple for slides
+          }
+          
+          &.pdf-link {
+            color: #dc3545 !important; // Red for PDF files
+          }
+          
+          &.external-link {
+            color: #28a745 !important; // Green for external links
+          }
+          
+          // Icon-specific styling for desktop
           i {
-            @include font-size(1.25rem); // 20px - smaller than current for single line
-            margin: 0; // Remove internal icon margins for tighter spacing
+            @include font-size(1.25rem); // 20px
+            margin: 0; // Remove internal icon margins
           }
           
           &:hover {
-            background-color: var(--bs-primary-bg-subtle);
-            transform: none;
-            text-decoration: none;
+            background-color: var(--bs-primary-bg-subtle) !important;
+            transform: none !important;
+            text-decoration: none !important;
           }
           
           &:focus {
-            background-color: var(--bs-primary-bg-subtle);
-            transform: none;
+            background-color: var(--bs-primary-bg-subtle) !important;
+            transform: none !important;
           }
-        }
-        
-        // Fallback for devices that support both touch and hover
-        // Ensures touch-friendly styling is maintained
-        @media (hover: none) or (pointer: coarse) {
-          // Uses the default button styling defined above
         }
       }
     }

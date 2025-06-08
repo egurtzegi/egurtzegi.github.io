@@ -37,7 +37,7 @@ format:
     theme:
       light: [bootstrap, custom-light.scss]
       dark: [bootstrap, custom-dark.scss]
-    toc: true
+    toc: false
     page-layout: article
     html-math-method: katex
     header-includes: |
