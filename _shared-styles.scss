@@ -172,6 +172,29 @@ p {
 }
 
 // =============================================================================
+// MOBILE-FIRST LINK STYLING
+// =============================================================================
+
+// Remove underlines from links to match Hugo site styling
+a {
+  text-decoration: none;
+  color: var(--bs-link-color);
+  transition: $transition-base;
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--bs-link-hover-color);
+  }
+  
+  &:focus-visible {
+    outline: $focus-ring-width solid var(--focus-ring-color);
+    outline-offset: $focus-ring-offset;
+    border-radius: $border-radius-sm;
+  }
+}
+
+// =============================================================================
 // MOBILE-FIRST LAYOUT COMPONENTS
 // =============================================================================
 

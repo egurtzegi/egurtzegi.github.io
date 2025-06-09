@@ -1,7 +1,15 @@
 ---
 title: "Projects"
-listing:
-  contents: "*.qmd"
-  sort: "date desc"
-  template: projects-list-template.ejs
 ---
+
+## [Modern approaches to diachronic phonology applied to Basque (MADPAB)](madpab/)
+
+Call: ANR-AAPG2020
+
+Duration: Jan 2021 - Dec 2024
+
+This project aims to improve our current understanding of Basque historical phonology by incorporating recent advances in theories of phonetically based sound change.
+
+## [Mixean Basque](mixean/)
+
+This project involves the phonetic description of Mixean Low Navarrese, an endangered variety of Basque. Preceding the acoustic analysis of this variety, we compile an overview of all previous acoustic studies performed on different Basque varieties, in order to synthesize the sparse acoustic descriptions of the language that are available.
