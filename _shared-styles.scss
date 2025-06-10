@@ -55,6 +55,17 @@ h4, .h4 { @include rfs($h4-font-size); }
 h5, .h5 { @include rfs($h5-font-size); }
 h6, .h6 { @include rfs($h6-font-size); }
 
+// Main page headings get underline to match h2 styling
+h1 {
+  border-bottom: 1px solid var(--bs-border-color);
+  padding-bottom: map-get($spacers, 3);
+  margin-bottom: map-get($spacers, 5);
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: map-get($spacers, 6);
+  }
+}
+
 // Section headings get extra spacing on larger screens
 h2 {
   margin-bottom: map-get($spacers, 5); // Larger margin for section headers
