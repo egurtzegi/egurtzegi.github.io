@@ -2,6 +2,10 @@
 title: "Teaching"
 ---
 
+# Teaching
+
+<hr>
+
 ## [Euskararen Fonetika eta Fonologia (UPPA)](euskalfono/)
 
 Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu.

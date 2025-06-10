@@ -2,7 +2,11 @@
 title: "Recent & Upcoming Talks"
 ---
 
-# Selected recent talks
+# Recent & Upcoming Talks
+
+<hr>
+
+## Selected recent talks
 
 - 2024 [with A. García-Covelo & I. Urrestarazu-Porta] "/h/ vs. /h̃/: Estudiando una oposición fonológica 'imposible' del euskera desde la fonología de laboratorio". Fonética Open Days Salamanca. [<i class="fas fa-chalkboard-teacher fa-lg"></i>](/static/slides/larraine-osoa/2024-larraine-h-fod.html)
 

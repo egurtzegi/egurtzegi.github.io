@@ -2,6 +2,10 @@
 title: "Projects"
 ---
 
+# Projects
+
+<hr>
+
 ## [Modern approaches to diachronic phonology applied to Basque (MADPAB)](madpab/)
 
 Call: ANR-AAPG2020
