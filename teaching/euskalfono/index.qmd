@@ -9,6 +9,10 @@ tags:
   - "Basque"
 ---
 
+# Euskararen Fonetika eta Fonologia (UPPA)
+
+**May 6, 2022**
+
 Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu. Azkenik, deskribapen eta analisi akustikoaren sarrera xume bat egingo dugu Praat programaren bidez.
 
 ## Egitasmoa

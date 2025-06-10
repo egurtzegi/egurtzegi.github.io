@@ -9,6 +9,10 @@ tags:
   - "Sound Change"
 ---
 
+# Sound Change (UPV/EHU)
+
+**May 6, 2020**
+
 This class offers an accessible introduction to the concept of sound change and the different phonological processes it encompasses, using examples from a wide range of languages which can be adapted to the particular interests of the attending students. Several typologies of phonetically natural sound change will be discussed and compared in order to present a comprehensible outline of how the sounds of the world's languages change over time.
 
 ## Course topics
