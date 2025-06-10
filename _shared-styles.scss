@@ -401,21 +401,33 @@ a {
 // MOBILE-FIRST CONTENT SECTIONS
 // =============================================================================
 
-// Featured publications with mobile optimization
+// Featured publications with mobile optimization and full-width background
 .featured-publications-section {
   background-color: var(--featured-bg);
   padding-block: map-get($spacers, 6); // 24px on mobile
   margin-block: map-get($spacers, 6);
-  border-radius: $border-radius-lg;
+  
+  // Break out of container to achieve full width
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  
+  // Add horizontal padding to contain content within readable area
+  padding-inline: max(calc((100vw - var(--bs-container-max-width, 1320px)) / 2), 1rem);
   
   @include media-breakpoint-up(sm) {
     padding-block: map-get($spacers, 7); // 32px
     margin-block: map-get($spacers, 7);
+    padding-inline: max(calc((100vw - var(--bs-container-max-width, 1320px)) / 2), 1.5rem);
   }
   
   @include media-breakpoint-up(md) {
     padding-block: map-get($spacers, 8); // 40px
     margin-block: map-get($spacers, 8);
+    padding-inline: max(calc((100vw - var(--bs-container-max-width, 1320px)) / 2), 2rem);
   }
   
   h2 {
