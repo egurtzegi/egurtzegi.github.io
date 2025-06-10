@@ -1,16 +1,11 @@
 ---
-title: Teaching
-listing:
-  contents:
-    - "euskalfono.qmd"
-    - "soundchange.qmd"
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Teaching"
 ---
 
-This page lists teaching materials and courses. 
+## [Euskararen Fonetika eta Fonologia (UPPA)](euskalfono/)
+
+Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu.
+
+## [Sound Change (UPV/EHU)](soundchange/)
+
+This class offers an accessible introduction to the concept of sound change and the different phonological processes it encompasses, using examples from a wide range of languages which can be adapted to the particular interests of the attending students.
