@@ -17,38 +17,63 @@ This class offers an accessible introduction to the concept of sound change and 
 
 ## Course topics
 
-* Syllabus 2020 [[pdf]](/static/files/Syllabus.pdf)
+* Syllabus 2020
+  <div class="touch-aware-links">
+    <a href="/static/files/Syllabus.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
 
 ### 1.- Introduction to variation and historical change
 
-* Appendix Probi [[pdf]](/static/files/AppendixProbi.pdf)
-* Cantar de Mio Cid [[pdf]](/static/files/MioCid.pdf) [[mp3]](01r.mp3)
+* Appendix Probi
+  <div class="touch-aware-links">
+    <a href="/static/files/AppendixProbi.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
+* Cantar de Mio Cid
+  <div class="touch-aware-links">
+    <a href="/static/files/MioCid.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+    <a href="01r.mp3" class="audio-link"><i class="fas fa-headphones"></i><span class="link-text">Audio</span></a>
+  </div>
 
 ### 2.- Neogrammarian sound change
 
 * 1st Reading
-* Sturtevant's Law of Waterloo [[slides]](/static/files/Sturtevant-Waterloo.pdf)
+* Sturtevant's Law of Waterloo
+  <div class="touch-aware-links">
+    <a href="/static/files/Sturtevant-Waterloo.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
+  </div>
 
 ### 3.- Kinds of sound change
 
 * 2nd Reading
-* Kinds of sound change [[slides]](/static/files/KindsofSC.pdf)
+* Kinds of sound change
+  <div class="touch-aware-links">
+    <a href="/static/files/KindsofSC.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
+  </div>
 
 ### 4.- Modern typologies of sound change
 
 * 3rd Reading
 * 4th Reading
-* Typologies of sound change [[slides]](/static/files/TypologiesofSC.pdf)
+* Typologies of sound change
+  <div class="touch-aware-links">
+    <a href="/static/files/TypologiesofSC.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
+  </div>
 
 ### 5.- Phonetic motivation in sound change
 
 * 5th Reading
-* Phonetic motivation in sound change [[slides]](/static/files/PhoneticSC.pdf)
+* Phonetic motivation in sound change
+  <div class="touch-aware-links">
+    <a href="/static/files/PhoneticSC.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
+  </div>
 
 ### 6.- Models of linguistic diversification
 
 * 6th Reading
-* Models of linguistic diversification [[slides]](/static/files/Diversification.pdf)
+* Models of linguistic diversification
+  <div class="touch-aware-links">
+    <a href="/static/files/Diversification.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
+  </div>
 
 ### 7.- Phases of sound change
 
@@ -56,6 +81,14 @@ This class offers an accessible introduction to the concept of sound change and 
 
 ## Exercices
 
-* 1. set of exercices [[pdf]](/static/files/TraskExercices1.pdf)
-* 2. set of exercices [[pdf]](/static/files/TraskExercices2.pdf)
-* 3. set of exercices [[pdf]](/static/files/CampbellExercices.pdf) 
+* 1. set of exercices
+  <div class="touch-aware-links">
+    <a href="/static/files/TraskExercices1.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
+* 2. set of exercices
+  <div class="touch-aware-links">
+    <a href="/static/files/TraskExercices2.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
+* 3. set of exercices
+  <div class="touch-aware-links">
+    <a href="/static/files/CampbellExercices.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a> 

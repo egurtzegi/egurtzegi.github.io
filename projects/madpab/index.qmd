@@ -40,15 +40,35 @@ Click on the <i class = "fas fa-user"></i> next to each project member to visit 
 ---
 
 ## Project Publications
- * Egurtzegi, A. & G. Elordieta. 2023 [online 2022]. A history of the Basque prosodic systems. _Diachronica_ 40.1, 30-72. [<i class = "ai ai-doi ai-lg"></i>](http://doi.org/10.1075/dia.20066.egu) [<i class = "ai ai-open-access ai-lg"></i>](https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu)
+ * Egurtzegi, A. & G. Elordieta. 2023 [online 2022]. A history of the Basque prosodic systems. _Diachronica_ 40.1, 30-72.
+   <div class="touch-aware-links">
+     <a href="http://doi.org/10.1075/dia.20066.egu" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+     <a href="https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+   </div>
 
- * Blevins, J. & A. Egurtzegi. 2023 [online 2022]. Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. _Linguistic Typology_ 27.2, 289-311. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class = "ai ai-open-access ai-lg"></i>](https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036)
+ * Blevins, J. & A. Egurtzegi. 2023 [online 2022]. Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. _Linguistic Typology_ 27.2, 289-311.
+   <div class="touch-aware-links">
+     <a href="https://doi.org/10.1515/lingty-2021-0036" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+     <a href="https://www.degruyter.com/document/doi/10.1515/lingty-2021-0036" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+   </div>
 
- * Krajewska, D., E. Zuloaga & A. Egurtzegi. 2022. Sibilant mergers in 18th-century Basque: A quantitative study. _Phonological Data & Analysis_ 4.5, 1–31. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.3765/pda.v4art5.67) [<i class = "ai ai-open-access ai-lg"></i>](https://phondata.org/index.php/pda/article/view/67/43) [<i class = "ai ai-osf ai-lg"></i>](https://osf.io/t6a7w/)
+ * Krajewska, D., E. Zuloaga & A. Egurtzegi. 2022. Sibilant mergers in 18th-century Basque: A quantitative study. _Phonological Data & Analysis_ 4.5, 1–31.
+   <div class="touch-aware-links">
+     <a href="https://doi.org/10.3765/pda.v4art5.67" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+     <a href="https://phondata.org/index.php/pda/article/view/67/43" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+     <a href="https://osf.io/t6a7w/" class="osf-link"><i class="ai ai-osf"></i><span class="link-text">OSF</span></a>
+   </div>
 
- * Egurtzegi, A. 2022. Goizuetako azentueraren garapena kokatzen Euskara Batu Zaharraren prosodia zehazteko: proposamenen ebaluazioa. [Placing the development of the Goizueta prosodic system to define the prosody of Common Basque: Evaluation of the proposals]. _Fontes Linguae Vasconum_ 133, 9–35. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.35462/flv133.1) [<i class = "ai ai-open-access ai-lg"></i>](https://www.culturanavarra.es/uploads/files/FLV133_01.pdf)
+ * Egurtzegi, A. 2022. Goizuetako azentueraren garapena kokatzen Euskara Batu Zaharraren prosodia zehazteko: proposamenen ebaluazioa. _Fontes Linguae Vasconum_ 133, 9–35.
+   <div class="touch-aware-links">
+     <a href="https://doi.org/10.35462/flv133.1" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+     <a href="https://www.culturanavarra.es/uploads/files/FLV133_01.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+   </div>
 
- * Elordieta, G. & A. Egurtzegi. 2022. Bizkaiko iparraldeko euskararen doinu-azentuaren berrikusketa [A revision of the pitch accent of Northern Bizkaian Basque]. In Barberia & Iribar (eds.), _Papers on Basque Linguistics in Honor of Jon Andoni Franco Elorza_. Bilbao: Deusto University Press, 319-337. [<i class = "ai ai-open-access ai-lg"></i>](../../publications/elordieta-egurtzegi-2022-bizkaiko-doinu-azentuaren/)
+ * Elordieta, G. & A. Egurtzegi. 2022. Bizkaiko iparraldeko euskararen doinu-azentuaren berrikusketa [A revision of the pitch accent of Northern Bizkaian Basque]. In Barberia & Iribar (eds.), _Papers on Basque Linguistics in Honor of Jon Andoni Franco Elorza_. Bilbao: Deusto University Press, 319-337.
+   <div class="touch-aware-links">
+     <a href="../../publications/elordieta-egurtzegi-2022-bizkaiko-doinu-azentuaren/" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">Open Access</span></a>
+   </div>
 
 ---
 

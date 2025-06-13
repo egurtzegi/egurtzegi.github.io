@@ -26,7 +26,12 @@ Click on the <i class = "fas fa-user"></i> next to each project member to visit 
 ---
 
 ## Project Publications
- * 2020 [with C. Carignan] An acoustic description of Mixean Basque. _Journal of the Acoustical Society of America_ 147.4, 2791–2802. [<i class = "ai ai-doi ai-lg"></i>](https://doi.org/10.1121/10.0000996) [<i class = "ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/pdf/10.1121/10.0000996) [Suplementary materials<i class = "ai ai-open-access ai-lg"></i>](https://asa.scitation.org/doi/suppl/10.1121/10.0000996/suppl_file/supppub1.pdf).
+ * 2020 [with C. Carignan] An acoustic description of Mixean Basque. _Journal of the Acoustical Society of America_ 147.4, 2791–2802.
+  <div class="touch-aware-links">
+    <a href="https://doi.org/10.1121/10.0000996" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://asa.scitation.org/doi/pdf/10.1121/10.0000996" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+    <a href="https://asa.scitation.org/doi/suppl/10.1121/10.0000996/suppl_file/supppub1.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">Supplement</span></a>
+  </div>
 
 ---
 

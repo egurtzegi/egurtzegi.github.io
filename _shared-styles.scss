@@ -413,7 +413,7 @@ a {
 // =============================================================================
 
 // Featured publications with mobile optimization and full-width background
-.featured-publications-section {
+.content-section-highlighted {
   background-color: var(--featured-bg);
   padding-block: map-get($spacers, 6); // 24px on mobile
   margin-block: map-get($spacers, 6);
@@ -593,6 +593,143 @@ a {
             background-color: var(--bs-primary-bg-subtle) !important;
             transform: none !important;
           }
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Backwards compatibility – will be removed once all pages are updated
+// -----------------------------------------------------------------------------
+.featured-publications-section {
+  @extend .content-section-highlighted;
+}
+
+// -----------------------------------------------------------------------------
+// TOUCH-AWARE LINKS WRAPPER
+// -----------------------------------------------------------------------------
+
+.touch-aware-links {
+  // Allow links to wrap naturally and keep a small gap between items
+  display: flex;
+  flex-wrap: wrap;
+  gap: map-get($spacers, 2);
+
+  // On desktop, make the wrapper inline so links flow with text
+  @media (hover: hover) and (pointer: fine) {
+    display: inline !important;
+    gap: 0;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Base link styling – mobile-first (touch devices)
+  // ---------------------------------------------------------------------------
+  a {
+    // Touch-friendly buttons
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: map-get($spacers, 2) !important;
+    padding: map-get($spacers, 2) map-get($spacers, 3) !important;
+    background-color: $primary !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: $border-radius !important;
+    @include rfs($font-size-sm);
+    margin-right: map-get($spacers, 2) !important;
+    margin-bottom: map-get($spacers, 2) !important;
+    transition: $transition-base;
+    min-height: $min-touch-target !important; // 44px minimum target
+
+    &:hover,
+    &:focus {
+      background-color: shift-color($primary, -$color-shift-hover) !important;
+      color: white !important;
+      transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+      outline: $focus-ring-width solid var(--focus-ring-color);
+      outline-offset: $focus-ring-offset;
+    }
+
+    // Icon sizing on touch devices
+    i {
+      @include rfs($icon-size-base);
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // Desktop overrides (hover + fine pointer) - icons only
+  // ---------------------------------------------------------------------------
+  @media (hover: hover) and (pointer: fine) {
+    a {
+      // Compact inline icon style for desktop
+      display: inline !important;
+      padding: 2px 4px !important;
+      background-color: transparent !important;
+      color: var(--color-primary) !important;
+      min-height: auto !important;
+      border-radius: $border-radius-sm !important;
+      margin-right: 3px !important;
+      margin-bottom: 0 !important;
+      gap: 0 !important; // Remove gap since we're hiding text
+
+      // Hide text on desktop - show icons only
+      .link-text {
+        display: none !important;
+      }
+
+      // Common academic link colours (blue by default)
+      &[href*="doi.org"],
+      &[href*="dx.doi.org"],
+      &[href*="arxiv.org"],
+      &[href*="github.com"],
+      &[href*="osf.io"],
+      &[href$=".pdf"],
+      &[title*="open access"],
+      &[title*="Open Access"] {
+        color: $publication-link-color !important;
+      }
+
+      // Specific semantic classes (optional fine-tuning)
+      &.slides-link   { color: #6f42c1 !important; } // Purple
+      &.pdf-link      { color: #dc3545 !important; } // Red
+      &.external-link { color: #28a745 !important; } // Green
+
+      // Icon sizing for desktop
+      i {
+        @include font-size(1.25rem);
+        margin: 0;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: var(--bs-primary-bg-subtle) !important;
+        transform: none !important;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // Compact variation for high-density lists (e.g., publications)
+  // ---------------------------------------------------------------------------
+
+  &.compact {
+    gap: map-get($spacers, 1);
+
+    a {
+      padding: map-get($spacers, 1) map-get($spacers, 2) !important;
+      min-height: $min-touch-target;
+
+      @media (hover: hover) and (pointer: fine) {
+        // Desktop stays icon-only, identical to normal override
+        padding: 2px 3px !important;
+        gap: 0 !important;
+
+        .link-text {
+          display: none !important;
         }
       }
     }

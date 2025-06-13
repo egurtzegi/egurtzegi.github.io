@@ -6,18 +6,40 @@ title: "Recent & Upcoming Talks"
 
 ## Selected recent talks
 
-- 2024 [with A. García-Covelo & I. Urrestarazu-Porta] "/h/ vs. /h̃/: Estudiando una oposición fonológica 'imposible' del euskera desde la fonología de laboratorio". Fonética Open Days Salamanca. [<i class="fas fa-chalkboard-teacher fa-lg"></i>](/static/slides/larraine-osoa/2024-larraine-h-fod.html)
+- 2024 [with A. García-Covelo & I. Urrestarazu-Porta] "/h/ vs. /h̃/: Estudiando una oposición fonológica 'imposible' del euskera desde la fonología de laboratorio". Fonética Open Days Salamanca.
+  <div class="touch-aware-links">
+    <a href="/static/slides/larraine-osoa/2024-larraine-h-fod.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
 
-- 2023 [with A. García-Covelo & I. Urrestarazu-Porta] "Does Basque have an impossible phonological opposition?". BCBL Speech and Bilingualism Talks. [<i class="fas fa-chalkboard-teacher fa-lg"></i>](/static/slides/larraine-osoa/2023-larraine-nasals-bcbl.html) [<i class="fas fa-chalkboard-teacher fa-lg"></i>](/static/slides/larraine-osoa/2024-larraine-h-ehu.html)
+- 2023 [with A. García-Covelo & I. Urrestarazu-Porta] "Does Basque have an impossible phonological opposition?". BCBL Speech and Bilingualism Talks.
+  <div class="touch-aware-links">
+    <a href="/static/slides/larraine-osoa/2023-larraine-nasals-bcbl.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+    <a href="/static/slides/larraine-osoa/2024-larraine-h-ehu.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
 
-- 2023 [with A. García-Covelo & I. Urrestarazu-Porta] "A nasalance-based study of the /h/ vs. /h̃/ opposition in Zuberoan Basque". 20th International Congress of Phonetic Sciences (ICPhS, Prague). [<i class="fas fa-chalkboard-teacher fa-lg"></i>](https://urrestarazu.gitlab.io/slides-icphs/2023-larraine-nasals-icphs.html)
+- 2023 [with A. García-Covelo & I. Urrestarazu-Porta] "A nasalance-based study of the /h/ vs. /h̃/ opposition in Zuberoan Basque". 20th International Congress of Phonetic Sciences (ICPhS, Prague).
+  <div class="touch-aware-links">
+    <a href="https://urrestarazu.gitlab.io/slides-icphs/2023-larraine-nasals-icphs.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
 
-- 2023 "An 'impossible' opposition: /h/ vs. /h̃/ in North-Eastern Basque". 53rd Linguistic Symposium on Romance Languages (LSRL 53), Phonetics and phonology - Beyond Romance (Paris, France). [<i class="fas fa-chalkboard-teacher fa-lg"></i>](/static/slides/h/paris.html)
+- 2023 "An 'impossible' opposition: /h/ vs. /h̃/ in North-Eastern Basque". 53rd Linguistic Symposium on Romance Languages (LSRL 53), Phonetics and phonology - Beyond Romance (Paris, France).
+  <div class="touch-aware-links">
+    <a href="/static/slides/h/paris.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
 
-- 2023 [with D. Krajewska, C. Carignan & I. Urrestarazu-Porta] "An acoustic description of sibilant contrasts and sibilant merger in Mixean Basque". 9th International Conference on Experimental Phonetics (CIFE, University of Vigo, Spain). [<i class="fas fa-chalkboard-teacher fa-lg"></i>](https://urrestarazu.gitlab.io/slides/2023-vigo-sibilants.html)
+- 2023 [with D. Krajewska, C. Carignan & I. Urrestarazu-Porta] "An acoustic description of sibilant contrasts and sibilant merger in Mixean Basque". 9th International Conference on Experimental Phonetics (CIFE, University of Vigo, Spain).
+  <div class="touch-aware-links">
+    <a href="https://urrestarazu.gitlab.io/slides/2023-vigo-sibilants.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
 
-- 2023 [with A. García-Covelo & I. Urrestarazu-Porta] "Documenting rare linguistic phenomena: A nasalance-based study of the Zuberoan /h/ vs. /h̃/ opposition". 9th International Conference on Experimental Phonetics (CIFE, University of Vigo, Spain). [<i class="fas fa-chalkboard-teacher fa-lg"></i>](/static/slides/h/vigo.html)
+- 2023 [with A. García-Covelo & I. Urrestarazu-Porta] "Documenting rare linguistic phenomena: A nasalance-based study of the Zuberoan /h/ vs. /h̃/ opposition". 9th International Conference on Experimental Phonetics (CIFE, University of Vigo, Spain).
+  <div class="touch-aware-links">
+    <a href="/static/slides/h/vigo.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
 
-- 2022 [with J. Cronenberg & J. Harrington] "Andalusian pre-to-post-aspiration and the life cycle of sound change". Workshop on Sound Change. Departamento de Lengua Española y Lingüística General (UNED, Madrid, Spain). [<i class="fas fa-file-pdf fa-lg"></i>](/static/files/slides/h/UNED-Slides.pdf)
+- 2022 [with J. Cronenberg & J. Harrington] "Andalusian pre-to-post-aspiration and the life cycle of sound change". Workshop on Sound Change. Departamento de Lengua Española y Lingüística General (UNED, Madrid, Spain).
+  <div class="touch-aware-links">
+    <a href="/static/files/slides/h/UNED-Slides.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
 
 - 2022 "When time is the key: Analyzing time-varying data in laboratory phonology". LPRG - Laboratory Phonology Research Group (Université Paris Cité, Paris, France).

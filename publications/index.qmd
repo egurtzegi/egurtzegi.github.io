@@ -10,12 +10,40 @@ In all papers, the open-access icon <i class="ai ai-open-access ai-lg"></i> link
 
 ## Journal Publications
 
-- 2024 [with D. Krajewska, C. Carignan & I. Urrestarazu-Porta]  An acoustic exploration of sibilant contrasts and sibilant merger in Mixean Basque. *Journal of the International Phonetic Association* 54.2, 677-706.  [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1017/S0025100324000045) [<i class="ai ai-open-access ai-lg"></i>](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/839C776F241162A02D7505FE4D042A7E/S0025100324000045a.pdf/div-class-title-an-acoustic-exploration-of-sibilant-contrasts-and-sibilant-merger-in-mixean-basque-div.pdf)   [<i class="ai ai-osf ai-lg"></i>](https://osf.io/vctgw/)   
-- 2024 [with I. Urrestarazu-Porta & A. García-Covelo]  Sudurkaritasun fonologikoa Larrainen: /h̃/ bai, baina bokalik ez. *Fontes Linguae Vasconum* 137, 163-190.  [Phonological nasality in Larraine Basque: there is /h̃/, but no nasal vowels.] [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.35462/flv137.7) [<i class="ai ai-open-access ai-lg"></i>](https://www.culturanavarra.es/uploads/files/FLV137-07.pdf)      
-- 2023 [with J. Blevins]  Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. *Linguistic Typology* 27.2, 289-311.  [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036) [<i class="ai ai-open-access ai-lg"></i>](https://doi.org/10.1515/lingty-2021-0036)      
-- 2023 [with G. Elordieta]  A history of the Basque prosodic systems. *Diachronica* 40.1, 30-72.  [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1075/dia.20066.egu) [<i class="ai ai-open-access ai-lg"></i>](https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu)      
-- 2023 [with S. Coretta, J. Casillas & T. Roettger]  Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses. *Advances in Methods and Practices in Psychological Science* 6.3.  [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1177/25152459231162567) [<i class="ai ai-open-access ai-lg"></i>](https://journals.sagepub.com/doi/full/10.1177/25152459231162567)  [<i class="fab fa-github"></i>](https://github.com/many-speech-analyses/many_analyses) [<i class="ai ai-osf ai-lg"></i>](https://osf.io/3bmcp/) [<i class="ai ai-osf ai-lg"></i>](https://osf.io/g9bq5/)  
-- 2023 /h̃/ hasperen sudurkarituaren inguruan. *International Journal of Basque Linguistics and Philology (ASJU)* 57, 275-294.  [On nasalized aspirated /h̃/.] [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1387/asju.25952) [<i class="ai ai-open-access ai-lg"></i>](https://ojs.ehu.eus/index.php/ASJU/article/view/25952/24923)      
+- 2024 [with D. Krajewska, C. Carignan & I. Urrestarazu-Porta]  An acoustic exploration of sibilant contrasts and sibilant merger in Mixean Basque. *Journal of the International Phonetic Association* 54.2, 677-706.
+  <div class="touch-aware-links compact">
+    <a href="https://doi.org/10.1017/S0025100324000045" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/839C776F241162A02D7505FE4D042A7E/S0025100324000045a.pdf/div-class-title-an-acoustic-exploration-of-sibilant-contrasts-and-sibilant-merger-in-mixean-basque-div.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+    <a href="https://osf.io/vctgw/" class="osf-link"><i class="ai ai-osf"></i><span class="link-text">OSF</span></a>
+  </div>
+- 2024 [with I. Urrestarazu-Porta & A. García-Covelo]  Sudurkaritasun fonologikoa Larrainen: /h̃/ bai, baina bokalik ez. *Fontes Linguae Vasconum* 137, 163-190.
+  <div class="touch-aware-links compact">
+    <a href="https://doi.org/10.35462/flv137.7" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://www.culturanavarra.es/uploads/files/FLV137-07.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
+- 2023 [with J. Blevins]  Refining explanation in Evolutionary Phonology: Macro-typologies and targeted typologies in action. *Linguistic Typology* 27.2, 289-311.
+  <div class="touch-aware-links compact">
+    <a href="https://doi.org/10.1515/lingty-2021-0036" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://doi.org/10.1515/lingty-2021-0036" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
+- 2023 [with G. Elordieta]  A history of the Basque prosodic systems. *Diachronica* 40.1, 30-72.
+  <div class="touch-aware-links compact">
+    <a href="https://doi.org/10.1075/dia.20066.egu" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://www.jbe-platform.com/content/journals/10.1075/dia.20066.egu" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
+- 2023 [with S. Coretta, J. Casillas & T. Roettger]  Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses. *Advances in Methods and Practices in Psychological Science* 6.3.
+  <div class="touch-aware-links compact">
+    <a href="https://doi.org/10.1177/25152459231162567" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://journals.sagepub.com/doi/full/10.1177/25152459231162567" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+    <a href="https://github.com/many-speech-analyses/many_analyses" class="github-link"><i class="fab fa-github"></i><span class="link-text">GitHub</span></a>
+    <a href="https://osf.io/3bmcp/" class="osf-link"><i class="ai ai-osf"></i><span class="link-text">OSF</span></a>
+    <a href="https://osf.io/g9bq5/" class="osf-link"><i class="ai ai-osf"></i><span class="link-text">OSF</span></a>
+  </div>
+- 2023 /h̃/ hasperen sudurkarituaren inguruan. *International Journal of Basque Linguistics and Philology (ASJU)* 57, 275-294.
+  <div class="touch-aware-links compact">
+    <a href="https://doi.org/10.1387/asju.25952" class="doi-link"><i class="ai ai-doi"></i><span class="link-text">DOI</span></a>
+    <a href="https://ojs.ehu.eus/index.php/ASJU/article/view/25952/24923" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
 - 2022 [with D. Krajewska & E. Zuloaga]  Sibilant mergers in 18th-century Basque: A quantitative study. *Phonological Data & Analysis* 4.5, 1-31.  [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.3765/pda.v4art5.67) [<i class="ai ai-open-access ai-lg"></i>](https://phondata.org/index.php/pda/article/view/67/43)   [<i class="ai ai-osf ai-lg"></i>](https://osf.io/t6a7w/)   
 - 2022 Goizuetako azentueraren garapena kokatzen Euskara Batu Zaharraren prosodia zehazteko: proposamenen ebaluazioa. *Fontes Linguae Vasconum* 133, 9-35.  [Placing the development of the Goizueta prosodic system to define the prosody of Common Basque: Evaluation of the proposals.] [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.35462/flv133.1) [<i class="ai ai-open-access ai-lg"></i>](https://www.culturanavarra.es/uploads/files/FLV133_01.pdf)      
 - 2020 [with J. Blevins & J. Ullrich]  Final obstruent voicing in Lakota: Phonetic evidence and phonological implications. *Language* 96.2, 294-337.  [<i class="ai ai-doi ai-lg"></i>](https://doi.org/10.1353/lan.2020.0022) [<i class="ai ai-open-access ai-lg"></i>](/static/files/Blevinsetal2020Reduced.pdf)      

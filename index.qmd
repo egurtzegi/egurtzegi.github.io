@@ -51,7 +51,7 @@ If my name rings a bell but my face and work don't match with it, note that ther
 
 :::
 
-::: {.featured-publications-section}
+::: {.content-section-highlighted}
 
 ::: {.grid}
 
