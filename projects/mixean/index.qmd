@@ -13,15 +13,37 @@ This project involves the phonetic description of Mixean Low Navarrese, an endan
 ---
 
 ## Project Members
-Click on the <i class = "fas fa-user"></i> next to each project member to visit their personal webpage, <i class = "ai ai-osf ai-lg"></i> for their OSF, <i class = "ai ai-orcid ai-lg"></i> for their ORCID, <i class = "ai ai-google-scholar ai-lg"></i> for their Google Scholar, <i class = "ai ai-researchgate ai-lg"></i> for their ResearchGate, and <i class = "ai ai-academia ai-lg"></i> for their Academia.edu.
 
- * Ander Egurtzegi (CNRS-IKER) [<i class = "fas fa-user"></i>](https://egurtzegi.github.io/) [<i class = "ai ai-osf ai-lg"></i>](https://osf.io/mhdj4/) [<i class = "ai ai-orcid ai-lg"></i>](https://orcid.org/0000-0002-3451-323X/) [<i class = "ai ai-google-scholar ai-lg"></i>](http://scholar.google.com/citations?user=HyhNsDkAAAAJ/) [<i class = "ai ai-researchgate ai-lg"></i>](https://www.researchgate.net/profile/Ander-Egurtzegi/) [<i class = "ai ai-academia ai-lg"></i>](https://cnrs.academia.edu/AnderEgurtzegi/)
+ * Ander Egurtzegi (CNRS-IKER)
+   <div class="touch-aware-links">
+     <a href="https://egurtzegi.github.io/" class="website-link"><i class="fas fa-user"></i><span class="link-text">Website</span></a>
+     <a href="https://osf.io/mhdj4/" class="osf-link"><i class="ai ai-osf"></i><span class="link-text">OSF</span></a>
+     <a href="https://orcid.org/0000-0002-3451-323X/" class="orcid-link"><i class="ai ai-orcid"></i><span class="link-text">ORCID</span></a>
+     <a href="http://scholar.google.com/citations?user=HyhNsDkAAAAJ/" class="scholar-link"><i class="ai ai-google-scholar"></i><span class="link-text">Scholar</span></a>
+     <a href="https://www.researchgate.net/profile/Ander-Egurtzegi/" class="researchgate-link"><i class="ai ai-researchgate"></i><span class="link-text">ResearchGate</span></a>
+     <a href="https://cnrs.academia.edu/AnderEgurtzegi/" class="academia-link"><i class="ai ai-academia"></i><span class="link-text">Academia</span></a>
+   </div>
 
- * Christopher Carignan (UCL) [<i class = "fas fa-user"></i>](https://www.christophercarignan.com/) [<i class = "ai ai-osf ai-lg"></i>](https://osf.io/5ucv8/) [<i class = "ai ai-orcid ai-lg"></i>](https://orcid.org/0000-0002-1565-3691/) [<i class = "ai ai-google-scholar ai-lg"></i>](https://scholar.google.com/citations?user=naAMMOwAAAAJ/) [<i class = "ai ai-researchgate ai-lg"></i>](https://www.researchgate.net/profile/Christopher-Carignan/)
+ * Christopher Carignan (UCL)
+   <div class="touch-aware-links">
+     <a href="https://www.christophercarignan.com/" class="website-link"><i class="fas fa-user"></i><span class="link-text">Website</span></a>
+     <a href="https://osf.io/5ucv8/" class="osf-link"><i class="ai ai-osf"></i><span class="link-text">OSF</span></a>
+     <a href="https://orcid.org/0000-0002-1565-3691/" class="orcid-link"><i class="ai ai-orcid"></i><span class="link-text">ORCID</span></a>
+     <a href="https://scholar.google.com/citations?user=naAMMOwAAAAJ/" class="scholar-link"><i class="ai ai-google-scholar"></i><span class="link-text">Scholar</span></a>
+     <a href="https://www.researchgate.net/profile/Christopher-Carignan/" class="researchgate-link"><i class="ai ai-researchgate"></i><span class="link-text">ResearchGate</span></a>
+   </div>
 
- * Dorota Krajewska (UPV/EHU) [<i class = "ai ai-orcid ai-lg"></i>](https://orcid.org/0000-0002-6909-985X/) [<i class = "ai ai-google-scholar ai-lg"></i>](https://scholar.google.com/citations?user=N1fwk4IAAAAJ/) [<i class = "ai ai-researchgate ai-lg"></i>](https://www.researchgate.net/profile/Dorota-Krajewska/)
+ * Dorota Krajewska (UPV/EHU)
+   <div class="touch-aware-links">
+     <a href="https://orcid.org/0000-0002-6909-985X/" class="orcid-link"><i class="ai ai-orcid"></i><span class="link-text">ORCID</span></a>
+     <a href="https://scholar.google.com/citations?user=N1fwk4IAAAAJ/" class="scholar-link"><i class="ai ai-google-scholar"></i><span class="link-text">Scholar</span></a>
+     <a href="https://www.researchgate.net/profile/Dorota-Krajewska/" class="researchgate-link"><i class="ai ai-researchgate"></i><span class="link-text">ResearchGate</span></a>
+   </div>
 
- * Iñigo Urrestarazu-Porta (CNRS-IKER, UPPA & UPV/EHU) [<i class = "ai ai-researchgate ai-lg"></i>](https://www.researchgate.net/profile/Inigo-Urrestarazu-Porta/)
+ * Iñigo Urrestarazu-Porta (CNRS-IKER, UPPA & UPV/EHU)
+   <div class="touch-aware-links">
+     <a href="https://www.researchgate.net/profile/Inigo-Urrestarazu-Porta/" class="researchgate-link"><i class="ai ai-researchgate"></i><span class="link-text">ResearchGate</span></a>
+   </div>
 
 ---
 
