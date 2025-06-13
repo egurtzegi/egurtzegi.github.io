@@ -626,12 +626,12 @@ a {
   // Base link styling – mobile-first (touch devices)
   // ---------------------------------------------------------------------------
   a {
-    // Touch-friendly buttons
+    // Touch-friendly buttons - ALL BLUE on mobile/touch
     display: inline-flex !important;
     align-items: center !important;
     gap: map-get($spacers, 2) !important;
     padding: map-get($spacers, 2) map-get($spacers, 3) !important;
-    background-color: $primary !important;
+    background-color: $primary !important; // Blue for all touch buttons
     color: white !important;
     text-decoration: none !important;
     border-radius: $border-radius !important;
@@ -675,27 +675,33 @@ a {
       margin-bottom: 0 !important;
       gap: 0 !important; // Remove gap since we're hiding text
 
-      // Hide text on desktop - show icons only
-      .link-text {
-        display: none !important;
-      }
+          // Hide text on desktop - show icons only
+    .link-text {
+      display: none !important;
+    }
 
-      // Common academic link colours (blue by default)
-      &[href*="doi.org"],
-      &[href*="dx.doi.org"],
-      &[href*="arxiv.org"],
-      &[href*="github.com"],
-      &[href*="osf.io"],
-      &[href$=".pdf"],
-      &[title*="open access"],
-      &[title*="Open Access"] {
-        color: $publication-link-color !important;
-      }
+    // All academic links are BLUE on desktop for consistency
+    color: $primary !important; // Blue by default
+    
+    // All common academic link types stay blue
+    &[href*="doi.org"],
+    &[href*="dx.doi.org"],
+    &[href*="arxiv.org"],
+    &[href*="github.com"],
+    &[href*="osf.io"],
+    &[href$=".pdf"],
+    &[title*="open access"],
+    &[title*="Open Access"],
+    &.doi-link,
+    &.github-link,
+    &.osf-link,
+    &.pdf-link {
+      color: $primary !important; // All blue for consistency
+    }
 
-      // Specific semantic classes (optional fine-tuning)
-      &.slides-link   { color: #6f42c1 !important; } // Purple
-      &.pdf-link      { color: #dc3545 !important; } // Red
-      &.external-link { color: #28a745 !important; } // Green
+    // Other specific semantic classes (if needed for special cases)
+    &.slides-link   { color: #6f42c1 !important; } // Purple
+    &.external-link { color: #28a745 !important; } // Green
 
       // Icon sizing for desktop
       i {
@@ -709,6 +715,13 @@ a {
         transform: none !important;
         text-decoration: none !important;
       }
+    }
+
+    // Fix for paragraph elements inside touch-aware-links on desktop
+    p {
+      display: inline !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
   }
 
