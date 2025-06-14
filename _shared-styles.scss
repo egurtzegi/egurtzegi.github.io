@@ -254,7 +254,53 @@ a {
   display: none;
 }
 
-// Mobile-first section spacing
+// =============================================================================
+// UNIFIED BOOTSTRAP GRID MARGIN SYSTEM
+// =============================================================================
+// All pages now use Bootstrap grid - single margin system for consistency
+
+/* Mobile-first approach - all grid pages */
+@media (max-width: 991.98px) {
+  
+  #quarto-content .grid {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    
+    /* Progressive mobile scaling */
+    @media (max-width: 375px) {
+      margin-left: 18px !important;
+      margin-right: 18px !important;
+    }
+    
+    @media (min-width: 376px) {
+      margin-left: 18px !important;
+      margin-right: 18px !important;
+    }
+    
+    @media (min-width: 576px) {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    
+    @media (min-width: 768px) {
+      margin-left: 24px !important;
+      margin-right: 24px !important;
+    }
+  }
+}
+
+/* Desktop (≥992px) - Unified centering for all grid pages */
+@media (min-width: 992px) {
+  #quarto-content .grid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1140px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+// Mobile-first section spacing (preserved for vertical spacing)
 .grid {
   margin-bottom: map-get($spacers, 6); // 24px on mobile
   gap: map-get($spacers, 4); // 16px gap on mobile
