@@ -1,7 +1,10 @@
 ---
 title: "Recent & Upcoming Talks"
+page-layout: custom
 ---
 
+::: {.grid}
+::: {.g-col-12}
 # Recent & Upcoming Talks
 
 ## Selected recent talks
@@ -43,3 +46,6 @@ title: "Recent & Upcoming Talks"
   </div>
 
 - 2022 "When time is the key: Analyzing time-varying data in laboratory phonology". LPRG - Laboratory Phonology Research Group (Université Paris Cité, Paris, France).
+
+:::
+:::

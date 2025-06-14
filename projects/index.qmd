@@ -1,7 +1,10 @@
 ---
 title: "Projects"
+page-layout: custom
 ---
 
+::: {.grid}
+::: {.g-col-12}
 # Projects
 
 ## [Modern approaches to diachronic phonology applied to Basque (MADPAB)](madpab/)
@@ -15,3 +18,6 @@ This project aims to improve our current understanding of Basque historical phon
 ## [Mixean Basque](mixean/)
 
 This project involves the phonetic description of Mixean Low Navarrese, an endangered variety of Basque. Preceding the acoustic analysis of this variety, we compile an overview of all previous acoustic studies performed on different Basque varieties, in order to synthesize the sparse acoustic descriptions of the language that are available.
+
+:::
+:::

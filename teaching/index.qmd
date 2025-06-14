@@ -1,7 +1,10 @@
 ---
 title: "Teaching"
+page-layout: custom
 ---
 
+::: {.grid}
+::: {.g-col-12}
 # Teaching
 
 ## [Euskararen Fonetika eta Fonologia (UPPA)](euskalfono/)
@@ -11,3 +14,6 @@ Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Has
 ## [Sound Change (UPV/EHU)](soundchange/)
 
 This class offers an accessible introduction to the concept of sound change and the different phonological processes it encompasses, using examples from a wide range of languages which can be adapted to the particular interests of the attending students.
+
+:::
+:::
