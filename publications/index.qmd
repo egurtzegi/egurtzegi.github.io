@@ -3,13 +3,14 @@ title: "Publications"
 page-layout: custom
 ---
 
-::: {.grid}
-::: {.g-col-12}
+<div class="grid">
+<div class="g-col-12">
+
 # Publications
 
 In all papers, the open-access icon <i class="ai ai-open-access ai-lg"></i> links to a freely accessible pdf. The DOI icon <i class="ai ai-doi ai-lg"></i> links to the DOI or paper webpage (whenever available) and the arXiv icon <i class="ai ai-arxiv ai-lg"></i> links to arXiv. <i class="fab fa-github"></i> links to the Github repo and <i class="ai ai-osf ai-lg"></i> to the OSF repo (code + extra materials).
 
-<hr>
+<hr/>
 
 ## Journal Publications
 
@@ -197,5 +198,5 @@ In all papers, the open-access icon <i class="ai ai-open-access ai-lg"></i> link
     <a href="/static/files/Egurtzegi2014.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
   </div>
 
-:::
-:::
+</div>
+</div>
