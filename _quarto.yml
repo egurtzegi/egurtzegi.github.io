@@ -7,7 +7,7 @@ project:
 
 website:
   title: "Ander Egurtzegi"
-  site-url: https://egurtzegi.github.io
+  site-url: https://javi-dev.github.io/egurtzegi-quarto-website
   search: 
     location: navbar
     type: overlay
