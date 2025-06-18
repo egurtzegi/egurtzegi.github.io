@@ -91,4 +91,5 @@ This class offers an accessible introduction to the concept of sound change and 
   </div>
 * 3. set of exercices
   <div class="touch-aware-links">
-    <a href="/static/files/CampbellExercices.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a> 
+    <a href="/static/files/CampbellExercices.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
+  </div>
