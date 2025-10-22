@@ -450,6 +450,10 @@ a {
         outline: $focus-ring-width solid var(--focus-ring-color);
         outline-offset: $focus-ring-offset;
       }
+      
+      i {
+        color: inherit;
+      }
     }
   }
 }
@@ -582,6 +586,7 @@ a {
         // Icon styling for touch devices
         i {
           @include rfs($icon-size-base);
+          color: inherit;
         }
       }
       
@@ -627,6 +632,7 @@ a {
           i {
             @include font-size(1.25rem); // 20px
             margin: 0; // Remove internal icon margins
+            color: inherit;
           }
           
           &:hover {
@@ -702,6 +708,7 @@ a {
     // Icon sizing on touch devices
     i {
       @include rfs($icon-size-base);
+      color: inherit;
     }
   }
 
@@ -753,6 +760,7 @@ a {
       i {
         @include font-size(1.25rem);
         margin: 0;
+        color: inherit;
       }
 
       &:hover,
