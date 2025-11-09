@@ -9,7 +9,17 @@ page-layout: custom
 
 ## Selected recent talks
 
-- 2024 [with A. García-Covelo & I. Urrestarazu-Porta] "/h/ vs. /h̃/: Estudiando una oposición fonológica 'imposible' del euskera desde la fonología de laboratorio". Fonética Open Days Salamanca.
+- 2025 [with I. Urrestarazu-Porta] "What is left when nasality is gone. Formant shift in formerly nasalized vowels in Larraine Basque". 6th Phonetics and Phonology in Europe (PAPE).
+  <div class="touch-aware-links">
+    <a href="https://urrestarazu.gitlab.io/loss-nasality-vowels/2025-06-pape-loss-nasality.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
+
+- 2025 [with I. Urrestarazu-Porta] "No dejes para mañana lo que puedas contar hoy: Hacia una lingüística cuantitativa, reproducible y abierta". 39 Congreso Internacional de la Asociación de Jóvenes Lingüistas (AJL Plenary Talk).
+  <div class="touch-aware-links">
+    <a href="https://phon-iker.gitlab.io/ajl25/2025-10-ajl.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
+  </div>
+
+- 2024 [with A. García-Covelo & I. Urrestarazu-Porta] "/h/ vs. /h̃/: Estudiando una oposición fonológica 'imposible' del euskera desde la fonología de laboratorio". Fonética Open Days (Salamanca).
   <div class="touch-aware-links">
     <a href="/static/slides/larraine-osoa/2024-larraine-h-fod.html" class="slides-link"><i class="fas fa-chalkboard-teacher"></i><span class="link-text">Slides</span></a>
   </div>

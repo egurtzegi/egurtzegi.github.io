@@ -7,11 +7,15 @@ page-layout: custom
 ::: {.g-col-12}
 # Teaching
 
+## [44200 Advanced course in Sound Change with a focus on Basque (UChicago 2024-25 Spring)](soundchangebasque/)
+
+In this seminar we discuss many of the linguistic aspects relevant to theories of sound change with a focus on the Basque language (with occasional case studies from other endangered languages such as Ribagorzan Aragonese or Lakota). Key topics will include phonetically-based sound change, synchronic variation as the seed of change, the role of contact, the advantages of studying change from different perspectives, typologically rare sound changes, and the importance of the precise phonetic documentation of endangered languages for sound change typology and linguistic theory overall.
+
 ## [Euskararen Fonetika eta Fonologia (UPPA)](euskalfono/)
 
 Honakoa euskararen fonetika eta fonologia lantzen dituen sarrera kurtsoa da. Hasteko, oinarrizko kontzeptuak aurkeztuko ditugu, ondoren euskararen bereizitasunak ikusteko. Euskararen segmentuak, silaba egitura eta azentuera mota ezberdinak aurkeztuko dira. Euskararen hots ezberdinak transkribatzen ikasiko dugu, eta euskaraz aurki daitezkeen txandakatze ezberdinak aztertu.
 
-## [Sound Change (UPV/EHU)](soundchange/)
+## [Sound Change (University of Munich & UPV/EHU)](soundchange/)
 
 This class offers an accessible introduction to the concept of sound change and the different phonological processes it encompasses, using examples from a wide range of languages which can be adapted to the particular interests of the attending students.
 

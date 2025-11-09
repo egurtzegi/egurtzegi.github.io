@@ -1,0 +1,78 @@
+---
+title: "44200 Advanced course in Sound Change with a focus on Basque (UChicago 2024-25 Spring)"
+date: "2025-10-06"
+---
+
+This graduate seminar is intended for students with a background in phonetics and (historical) phonology and an interest in either sound change or the sound patterns of Basque. In this seminar, we will discuss many of the linguistic aspects relevant to theories of sound change with a focus on the Basque language (with occasional case studies from other endangered languages such as Ribagorzan Aragonese or Lakota). Key topics will include phonetically-based sound change, synchronic variation as the seed of change, the role of contact, the advantages of studying change from different perspectives, typologically rare sound changes, and the importance of the precise phonetic documentation of endangered languages for sound change typology and linguistic theory overall.
+
+The seminar was offered at the University of Chicago during the Spring Quarter of 2025.
+
+--------------------------------------------------
+Course topics:
+==============
+*   Syllabus 2025 [pdf](/static/files/SyllabusUChicago2025.pdf)
+
+--------------------------------------------------
+1.- Introduction
+--------------------------------------------------
+*   Methodology
+*   The sound structure of Basque
+
+[slides](/static/files/1-Intro&BasquePhon.pdf)
+
+2.- Documenting endangered varieties
+--------------------------------------------------
+*   Mixean Basque
+*   Zuberoan Basque
+
+[slides](/static/files/2-Zuberoan&Mixean.pdf)
+
+3.- Looking at a 'weird' sound change from a phonetic perspective: Metathesis
+--------------------------------------------------
+*   Everything we know about metathesis
+*   Other cases of metathesis in Basque
+
+[slides](/static/files/3-Metathesis.pdf)
+
+4.- The role of contact in phonetically-based sound change
+--------------------------------------------------
+*   u-fronting in Zuberoan Basque
+*   Other contact-triggered sound patterns in Basque
+
+[slides](/static/files/4-RoleOfContact.pdf)
+
+5.- Analyzing a sound change from multiple sources and angles
+--------------------------------------------------
+*   Basque sibilant merger with acoustic data
+*   Basque sibilant merger in a 18th century dictionary
+
+[slides](/static/files/5-MultipleSources.pdf)
+
+6.- Synchronic variation as the seed of sound change: Cluster palatalization
+--------------------------------------------------
+*   Cluster palatalization in Romance
+*   Borrowing into Basque
+
+[slides](/static/files/6-SeedOfSoundChange.pdf)
+
+7.- Typologically rare sound patterns: /h/ vs. /h̃/ in Basque
+--------------------------------------------------
+*   Nasalance study of Zuberoan aspiration data
+*   Acoustic study of Mixean aspiration data
+
+[slides](/static/files/1-Intro&BasquePhon.pdf)
+
+8.- Typologically rare sound changes: Final voicing
+--------------------------------------------------
+*   Final obstruent voicing in Lakota
+*   The importance of endangered languages and varieties for linguistic theory
+
+[slides](/static/files/8-FinalVoicing.pdf)
+
+9.- Prosodic change
+--------------------------------------------------
+*   The reconstruction of the Basque prosodic systems
+*   Implications for synchronic analysis: Pitch accent in Northern Bizkaian Basque
+
+[slides](/static/files/9-HistoryOfProsody.pdf)
+--------------------------------------------------

@@ -1,9 +1,11 @@
 ---
-title: "Sound Change (UPV/EHU)"
+title: "Sound Change (University of Munich & UPV/EHU)"
 date: "2020-05-06"
 ---
 
 This class offers an accessible introduction to the concept of sound change and the different phonological processes it encompasses, using examples from a wide range of languages which can be adapted to the particular interests of the attending students. Several typologies of phonetically natural sound change will be discussed and compared in order to present a comprehensible outline of how the sounds of the world's languages change over time.
+
+The class was offered at the University of Munich (from 2017 to 2019) and the University of the Basque Country (from 2019 to 2021).
 
 --------------------------------------------------
 Course topics:
