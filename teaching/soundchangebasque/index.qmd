@@ -11,90 +11,69 @@ The seminar was offered at the University of Chicago during the Spring Quarter o
 
 ## Course topics
 
-*   Syllabus 2025
-  <div class="touch-aware-links">
-    <a href="/static/files/SyllabusUChicago2025.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a>
-  </div>
+*   Syllabus 2025 <div class="touch-aware-links"><a href="/static/files/SyllabusUChicago2025.pdf" class="pdf-link"><i class="ai ai-open-access"></i><span class="link-text">PDF</span></a></div>
 
 ## 1. Introduction
 
 *   Methodology
 *   The sound structure of Basque
 
-<div class="touch-aware-links">
-  <a href="/static/files/1-Intro&BasquePhon.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/1-Intro&BasquePhon.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 2. Documenting endangered varieties
 
 *   Mixean Basque
 *   Zuberoan Basque
 
-<div class="touch-aware-links">
-  <a href="/static/files/2-Zuberoan&Mixean.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/2-Zuberoan&Mixean.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 3. Looking at a 'weird' sound change from a phonetic perspective: Metathesis
 
 *   Everything we know about metathesis
 *   Other cases of metathesis in Basque
 
-<div class="touch-aware-links">
-  <a href="/static/files/3-Metathesis.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/3-Metathesis.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 4. The role of contact in phonetically-based sound change
 
 *   u-fronting in Zuberoan Basque
 *   Other contact-triggered sound patterns in Basque
 
-<div class="touch-aware-links">
-  <a href="/static/files/4-RoleOfContact.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/4-RoleOfContact.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 5. Analyzing a sound change from multiple sources and angles
 
 *   Basque sibilant merger with acoustic data
 *   Basque sibilant merger in a 18th century dictionary
 
-<div class="touch-aware-links">
-  <a href="/static/files/5-MultipleSources.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/5-MultipleSources.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 6. Synchronic variation as the seed of sound change: Cluster palatalization
 
 *   Cluster palatalization in Romance
 *   Borrowing into Basque
 
-<div class="touch-aware-links">
-  <a href="/static/files/6-SeedOfSoundChange.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/6-SeedOfSoundChange.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 7. Typologically rare sound patterns: /h/ vs. /h̃/ in Basque
 
 *   Nasalance study of Zuberoan aspiration data
 *   Acoustic study of Mixean aspiration data
 
-<div class="touch-aware-links">
-  <a href="/static/files/1-Intro&BasquePhon.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/1-Intro&BasquePhon.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 8. Typologically rare sound changes: Final voicing
 
 *   Final obstruent voicing in Lakota
 *   The importance of endangered languages and varieties for linguistic theory
 
-<div class="touch-aware-links">
-  <a href="/static/files/8-FinalVoicing.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/8-FinalVoicing.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ## 9. Prosodic change
 
 *   The reconstruction of the Basque prosodic systems
 *   Implications for synchronic analysis: Pitch accent in Northern Bizkaian Basque
 
-<div class="touch-aware-links">
-  <a href="/static/files/9-HistoryOfProsody.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a>
-</div>
+<div class="touch-aware-links"><a href="/static/files/9-HistoryOfProsody.pdf" class="slides-link"><i class="fas fa-file-powerpoint"></i><span class="link-text">Slides</span></a></div>
 
 ---
