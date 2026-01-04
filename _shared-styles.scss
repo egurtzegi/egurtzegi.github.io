@@ -597,7 +597,7 @@ a {
           display: inline !important;
           padding: 2px 4px !important;
           background-color: transparent !important;
-          color: $publication-link-color !important;
+          color: var(--color-primary) !important;
           min-height: auto !important;
           border-radius: $border-radius-sm !important;
           margin-right: 3px !important;
@@ -1188,6 +1188,6 @@ a {
   a[href*="arxiv.org"],
   a[href*="github.com"],
   a[href*="osf.io"] {
-    color: $publication-link-color !important;
+    color: var(--color-primary) !important;
   }
 } 
