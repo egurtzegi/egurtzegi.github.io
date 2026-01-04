@@ -597,23 +597,11 @@ a {
           display: inline !important;
           padding: 2px 4px !important;
           background-color: transparent !important;
-          color: var(--color-primary) !important;
+          color: $publication-link-color !important;
           min-height: auto !important;
           border-radius: $border-radius-sm !important;
           margin-right: 3px !important;
           margin-bottom: 0 !important;
-          
-          // All publication links use the same blue color
-          &[href*="doi.org"],
-          &[href*="dx.doi.org"],
-          &[href*="arxiv.org"],
-          &[href*="github.com"],
-          &[href*="osf.io"],
-          &[href$=".pdf"],
-          &[title*="open access"],
-          &[title*="Open Access"] {
-            color: $publication-link-color !important;
-          }
           
           // Talk-specific link colors
           &.slides-link {
