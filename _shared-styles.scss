@@ -422,7 +422,7 @@ a {
     margin-block-end: map-get($spacers, 2);
     
     a {
-      color: var(--color-primary);
+      color: var(--color-primary) !important;
       text-decoration: none;
       transition: $transition-base, $transition-transform;
       display: inline-flex;
@@ -441,7 +441,7 @@ a {
       
       &:hover,
       &:focus {
-        color: var(--color-primary-hover);
+        color: var(--color-primary-hover) !important;
         transform: $hover-transform;
         text-decoration: none;
       }
